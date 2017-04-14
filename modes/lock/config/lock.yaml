@@ -29,11 +29,13 @@ scoring:
 shots:
     left_lock:
         profile: sp_lock
+        reset_events: mode_2ball_stopped, mode_3ball_stopped
         advance_events: 
             - balldevice_bd_left_saucer_ball_enter
             - balldevice_bd_right_saucer_ball_enter
     right_lock:
         profile: sp_lock
+        reset_events: mode_2ball_stopped, mode_3ball_stopped
         advance_events: 
             - balldevice_bd_left_saucer_ball_enter
             - balldevice_bd_right_saucer_ball_enter
