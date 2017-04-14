@@ -56,8 +56,8 @@ logic_blocks:
         lb_light_lock:
             count_events: drop_target_bank_rod_down
             enable_events: mode_saucer_started
-            disable_events: mode_2ball_started
-            reset_events: multiball_mb_2ball_ended
+            disable_events: mode_saucer_stopped
+            reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
             count_complete_value: current_player.required_hits + 1
             events_when_complete: lock_start
         lb_bonus:
