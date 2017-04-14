@@ -1,22 +1,23 @@
 #config_version=4
 mode:
     start_events: start_3ball
-    stop_events: multiball_mb_3ball_ended
+    stop_events: multiball_mb_3ball_ball_lost
     priority: 150
-
-shots:
-    rod_in_order:
-        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
 
 scoring:
     drop_target_bank_rod_down:
-        score: 5000
+        score: 5000|block
     rod_in_order_complete:
-        score: 5000
+        score: 5000|block
     balldevice_bd_left_saucer_ball_enter:
-        score: 2000
+        score: 2000|block
     balldevice_bd_right_saucer_ball_enter:
-        score: 2000
+        score: 2000|block
+    jackpot.2:  # just add the same value again
+        score: 1000 + current_player.light_jackpot_required_hits * 1000
+
+event_player:
+    balldevice_bd_shooter_lane_ball_eject_success: start_2ball
 
 multiballs:
     mb_3ball:
@@ -26,12 +27,6 @@ multiballs:
         ball_locks: bd_left_saucer, bd_right_saucer
 
 show_player:
-    multiball_mb_rod_started:
-        left_eject_off_3ball: play
-        right_eject_off_3ball: play
-        saucer_ramps:
-            loops: -1
-            speed: 4
     balldevice_bd_left_saucer_ball_enter:
         left_saucer_3ball:
             loops: 0

@@ -38,14 +38,25 @@ scoring:
     increase_required:
         required_hits: 1
     timer_2x_multiplier_started:
-        pf_multiplier: 2
-        action: set
+        pf_multiplier:
+            score: 2
+            action: set
     timer_2x_multiplier_stopped:
-        pf_multiplier: 1
-        action: set
+        pf_multiplier:
+            score: 1
+            action: set
     timer_4x_multiplier_started:
-        pf_multiplier: 4
-        action: set
+        pf_multiplier:
+            score: 4
+            action: set
+#    mode_2ball_started:
+#        pf_multiplier:
+#            score: 1.5
+#            action: set
+#    mode_2ball_stopped:
+#        pf_multiplier:
+#            score: 1
+#            action: set
 
 logic_blocks:
     counters:

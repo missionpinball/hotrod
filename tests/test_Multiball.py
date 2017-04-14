@@ -75,6 +75,8 @@ class TestMultiball(MpfMachineTestCase, MpfGameTestCase):
         self.assertEqual(0, self.machine.ball_devices.bd_right_saucer.balls)
         self.assertBallsInPlay(3)
         self.assertBallsOnPlayfield(3)
+        self.assertModeRunning("2ball")
+        self.assertModeRunning("3ball")
 
         self.drain_ball()
         self.advance_time_and_run(3)
@@ -91,6 +93,9 @@ class TestMultiball(MpfMachineTestCase, MpfGameTestCase):
         self.release_switch_and_run("pfs_shooter_lane", 4)
         self.assertBallsOnPlayfield(2)
         self.assertBallsInPlay(2)
+
+        self.assertModeRunning("2ball")
+        self.assertModeNotRunning("3ball")
 
         self.advance_time_and_run(10)
         self.drain_ball()

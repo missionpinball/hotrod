@@ -14,6 +14,9 @@ multiball_locks:
         lock_devices: bd_right_saucer
         reset_count_for_current_player_events: start_2ball, start_3ball
 
+scoring:
+    sw_ejects{(current_player.bl_left_lock_locked_balls > 0) != (current_player.bl_right_lock_locked_balls > 0)}: start_2ball
+
 event_player:
     # on eject start 2ball
     sw_ejects{(current_player.bl_left_lock_locked_balls > 0) != (current_player.bl_right_lock_locked_balls > 0)}: start_2ball
