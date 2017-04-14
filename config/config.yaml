@@ -31,6 +31,7 @@ modes:
   - lock
   - lock_lit
   - 2ball
+  - 3ball
   - extra_ball
   - super_pops_1
   - super_pops_2

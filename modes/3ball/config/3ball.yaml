@@ -1,6 +1,6 @@
 #config_version=4
 mode:
-    start_events: multiball_mb_3ball_started
+    start_events: start_3ball
     stop_events: multiball_mb_3ball_ended
     priority: 150
 
@@ -20,15 +20,10 @@ scoring:
 
 multiballs:
     mb_3ball:
-        ball_count: 2
-        ball_count_type: add
+        ball_count: 3
         shoot_again: 10s
-        disable_events: mb_3ball_disable
-        enable_events: mb_3ball_enable
-        start_events: 
-            balldevice_bd_shooter_lane_ball_left
-            sw_skill_shot
-            sw_skill_shot_cancel
+        start_events: balldevice_bd_shooter_lane_ball_eject_success
+        ball_locks: bd_left_saucer, bd_right_saucer
 
 show_player:
     multiball_mb_rod_started:

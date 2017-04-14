@@ -1,8 +1,15 @@
 #config_version=4
 mode:
-    start_events: multiball_mb_2ball_started
+    start_events: start_2ball
     stop_events: multiball_mb_2ball_ended
     priority: 140
+
+multiballs:
+    mb_2ball:
+        ball_count: 2
+        start_events: mode_2ball_started
+        shoot_again: 10s
+        ball_locks: bd_left_saucer, bd_right_saucer
 
 scoring:
     left_saucer_hit:
