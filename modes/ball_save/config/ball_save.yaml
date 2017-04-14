@@ -1,0 +1,45 @@
+#config_version=4
+mode:
+    start_events: ball_starting
+    priority: 500
+
+ball_saves:
+    default:
+        active_time: 8s
+        hurry_up_time: 3s
+        grace_period: 2s
+        enable_events: mode_ball_save_started
+        timer_start_events: 
+            balldevice_bd_shooter_lane_ball_left
+            sw_skill_shot
+            sw_skill_shot_cancel
+        auto_launch: no
+        balls_to_save: 1
+
+show_player:
+    ball_save_default_enabled:
+        ball_save_flash:
+            loops: -1
+            speed: 4
+    ball_save_default_hurry_up:
+        ball_save_flash:
+            loops: -1
+            speed: 8
+    ball_save_default_grace_period:
+        ball_save_flash:
+            action: stop
+    ball_save_default_saving_ball:
+        ball_save_flash:
+            action: stop
+    ball_save_default_disabled:
+        ball_save_flash:
+            action: stop
+
+shows:
+    ball_save_flash:
+        - time: 0
+          lights:
+              pfl_same_player: ff
+        - time: +1
+          lights:
+              pfl_same_player: 00

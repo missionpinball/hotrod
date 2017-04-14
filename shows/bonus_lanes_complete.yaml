@@ -1,0 +1,14 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_left_outlane: ff
+    pfl_left_inlane: 0
+    pfl_right_inlane: ff
+    pfl_right_outlane: 0
+- time: +1
+  lights:
+    pfl_left_outlane: 0
+    pfl_left_inlane: ff
+    pfl_right_inlane: 0
+    pfl_right_outlane: ff

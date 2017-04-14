@@ -1,0 +1,34 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_left_rollover: ff
+    pfl_2x: 00
+- time: +1
+  lights:
+    pfl_2x: ff
+    pfl_left_rollover: 00
+- time: +1
+  lights:
+    pfl_center_rollover: ff
+    pfl_2x: 00
+- time: +1
+  lights:
+    pfl_4x: ff
+    pfl_center_rollover: 00
+- time: +1
+  lights:
+    pfl_right_rollover: ff
+    pfl_4x: 00
+- time: +1
+  lights:
+    pfl_4x: ff
+    pfl_right_rollover: 00
+- time: +1
+  lights:
+    pfl_center_rollover: ff
+    pfl_4x: 00
+- time: +1
+  lights:
+    pfl_2x: ff
+    pfl_center_rollover: 00

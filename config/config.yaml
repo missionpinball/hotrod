@@ -1,0 +1,132 @@
+#config_version=4
+
+config:
+    - matrix_lights.yaml
+    - coils.yaml
+    - switches.yaml
+    - keyboard.yaml
+    - score_reels.yaml
+
+hardware:
+    platform: opp
+    driverboards: gen2
+
+opp:
+    ports: /dev/ttyACM0
+#    ports: /dev/cu.usbmodem1411
+
+game:
+    allow_start_with_loose_balls: true
+    balls_per_game: 3
+    max_players: 2
+
+modes:
+  - base
+#  - tilt
+#  - bonus
+#  - special
+  - ball_save
+  - hot_lanes
+  - saucer
+#  - lock
+#  - lock_lit
+#  - 2ball
+#  - extra_ball
+  - super_pops_1
+  - super_pops_2
+  - skill_shot
+
+flippers:
+    left_flipper:
+        main_coil: pfc_flipper_left_main
+        activation_switch: cs_left_flipper
+    right_flipper:
+        main_coil: pfc_flipper_right_main
+        activation_switch: cs_right_flipper
+
+ball_devices:
+    bd_trough:
+        ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3
+        jam_switch: pfs_trough_jam
+        entrance_count_delay: 300ms
+        eject_coil: pfc_trough_eject
+        tags: trough, home, drain
+        eject_targets: bd_shooter_lane
+        confirm_eject_type: target
+        debug: yes
+    bd_shooter_lane:
+        ball_switches: pfs_shooter_lane
+        eject_timeouts: 3s
+        tags: ball_add_live
+        mechanical_eject: true
+    bd_left_eject:
+        ball_switches: pfs_left_eject
+        eject_coil: pfc_left_eject
+        eject_timeouts: 2s
+        entrance_count_delay: 1s
+    bd_right_eject:
+        ball_switches: pfs_right_eject
+        eject_coil: pfc_right_eject
+        eject_timeouts: 2s
+        entrance_count_delay: 1s
+    bd_left_saucer:
+        ball_switches: pfs_left_saucer
+        eject_coil: pfc_left_saucer
+        eject_timeouts: 2s
+    bd_right_saucer:
+        ball_switches: pfs_right_saucer
+        eject_coil: pfc_right_saucer
+        eject_timeouts: 2s
+
+drop_targets:
+    r:
+        switch: pfs_drop_r
+        reset_coil: pfc_drop_reset
+    o:
+        switch: pfs_drop_o
+        reset_coil: pfc_drop_reset
+    d:
+        switch: pfs_drop_d
+        reset_coil: pfc_drop_reset
+
+drop_target_banks:
+    rod:
+       drop_targets: r,o,d
+       reset_coil: pfc_drop_reset
+       reset_events: 
+           drop_target_bank_rod_down: 1s
+
+autofire_coils:
+    left_sling:
+        coil: pfc_left_sling
+        switch: pfs_left_sling
+    right_sling:
+        coil: pfc_right_sling
+        switch: pfs_right_sling
+    left_pop:
+        coil: pfc_left_pop
+        switch: pfs_left_pop
+    right_pop:
+        coil: pfc_right_pop
+        switch: pfs_right_pop
+    center_pop:
+        coil: pfc_center_pop
+        switch: pfs_center_pop
+
+virtual_platform_start_active_switches:
+    pfs_trough_1
+    pfs_trough_2
+    pfs_trough_3
+    bbs_player_1_10
+    bbs_player_1_100
+    bbs_player_1_1000
+    bbs_player_1_10000
+    bbs_player_2_10
+    bbs_player_2_100
+    bbs_player_2_1000
+    bbs_player_2_10000
+
+displays:
+    window:
+        width: 800
+        height: 600

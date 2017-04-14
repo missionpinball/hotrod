@@ -1,0 +1,60 @@
+# config_version=4
+
+keyboard:
+  1:
+    switch: cs_start
+  a:
+    switch: cs_service_up
+  s:
+    switch: cs_service_down
+  /:
+    switch: cs_service_esc
+  enter:
+    switch: cs_service_enter
+  .:
+    switch: cs_door_open
+    toggle: true
+  z:
+    switch: cs_right_flipper
+  x:
+    switch: cs_left_flipper
+  shift-t:
+    switch: pfs_trough
+    toggle: true
+  f:
+    switch: pfs_shooter_lane
+    toggle: true
+  h:
+    switch: pfs_top_lane_h
+  o:
+    switch: pfs_top_lane_o
+  t:
+    switch: pfs_top_lane_t
+  r:
+    switch: pfs_drop_r
+    toggle: true
+  0:
+    switch: pfs_drop_o
+    toggle: true
+  d:
+    switch: pfs_drop_d
+    toggle: true
+  e:
+    switch: pfs_left_eject
+    toggle: true
+  w:
+    switch: pfs_right_eject
+  q:
+    switch: pfs_left_inlane
+  p:
+    switch: pfs_right_inlane
+  i: 
+    switch: pfs_left_outlane
+  u:
+    switch: pfs_right_outlane
+  n:
+    switch: pfs_center_pop
+  b:
+    switch: pfs_left_pop
+  m:
+    switch: pfs_right_pop

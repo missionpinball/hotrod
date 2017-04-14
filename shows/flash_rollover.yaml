@@ -1,0 +1,12 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_left_rollover: ff
+    pfl_center_rollover: ff
+    pfl_right_rollover: ff
+- time: +1
+  lights:
+    pfl_left_rollover: 0
+    pfl_center_rollover: 0
+    pfl_right_rollover: 0

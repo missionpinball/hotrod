@@ -1,0 +1,165 @@
+#config_version=4
+mode:
+    start_events: multiball_mb_3ball_started
+    stop_events: multiball_mb_3ball_ended
+    priority: 150
+
+shots:
+    rod_in_order:
+        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
+
+scoring:
+    drop_target_bank_rod_down:
+        score: 5000
+    rod_in_order_complete:
+        score: 5000
+    balldevice_bd_left_saucer_ball_enter:
+        score: 2000
+    balldevice_bd_right_saucer_ball_enter:
+        score: 2000
+
+multiballs:
+    mb_3ball:
+        ball_count: 2
+        ball_count_type: add
+        shoot_again: 10s
+        disable_events: mb_3ball_disable
+        enable_events: mb_3ball_enable
+        start_events: 
+            balldevice_bd_shooter_lane_ball_left
+            sw_skill_shot
+            sw_skill_shot_cancel
+
+show_player:
+    multiball_mb_rod_started:
+        left_eject_off_3ball: play
+        right_eject_off_3ball: play
+        saucer_ramps:
+            loops: -1
+            speed: 4
+    balldevice_bd_left_saucer_ball_enter:
+        left_saucer_3ball:
+            loops: 0
+            speed: 8
+            priority: 100
+    balldevice_bd_right_saucer_ball_enter:
+        right_saucer_3ball:
+            loops: 0
+            speed: 8
+            priority: 100
+
+shows:
+    saucer_ramps:
+        - time: 0
+          lights:
+              pfl_left_saucer_1: ff
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_4: 00
+              pfl_right_saucer_1: ff
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_4: 00
+        - time: +1
+          lights:
+              pfl_left_saucer_1: ff
+              pfl_left_saucer_2: ff
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_4: 00
+              pfl_right_saucer_1: ff
+              pfl_right_saucer_2: ff
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_4: 00
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: ff
+              pfl_left_saucer_3: ff
+              pfl_left_saucer_4: 00
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: ff
+              pfl_right_saucer_3: ff
+              pfl_right_saucer_4: 00
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: ff
+              pfl_left_saucer_4: ff
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: ff
+              pfl_right_saucer_4: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_4: ff
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_4: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_4: 00
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_4: 00
+
+    left_eject_off_3ball:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+    right_eject_off_3ball:
+        - time: 0
+          lights:
+              pfl_right_eject: ff
+
+    left_saucer_3ball:
+        - time: 0
+          lights:
+              pfl_left_saucer_1: ff
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: ff
+              pfl_left_saucer_3: 00
+        - time: +1
+          lights:
+              pfl_left_saucer_1: ff
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: 00
+
+    right_saucer_3ball:
+        - time: 0
+          lights:
+              pfl_right_saucer_1: ff
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: ff
+              pfl_right_saucer_3: 00
+        - time: +1
+          lights:
+              pfl_right_saucer_1: ff
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: 00

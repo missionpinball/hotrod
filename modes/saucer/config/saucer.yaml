@@ -1,0 +1,35 @@
+#config_version=4
+mode:
+    start_events: mode_base_started, multiball_mb_2ball_ended
+    stop_events: mode_lock_started
+    priority: 120
+
+scoring:
+    left_saucer_hit:
+        score: 300
+    right_saucer_hit:
+        score: 300
+    pfs_drop_r_active:
+        score: 100
+    pfs_drop_o_active:
+        score: 100
+    pfs_drop_d_active:
+        score: 100
+    drop_target_bank_rod_down:
+        score: 300
+
+shots:
+    left_saucer:
+        hit_events: balldevice_bd_left_saucer_ball_enter
+    right_saucer:
+        hit_events: balldevice_bd_right_saucer_ball_enter
+
+show_player:
+    balldevice_bd_left_saucer_ball_enter:
+        left_saucer_eject:
+            loops: 0
+            speed: 6
+    balldevice_bd_right_saucer_ball_enter:
+        right_saucer_eject:
+            loops: 0
+            speed: 6

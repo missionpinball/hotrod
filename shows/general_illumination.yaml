@@ -1,0 +1,19 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_left_sling_1: ff
+    pfl_right_sling_1: ff
+    pfl_left_sling_2: ff
+    pfl_right_sling_2: ff
+    pfl_left_upper: ff
+    pfl_right_upper: ff
+    pfl_left_saucer_gi: ff
+    pfl_right_saucer_gi: ff
+    pfl_left_pop: ff
+    pfl_center_pop: ff
+    pfl_right_pop: ff
+    pfl_lane_1: ff
+    pfl_lane_2: ff
+    pfl_lane_3: ff
+    pfl_lane_4: ff

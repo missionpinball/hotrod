@@ -1,0 +1,17 @@
+#config_version=4
+mode:
+    start_events: extra_ball_lit
+    stop_events: extra_ball_hit
+    priority: 170
+
+shots:
+    extra_ball:
+        switch: pfs_top_lane_o
+        reset_events: mode_extra_ball_started
+        profile: sp_extra_ball
+        show_tokens:
+            light: pfl_special
+
+show_player:
+    extra_ball_hit:
+        same_player_shoots_again: play

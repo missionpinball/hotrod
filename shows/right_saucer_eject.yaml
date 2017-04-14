@@ -1,0 +1,27 @@
+#show_version=4
+
+- time: 0
+  lights:
+      pfl_right_saucer_1: 00
+      pfl_right_saucer_2: 00
+      pfl_right_saucer_3: ff
+- time: +1
+  lights:
+      pfl_right_saucer_1: 00
+      pfl_right_saucer_2: ff
+      pfl_right_saucer_3: ff
+- time: +1
+  lights:
+      pfl_right_saucer_1: ff
+      pfl_right_saucer_2: ff
+      pfl_right_saucer_3: 00
+- time: +1
+  lights:
+      pfl_right_saucer_1: ff
+      pfl_right_saucer_2: 00
+      pfl_right_saucer_3: 00
+- time: +1
+  lights:
+      pfl_right_saucer_1: 00
+      pfl_right_saucer_2: 00
+      pfl_right_saucer_3: 00

@@ -1,0 +1,346 @@
+#config_version=4
+
+matrix_lights:
+    bbl_ball_in_play_1:
+        number: 0-0
+        label: Ball In Play 1
+    bbl_ball_in_play_2:
+        number: 0-1
+        label: Ball In Play 2
+    bbl_ball_in_play_3:
+        number: 0-2
+        label: Ball In Play 3
+    bbl_ball_in_play_4:
+        number: 0-3
+        label: Ball In Play 4
+    bbl_ball_in_play_5:
+        number: 0-4
+        label: Ball In Play 5
+    bbl_game_over:
+        number: 0-5
+        label: Game Over
+    bbl_tilt:
+        number: 0-6
+        label: Tilt
+    bbl_match_90:
+        number: 0-7
+        label: Match 90
+    bbl_match_80:
+        number: 0-8
+        label: Match 80
+    bbl_match_70:
+        number: 0-9
+        label: Match 70
+    bbl_match_60:
+        number: 0-10
+        label: Match 60
+    bbl_match_50:
+        number: 0-11
+        label: Match 50
+    bbl_match_40:
+        number: 0-12
+        label: Match 40
+    bbl_match_30:
+        number: 0-13
+        label: Match 30
+    bbl_match_20:
+        number: 0-14
+        label: Match 20
+    bbl_match_10:
+        number: 0-15
+        label: Match 10
+    bbl_match_00:
+        number: 0-16
+        label: Match 10
+    bbl_match:
+        number: 1-21
+        label: Match
+
+    bbl_player_1_gi_1:
+        number: 1-22
+        label: Player 1 GI 1
+    bbl_player_1_gi_2:
+        number: 1-23
+        label: Player 1 GI 2
+    bbl_player_1_gi_3:
+        number: 1-24
+        label: Player 1 GI 3
+    bbl_player_1_gi_4:
+        number: 1-25
+        label: Player 1 GI 4
+    bbl_player_1_gi_5:
+        number: 1-26
+        label: Player 1 GI 5
+    bbl_player_2_gi_1:
+        number: 1-27
+        label: Player 2 GI 1
+    bbl_player_2_gi_2:
+        number: 1-28
+        label: Player 2 GI 2
+    bbl_player_2_gi_3:
+        number: 1-29
+        label: Player 2 GI 3
+    bbl_player_2_gi_4:
+        number: 1-30
+        label: Player 2 GI 4
+    bbl_player_2_gi_5:
+        number: 1-31
+        label: Player 2 GI 5
+
+    bbl_player_1_up:
+        number: 0-25
+        label: Player 1 Up
+    bbl_player_2_up:
+        number: 0-26
+        label: Player 2 Up
+    bbl_player_1_100k:
+        number: 0-19
+        label: Player 1 100K
+    bbl_player_2_100k:
+        number: 0-20
+        label: Player 2 100K
+
+    bbl_gi_1:
+        number: 0-21
+        label: Backbox GI 1
+    bbl_gi_2:
+        number: 0-22
+        label: Backbox GI 2
+    bbl_gi_3:
+        number: 0-23
+        label: Backbox GI 3
+    bbl_gi_4:
+        number: 0-24
+        label: Backbox GI 4
+    bbl_gi_5:
+        number: 0-25
+        label: Backbox GI 5
+    bbl_gi_6:
+        number: 0-26
+        label: Backbox GI 6
+    bbl_gi_7:
+        number: 0-27
+        label: Backbox GI 7
+    bbl_gi_8:
+        number: 0-28
+        label: Backbox GI 8
+    bbl_gi_9:
+        number: 0-29
+        label: Backbox GI 9
+    bbl_gi_10:
+        number: 0-30
+        label: Backbox GI 10
+    bbl_gi_11:
+        number: 0-31
+        label: Backbox GI 11
+    bbl_gi_12:
+        number: 1-16
+        label: Backbox GI 12
+    bbl_gi_13:
+        number: 1-17
+        label: Backbox GI 13
+    bbl_gi_14:
+        number: 1-18
+        label: Backbox GI 14
+    bbl_gi_15:
+        number: 1-19
+        label: Backbox GI 15
+    bbl_gi_16:
+        number: 1-20
+        label: Backbox GI 16
+
+    pfl_left_saucer_gi:
+        number: 3-0
+        label: Left Saucer
+    pfl_lane_4:
+        number: 3-1
+        label: Lane 4
+    pfl_lane_3:
+        number: 3-2
+        label: Lane 3
+    pfl_lane_2:
+        number: 3-3
+        label: Lane 2
+    pfl_lane_1:
+        number: 3-4
+        label: Lane 1
+    pfl_top_lane_t:
+        number: 3-5
+        label: Top Lane T
+    pfl_top_lane_o:
+        number: 3-6
+        label: Top Lane O
+    pfl_top_lane_h:
+        number: 3-7
+        label: Top Lane H
+    pfl_left_saucer_4:
+        number: 3-8
+        label: Left Saucer 4
+    pfl_right_saucer_gi:
+        number: 3-9
+        label: Right Saucer
+    pfl_right_saucer_4:
+        number: 3-10
+        label: Right Saucer 4
+    pfl_special:
+        number: 3-11
+        label: Special
+    pfl_left_upper:
+        number: 3-12
+        label: Left Upper
+    pfl_right_upper:
+        number: 3-13
+        label: Right Upper
+    pfl_right_eb:
+        number: 3-14
+        label: Right Extra Ball
+    pfl_left_eb:
+        number: 3-15
+        label: Left Extra Ball
+    pfl_left_sling_1:
+        number: 3-16
+        label: Left Sling 1
+    pfl_left_sling_2:
+        number: 3-17
+        label: Left Sling 2
+    pfl_right_sling_1:
+        number: 3-18
+        label: Right Sling 1
+    pfl_right_sling_2:
+        number: 3-19
+        label: Right Sling 2
+    pfl_bonus_3000:
+        number: 4-1
+        label: Bonus 3,000
+    pfl_bonus_5000:
+        number: 4-2
+        label: Bonus 5,000
+    pfl_bonus_7000:
+        number: 4-3
+        label: Bonus 7,000
+    pfl_bonus_9000:
+        number: 4-4
+        label: Bonus 9,000
+    pfl_left_outlane:
+        number: 4-5
+        label: Left Outlane
+    pfl_2x:
+        number: 4-6
+        label: 2X
+    pfl_left_inlane:
+        number: 4-7
+        label: Left Inlane
+    pfl_bonus_10000:
+        number: 4-8
+        label: Bonus 10,000
+    pfl_bonus_2000:
+        number: 4-9
+        label: Bonus 2,000
+    pfl_bonus_4000:
+        number: 4-10
+        label: Bonus 4,000
+    pfl_bonus_6000:
+        number: 4-11
+        label: Bonus 6,000
+    pfl_bonus_8000:
+        number: 4-12
+        label: Bonus 8,000
+    pfl_same_player:
+        number: 4-13
+        label: Same Player Shoots Again
+    pfl_bonus_1000:
+        number: 4-14
+        label: Bonus 1,000
+    pfl_center_pop:
+        number: 4-15
+        label: Center Pop
+    pfl_left_pop:
+        number: 4-16
+        label: Right Pop
+    pfl_right_rollover:
+        number: 4-17
+        label: Right Rollover
+    pfl_left_saucer_1:
+        number: 4-18
+        label: Left Saucer 1
+    pfl_left_saucer_2:
+        number: 4-19
+        label: Left Saucer 2
+    pfl_left_saucer_3:
+        number: 4-20
+        label: Left Saucer 3
+    pfl_right_saucer_1:
+        number: 4-21
+        label: Right Saucer 1
+    pfl_right_saucer_2:
+        number: 4-22
+        label: Right Saucer 2
+    pfl_right_saucer_3:
+        number: 4-23
+        label: Right Saucer 3
+    pfl_4x:
+        number: 4-24
+        label: 4X
+    pfl_right_outlane:
+        number: 4-25
+        label: Right Outlane
+    pfl_right_inlane:
+        number: 4-26
+        label: Right Inlane
+    pfl_right_eject:
+        number: 4-27
+        label: Right Eject
+    pfl_left_eject:
+        number: 4-28
+        label: Left Eject
+    pfl_left_rollover:
+        number: 4-29
+        label: Left Rollover
+    pfl_center_rollover:
+        number: 4-30
+        label: Center Rollover
+    pfl_right_pop:
+        number: 4-31
+        label: Right Pop
+
+info_lights:
+    match_00:
+        light: bbl_match_00
+    match_10:
+        light: bbl_match_10
+    match_20:
+        light: bbl_match_20
+    match_30:
+        light: bbl_match_30
+    match_40:
+        light: bbl_match_40
+    match_50:
+        light: bbl_match_50
+    match_60:
+        light: bbl_match_60
+    match_70:
+        light: bbl_match_70
+    match_80:
+        light: bbl_match_80
+    match_90:
+        light: bbl_match_90
+    ball_1:
+        light: bbl_ball_in_play_1
+    ball_2:
+        light: bbl_ball_in_play_2
+    ball_3:
+        light: bbl_ball_in_play_3
+    ball_4:
+        light: bbl_ball_in_play_4
+    ball_5:
+        light: bbl_ball_in_play_5
+    player_1:
+        light: bbl_player_1_up
+        tags: player1
+    player_2:
+        light: bbl_player_2_up
+        tags: player2
+    tilt:
+        light: bbl_tilt
+    game_over:
+        light: bbl_game_over

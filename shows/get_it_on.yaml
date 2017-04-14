@@ -1,0 +1,6 @@
+#show_version=4
+
+- time: 0
+  coils:
+      cs_chime_1
+      

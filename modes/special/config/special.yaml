@@ -1,0 +1,7 @@
+#config_version=4
+
+mode:
+    start_events: special
+    stop_events: special_hit_complete
+    priority: 400
+

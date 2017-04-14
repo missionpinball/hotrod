@@ -1,0 +1,74 @@
+#config_version=4
+mode:
+    start_events: multiball_mb_2ball_started
+    stop_events: multiball_mb_2ball_ended
+    priority: 140
+
+scoring:
+    left_saucer_hit:
+        score: 300
+    right_saucer_hit:
+        score: 300
+    pfs_drop_r_active:
+        score: 100
+    pfs_drop_o_active:
+        score: 100
+    pfs_drop_d_active:
+        score: 100
+    drop_target_bank_rod_down:
+        score: 300
+    rod_in_order_complete:
+        score: 300
+    jackpot:
+        score: 3000
+        light_jackpot_required_hits: 1
+
+logic_blocks:
+    counters:
+        lb_increase_drop_hits_for_light_jackpot:
+            count_events: jackpot
+            persist_state: True
+            events_when_complete: increase_light_jackpot
+        lb_enable_jackpot:
+            count_events: drop_target_bank_rod_down
+            restart_events: jackpot
+            count_complete_value: current_player.light_jackpot_required_hits + 1
+            events_when_complete: light_jackpot
+
+achievements:
+    light_jackpot:
+        start_enabled: True
+        show_tokens:
+           lights: pfl_left_eb, pfl_right_eb
+        show_when_started: flash
+        show_when_completed: off
+        start_events: light_jackpot
+        events_when_started: jackpot_lit
+        reset_events: 
+            - multiball_mb_2ball_started
+            - jackpot
+        complete_events: sw_ejects
+        events_when_completed: jackpot
+
+show_player:
+    multiball_mb_rod_started:
+        left_eject_off: play
+        right_eject_off: play
+    balldevice_bd_left_saucer_ball_enter:
+        left_saucer_eject:
+            loops: 0
+            speed: 6
+    balldevice_bd_right_saucer_ball_enter:
+        right_saucer_eject:
+            loops: 0
+            speed: 6
+
+shows:
+    left_eject_off:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+    right_eject_off:
+        - time: 0
+          lights:
+              pfl_right_eject: ff

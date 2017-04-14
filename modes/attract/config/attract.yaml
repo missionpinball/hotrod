@@ -1,0 +1,26 @@
+#config_version=4
+
+show_player:
+    mode_attract_started:
+        attract_display_loop: play
+        general_illumination:
+            loops: -1
+            priority: 3
+        bonus_lanes_sweep:
+            speed: 3
+            loops: -1
+        bonus_climb:
+            speed: 3
+            loops: -1
+        hot_alternate:
+            speed: 2
+            loops: -1
+        left_saucer_sweep:
+            speed: 3
+            loops: -1
+        right_saucer_sweep:
+            speed: 3
+            loops: -1
+        rollovers_multipliers:
+            speed: 3
+            loops: -1

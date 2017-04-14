@@ -1,0 +1,57 @@
+Skill shot: 
+- Starts with auto rotating H-O-T lanes, flip stops rotation and allows flipper lane change
+- with no flip: 1000 points, completes H-O-T lanes and lights lock on both saucers
+- with flip: 250 points, completes H-O-T lanes
+- pop to saucer: 3000 points
+
+after skill shot, complete H-O-T lanes to add bonus
+
+Pops: 10 points 
+super pops: 50 hits to start, 30 points, flash pop lamps
+
+R-O-D drops: 
+- single drop: 20 points
+- complete: 300 points, light lock
+- ROD complete in order: 1000 points, complete 2 locks and/or to max
+
+Rollovers:
+ - single: 70 points
+ - complete: 500 points, start 2X playfield multiplier (10s timer)
+
+In/Out lanes:
+- Each lane: 50 points
+- Complete: 300 points, Add 2X bonus, then on second completion, 4X bonus
+
+Saucers:
+- unlit: add 1000 bonus, 100 points
+- lit: increase lock to 3 locks, hold ball in lock at 3
+
+Extra Ball:  
+- Complete H-O-T, R-O-D Drops, In/Out lanes to qualify O lane as Extra Ball
+
+Multiball:
+- 2 ball
+	- one ball locked: hit either eject to start
+	- eject (jackpot) scores 1000 jackpot, alternates sides
+	- Playfield 1.5X multiplier
+	- re-enable jackpot by completing ROD drops, add 1000 to jackpot
+	- 10s ball saver
+
+- 3 ball
+	- lock second ball before eject on 2 ball to enable 3 ball multiball
+	- starts on shooter lane complete
+	- eject (jackpot) scores 2000 jackpot, either side
+	- Playfield 2X multiplier
+	- re-enable jackpot by completing ROD drops, add 2000 to jackpot
+	- drops to 2 ball rules on lost ball
+	- 10s ball saver
+
+Match:
+	- awards credit
+	
+100K Lamps: flash for each 100K value, pause lit between
+
+Slingshot: 10 points
+Left/Right switch: 10 points
+
+Credit Reel: 0-15 total

@@ -1,0 +1,12 @@
+#config_version=4
+
+mode:
+    code: bonus.Count
+    start_events: ball_ending
+    stop_events: bonus_complete
+    use_wait_queue: true
+    priority: 600
+
+scoring:
+    BonusValue: 
+        score: 1000

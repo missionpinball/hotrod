@@ -1,0 +1,9 @@
+#show_version=4
+
+- duration: 50ms
+  lights:
+      (hot_light): ff
+- duration: 50ms
+  lights:
+      (hot_light): 00
+      

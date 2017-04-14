@@ -1,0 +1,28 @@
+#config_version=4
+mode:
+    start_events: super_pops_2_start
+    stop_events: super_pops_1_start
+    priority: 300
+
+scoring:
+    sw_pop:
+        score: 50
+
+show_player:
+    mode_super_pops_2_started:
+        flash_pops:
+            loop: -1
+            speed: 4
+                
+shows:
+    flash_pops:
+        - time: 0
+          lights:
+              pfl_left_pop: 0
+              pfl_center_pop: 0
+              pfl_right_pop: 0
+        - time: +1
+          lights:
+              pfl_left_pop: ff
+              pfl_center_pop: ff
+              pfl_right_pop: ff

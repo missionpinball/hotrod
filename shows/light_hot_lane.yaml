@@ -1,0 +1,4 @@
+#show_version=4
+- time: 0
+  lights:
+      (hot_light): ff

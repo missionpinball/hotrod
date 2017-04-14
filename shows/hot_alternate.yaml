@@ -1,0 +1,12 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_top_lane_h: ff
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: ff
+- time: +1
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: ff
+    pfl_top_lane_t: 00

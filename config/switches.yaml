@@ -1,0 +1,131 @@
+#config_version=4
+
+switches:
+    cs_left_flipper:
+        number: 2-0
+        tags: flipper
+    cs_right_flipper:
+        number: 2-1
+        tags: flipper
+
+    bbs_player_1_10000:
+        number: 2-16
+    bbs_player_1_1000:
+        number: 2-17
+    bbs_player_1_100:
+        number: 2-18
+    bbs_player_1_10:
+        number: 2-19
+
+    bbs_player_2_10000:
+        number: 2-20
+    bbs_player_2_1000:
+        number: 2-21
+    bbs_player_2_100:
+        number: 2-22
+    bbs_player_2_10:
+        number: 2-23
+
+    cs_tilt_bob:
+        number: 2-24
+        tags: playfield_active, tilt
+    cs_coin_1:
+        number: 2-26
+    cs_coin_2:
+        number: 2-27
+    cs_start:
+        number: 2-28
+        tags: start
+    cs_slam_tilt:
+        number: 2-29
+        tags: slam_tilt
+
+
+    pfs_left_sling:
+        number: 5-0
+        tags: playfield_active, skill_shot_cancel
+    pfs_right_sling:
+        number: 5-1
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_upper:
+        number: 5-16
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_side:
+        number: 5-17
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_eject:
+        number: 5-18
+        tags: skill_shot_cancel, ejects
+    pfs_drop_d:
+        number: 5-19
+        tags: playfield_active, skill_shot_cancel
+    pfs_drop_o:
+        number: 5-20
+        tags: playfield_active, skill_shot_cancel
+    pfs_drop_r:
+        number: 5-21
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_rollover:
+        number: 5-22
+        tags: playfield_active, skill_shot_cancel
+    pfs_center_rollover:
+        number: 5-23
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_inlane:
+        number: 5-25
+        tags: playfield_active, skill_shot_cancel
+    pfs_left_outlane:
+        number: 5-26
+        tags: playfield_active, skill_shot_cancel
+    pfs_trough_1:
+        number: 5-27
+    pfs_trough_2:
+        number: 5-28
+    pfs_trough_3:
+        number: 5-29
+    pfs_trough_jam:
+        number: 5-30
+    pfs_right_pop:
+        number: 6-0
+        tags: playfield_active, pop, skill_shot_cancel
+    pfs_center_pop:
+        number: 6-1
+        tags: playfield_active, pop, skill_shot_cancel
+    pfs_left_pop:
+        number: 6-2
+        tags: playfield_active, pop, skill_shot_cancel
+    pfs_shooter_lane:
+        number: 6-16
+    pfs_right_outlane:
+        number: 6-17
+        tags: playfield_active, skill_shot_cancel
+    pfs_right_inlane:
+        number: 6-18 
+        tags: playfield_active, skill_shot_cancel
+    pfs_right_rollover:
+        number: 6-20
+        tags: playfield_active, skill_shot_cancel
+    pfs_right_eject:
+        number: 6-21
+        tags: skill_shot_cancel, ejects
+    pfs_right_side:
+        number: 6-22
+        tags: playfield_active, skill_shot_cancel
+    pfs_right_upper:
+        number: 6-23
+        tags: playfield_active, skill_shot_cancel
+    pfs_top_lane_h:
+        number: 6-26
+        tags: playfield_active, skill_shot
+    pfs_top_lane_o:
+        number: 6-27
+        tags: playfield_active, skill_shot
+    pfs_top_lane_t:
+        number: 6-28
+        tags: playfield_active, skill_shot
+    pfs_right_saucer:
+        number: 6-30
+        tags: skill_shot_cancel
+    pfs_left_saucer:
+        number: 6-31
+        tags: skill_shot_cancel

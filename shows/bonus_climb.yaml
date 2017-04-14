@@ -1,0 +1,62 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_bonus_1000: ff
+- time: +1
+  lights:
+    pfl_bonus_2000: ff
+- time: +1
+  lights:
+    pfl_bonus_3000: ff
+- time: +1
+  lights:
+    pfl_bonus_4000: ff
+- time: +1
+  lights:
+    pfl_bonus_5000: ff
+- time: +1
+  lights:
+    pfl_bonus_6000: ff
+- time: +1
+  lights:
+    pfl_bonus_7000: ff
+- time: +1
+  lights:
+    pfl_bonus_8000: ff
+- time: +1
+  lights:
+    pfl_bonus_9000: ff
+- time: +1
+  lights:
+    pfl_bonus_10000: ff
+- time: +1
+  lights:
+    pfl_bonus_1000: 00
+- time: +1
+  lights:
+    pfl_bonus_2000: 00
+- time: +1
+  lights:
+    pfl_bonus_3000: 00
+- time: +1
+  lights:
+    pfl_bonus_4000: 00
+- time: +1
+  lights:
+    pfl_bonus_5000: 00
+- time: +1
+  lights:
+    pfl_bonus_6000: 00
+- time: +1
+  lights:
+    pfl_bonus_7000: 00
+- time: +1
+  lights:
+    pfl_bonus_8000: 00
+- time: +1
+  lights:
+    pfl_bonus_9000: 00
+- time: +1
+  lights:
+    pfl_bonus_10000: 00

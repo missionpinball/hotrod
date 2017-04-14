@@ -1,0 +1,496 @@
+#config_version=4
+mode:
+    start_events: ball_starting
+    code: base.Bonus
+    priority: 100
+
+scoring:
+    pfs_left_upper_active:
+        score: 100 * current_player.pf_multiplier
+    pfs_right_upper_active:
+        score: 100 * current_player.pf_multiplier
+    pfs_left_sling_active:
+        score: 10 * current_player.pf_multiplier
+    pfs_right_sling_active:
+        score: 10 * current_player.pf_multiplier
+    pfs_left_side_active:
+        score: 10 * current_player.pf_multiplier
+    pfs_right_side_active:
+        score: 10 * current_player.pf_multiplier
+    pfs_right_rollover_active:
+        score: 100 * current_player.pf_multiplier
+    pfs_center_rollover_active:
+        score: 100 * current_player.pf_multiplier
+    pfs_left_rollover_active:
+        score: 100 * current_player.pf_multiplier
+    pfs_left_eject_active:
+        score: 500 * current_player.pf_multiplier
+    pfs_right_eject_active:
+        score: 500 * current_player.pf_multiplier
+    bonus_lanes_default_unlit_hit:
+        score: 20 * current_player.pf_multiplier
+    bonus_lanes_default_lit_hit:
+        score: 20 * current_player.pf_multiplier
+    bonus_lanes_default_lit_complete:
+        score: 300 * current_player.pf_multiplier
+    rollovers_default_lit_complete:
+        score: 1000 * current_player.pf_multiplier
+    increase_required:
+        required_hits: 1
+    timer_2x_multiplier_started:
+        pf_multiplier: 2
+        action: set
+    timer_2x_multiplier_stopped:
+        pf_multiplier: 1
+        action: set
+    timer_4x_multiplier_started:
+        pf_multiplier: 4
+        action: set
+
+logic_blocks:
+    counters:
+        lb_increase_drop_hits_for_light_lock:
+            count_events: multiball_mb_2ball_ended
+            persist_state: True
+            events_when_complete: increase_required
+        lb_light_lock:
+            count_events: drop_target_bank_rod_down
+            enable_events: mode_saucer_started
+            disable_events: mode_2ball_started
+            reset_events: multiball_mb_2ball_ended
+            count_complete_value: current_player.required_hits + 1
+            events_when_complete: lock_start
+        lb_bonus:
+            count_events: 
+                - hot_lanes_default_lit_complete
+                - bonus_lanes_default_lit_complete
+                - rollovers_hit
+                - left_saucer_hit
+                - right_saucer_hit
+            starting_count: 0
+            count_interval: 1000
+            count_complete_value: 10000
+            direction: up
+            events_when_complete: bonus_max
+    sequences:
+        lb_skill_shot:
+            events: skill_shot_sp_skill_shot_lit_hit
+            disable_events: mode_2ball_started
+            reset_events: mode_2ball_stopped
+            events_when_complete: lock_start
+        lb_left_ball_locked:
+            events: ball_lock_bl_left_lock_locked_ball
+            reset_events: mode_lock_started
+            events_when_complete: ball_locked
+        lb_right_ball_locked:
+            events: ball_lock_bl_right_lock_locked_ball
+            reset_events: mode_lock_started
+            events_when_complete: ball_locked
+        lb_rollovers:
+            events: rollovers_default_lit_complete
+            events_when_hit: start_2x
+    accruals:
+        lb_extra_ball:
+            events:
+                - hot_lanes_default_lit_complete
+                - bonus_lanes_default_lit_complete
+                - drop_target_bank_rod_down
+            events_when_complete: extra_ball_lit
+
+timers:
+    2x_multiplier:
+        start_value: 10
+        end_value: 0
+        direction: down
+        start_running: no
+        control_events:
+            - event: start_2x
+              action: start
+
+shots:
+    right_outlane:
+        switch: pfs_right_outlane
+        show_tokens:
+            light: pfl_right_outlane
+    right_inlane:
+        switch: pfs_right_inlane
+        show_tokens:
+            light: pfl_right_inlane
+    left_outlane:
+        switch: pfs_left_outlane
+        show_tokens:
+            light: pfl_left_outlane
+    left_inlane:
+        switch: pfs_left_inlane
+        show_tokens:
+            light: pfl_left_inlane
+    left_rollover:
+        switch: pfs_left_rollover
+        show_tokens:
+            light: pfl_left_rollover
+    center_rollover:
+        switch: pfs_center_rollover
+        show_tokens:
+            light: pfl_center_rollover
+    right_rollover:
+        switch: pfs_right_rollover
+        show_tokens:
+            light: pfl_right_rollover
+    hot_in_order:
+        switch_sequence: pfs_top_lane_h,pfs_top_lane_o,pfs_top_lane_t
+    rod_in_order:
+        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
+
+shot_profiles:
+    sp_lock:
+        states:
+            - name: lock_1
+              show: flash_lock_123
+            - name: lock_2
+              show: flash_lock_23
+            - name: lock_3
+              show: flash_lock_3
+            - name: lit
+              show: flash_lock_4
+    sp_extra_ball:
+        states:
+            - name: lit
+              show: on
+            - name: hit
+              show: flash_extra_ball
+
+shot_groups:
+    bonus_lanes:
+        shots: left_outlane,left_inlane,right_inlane,right_outlane
+        rotate_left_events: cs_left_flipper_active
+        rotate_right_events: cs_right_flipper_active
+        reset_events: 
+            bonus_lanes_default_lit_complete: 1s
+    rollovers:
+        shots: left_rollover,center_rollover,right_rollover
+        reset_events:
+            rollovers_default_lit_complete: 1s
+
+extra_balls:
+    eb:
+        award_events: extra_ball_hit
+        reset_events: mode_extra_ball_stopped
+
+show_player:
+    mode_base_started:
+        general_illumination:
+            priority: 100
+        ejects: play
+    bonus_lanes_default_lit_complete: 
+        bonus_lanes_complete:
+            loops: 4
+            speed: 4
+    rollovers_default_lit_complete:
+        flash_rollover:
+            loops: 4
+            speed: 4
+    timer_2x_multiplier_started:
+        flash:
+            action: play
+            show_tokens:
+                light: pfl_2x
+    timer_2x_multiplier_stopped:
+        flash:
+            action: stop
+            show_tokens:
+                light: pfl_2x
+    game_starting:
+        player1_start:
+            speed: 2
+            loops: 0
+    player_add_success:
+        player2_start: 
+            speed: 2
+            loops: 0
+
+shows:
+    flash_2x:
+        - time: 0
+          lights:
+              pfl_2x: ff
+        - time: +1
+          lights: 
+              pfl_2x: 00
+    stop_2x:
+        - time: 0
+          lights:
+              pfl_2x: 00
+    ejects:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+              pfl_right_eject: ff
+
+    player1_start:
+        - time: 0
+          coils:
+              cc_chime_1: pulse
+        - time: +1
+          coils:
+              cc_chime_2: pulse
+        - time: +1
+          coils:
+              cc_chime_3: pulse
+
+    player2_start:
+        - time: 0
+          coils:
+              cc_chime_1: pulse
+        - time: +1
+          coils:
+              cc_chime_2: pulse
+
+    flash_bonus_lamp:
+        - time: 0
+          lights:
+              (lamp): ff
+        - time: +1
+          lights:
+              (lamp): 00
+        - time: +1
+          lights:
+              (lamp): ff
+        - time: +1
+          lights:
+              (lamp): 00
+        - time: +1
+          lights:
+              (lamp): ff
+        - duration: -1
+
+    flash_left_1:
+        - time: 0
+          lights:
+              pfl_left_saucer_1: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_1: 00
+    flash_left_2:
+        - time: 0
+          lights:
+              pfl_left_saucer_2: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_2: 00
+    flash_left_3:
+        - time: 0
+          lights:
+              pfl_left_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_3: 00
+    flash_left_4:
+        - time: 0
+          lights:
+              pfl_left_saucer_4: ff
+        - time: +1
+          lights:
+              pfl_left_saucer_4: 00
+    flash_left_eject:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+        - time: +1
+          lights:
+              pfl_left_eject: 00
+
+    flash_right_1:
+        - time: 0
+          lights:
+              pfl_right_saucer_1: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_1: 00
+    flash_right_2:
+        - time: 0
+          lights:
+              pfl_right_saucer_2: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_2: 00
+    flash_right_3:
+        - time: 0
+          lights:
+              pfl_right_saucer_3: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_3: 00
+    flash_right_4:
+        - time: 0
+          lights:
+              pfl_right_saucer_4: ff
+        - time: +1
+          lights:
+              pfl_right_saucer_4: 00
+    flash_right_eject:
+        - time: 0
+          lights:
+              pfl_right_eject: ff
+        - time: +1
+          lights:
+              pfl_right_eject: 00
+
+    left_lock_off:
+        - time: 0
+          lights:
+              pfl_left_saucer_1: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_4: 00
+              pfl_left_eject: ff
+    right_lock_off:
+        - time: 0
+          lights:
+              pfl_right_saucer_1: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_4: 00
+              pfl_right_eject: ff
+
+    flash_lock_123:
+        - time: 0
+          shows:
+              flash_left_1:
+                  loops: -1
+                  speed: 2
+              flash_right_1:
+                  loops: -1
+                  speed: 2
+              flash_left_2:
+                  loops: -1
+                  speed: 2
+              flash_right_2:
+                  loops: -1
+                  speed: 2
+              flash_left_3:
+                  loops: -1
+                  speed: 2
+              flash_right_3:
+                  loops: -1
+                  speed: 2
+          lights:
+              pfl_left_saucer_4: 00
+              pfl_left_eject: ff
+              pfl_right_saucer_4: 00
+              pfl_right_eject: ff
+
+    flash_lock_23:
+        - time: 0
+          shows:
+              flash_left_2:
+                  loops: -1
+                  speed: 2
+              flash_right_2:
+                  loops: -1
+                  speed: 2
+              flash_left_3:
+                  loops: -1
+                  speed: 2
+              flash_right_3:
+                  loops: -1
+                  speed: 2
+          lights:
+              pfl_left_saucer_4: 00
+              pfl_left_saucer_1: ff
+              pfl_left_eject: ff
+              pfl_right_saucer_4: 00
+              pfl_right_saucer_1: ff
+              pfl_right_eject: ff
+
+    flash_lock_3:
+        - time: 0
+          shows:
+              flash_left_3:
+                  loops: -1
+                  speed: 2
+              flash_right_3:
+                  loops: -1
+                  speed: 2
+          lights:
+              pfl_left_saucer_4: 00
+              pfl_left_saucer_2: ff
+              pfl_left_saucer_1: ff
+              pfl_left_eject: ff
+              pfl_right_saucer_4: 00
+              pfl_right_saucer_2: ff
+              pfl_right_saucer_1: ff
+              pfl_right_eject: ff
+
+    flash_lock_4:
+        - time: 0
+          shows:
+              flash_left_4:
+                  loops: -1
+                  speed: 2
+              flash_right_4:
+                  loops: -1
+                  speed: 2
+              flash_left_eject:
+                  loops: -1
+                  speed: 2
+              flash_right_eject:
+                  loops: -1
+                  speed: 2
+          lights:
+              pfl_left_saucer_3: ff
+              pfl_left_saucer_2: ff
+              pfl_left_saucer_1: ff
+              pfl_right_saucer_3: ff
+              pfl_right_saucer_2: ff
+              pfl_right_saucer_1: ff
+              
+    same_player_shoots_again:
+        - time: 0
+          lights:
+              pfl_same_player: ff
+
+    flash_extra_ball:
+        - time: 0
+          lights:
+              (light): 00
+        - time: +1
+          lights:
+              (light): ff
+        - time: +1
+          lights:
+              (light): 00
+        - time: +1
+          lights:
+              (light): ff
+        - time: +1
+          lights:
+              (light): 00
+        - time: +1
+          lights:
+              (light): ff
+        - time: +1
+          lights:
+              (light): 00
+
+slide_player:
+  mode_base_started:
+    widgets:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 100
+      - type: text
+        text: PLAYER (number)
+        y: 10
+        x: 10
+        font_size: 50
+        anchor_x: left
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 10
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 50

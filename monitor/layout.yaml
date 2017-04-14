@@ -1,0 +1,11 @@
+windows:
+  devices:
+    height: 946
+    width: 479
+    x: 1421
+    y: 38
+  playfield:
+    height: 978
+    width: 523
+    x: 1032
+    y: 85

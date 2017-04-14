@@ -1,0 +1,23 @@
+#config_version=4
+mode:
+    start_events: lock_lit
+    stop_events: multiball_mb_2ball_started
+#    restart_on_next_ball: True
+    priority: 140
+
+ball_locks:
+    bl_left_lock:
+        balls_to_lock: 1
+        lock_devices: bd_left_saucer
+        disable_events: multiball_mb_2ball_started
+    bl_right_lock:
+        balls_to_lock: 1
+        lock_devices: bd_right_saucer
+        disable_events: multiball_mb_2ball_started
+
+multiballs:
+    mb_2ball:
+        ball_count: 1
+        shoot_again: 10s
+        start_events: sw_ejects
+        ball_locks: bl_left_lock, bl_right_lock

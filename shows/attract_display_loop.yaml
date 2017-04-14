@@ -1,0 +1,58 @@
+#show_version=4
+
+- duration: 7s
+  slides:
+    gottlieb_hot_rod:
+      widgets:
+      - type: Text
+        text: Gottlieb's
+        font_size: 40
+        anchor_x: middle
+        anchor_y: bottom
+        y: center+32
+      - type: Text
+        text: HOT ROD 
+        font_size: 70
+        color: red
+      transition:
+         type: move_in
+         duration: 1s
+         direction: top
+
+- duration: 5s
+  slides:
+    press_start:
+      widgets:
+      - type: Text
+        text: PRESS START
+        font_size: 50
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: .5s
+            - property: opacity
+              value: 1
+              duration: .5s
+              repeat: -1
+      - type: Text
+        text: FREE PLAY
+        color: green
+        y: 10
+        anchor_y: bottom
+      transition:
+         type: move_in
+         duration: 1s
+         direction: right
+
+- duration: 3s
+  slides:
+    compete_slide:
+      widgets:
+      - type: text
+        text: IT'S MORE FUN TO COMPETE
+      transition:
+         type: push
+         duration: 1s
+         direction: left
+

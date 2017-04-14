@@ -1,0 +1,33 @@
+#config_version=4
+mode:
+    start_events: ball_starting
+    stop_events: super_pops_2_start
+    priority: 300
+
+scoring:
+    sw_pop:
+        score: 10
+
+logic_blocks:
+    counters:
+        sw_pop:
+            count_events: sw_pop
+            starting_count: 50
+            count_complete_value: 0
+            direction: down
+            events_when_complete: super_pops_2_start
+
+show_player:
+    mode_super_pops_1_started:
+        normal_pops: 
+            loops: -1
+        
+shows:
+    normal_pops:
+        - time: 0
+          lights:
+              pfl_right_pop: ff
+              pfl_center_pop: ff
+              pfl_left_pop: ff
+
+          

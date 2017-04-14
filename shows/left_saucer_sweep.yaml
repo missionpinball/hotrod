@@ -1,0 +1,18 @@
+#show_version=4
+
+- time: 0
+  lights:
+    pfl_left_saucer_1: ff
+    pfl_left_saucer_4: 00
+- time: +1
+  lights:
+    pfl_left_saucer_2: ff
+    pfl_left_saucer_1: 00
+- time: +1
+  lights:
+    pfl_left_saucer_3: ff
+    pfl_left_saucer_2: 00
+- time: +1
+  lights:
+    pfl_left_saucer_4: ff
+    pfl_left_saucer_3: 00

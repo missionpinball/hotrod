@@ -1,0 +1,53 @@
+#config_version=4
+mode:
+    start_events: lock_start
+    stop_events: multiball_mb_2ball_started
+#    restart_on_next_ball: True
+    priority: 130
+
+scoring:
+    left_lock_sp_left_lock_lock_1_complete:
+        score: 150
+    left_lock_sp_left_lock_lock_2_complete:
+        score: 170
+    left_lock_sp_left_lock_lock_3_complete:
+        score: 200
+    right_lock_sp_right_lock_lock_1_complete:
+        score: 150
+    right_lock_sp_right_lock_lock_2_complete:
+        score: 170
+    right_lock_sp_right_lock_lock_3_complete:
+        score: 200
+    pfs_drop_r_active:
+        score: 100
+    pfs_drop_o_active:
+        score: 100
+    pfs_drop_d_active:
+        score: 100
+    drop_target_bank_rod_down:
+        score: 300
+
+logic_blocks:
+    counters:
+        lb_lock:
+            count_events:
+                - balldevice_bd_left_saucer_ball_enter
+                - balldevice_bd_right_saucer_ball_enter
+            starting_count: 1
+            count_complete_value: 3
+            direction: up
+            persist_state: True
+            reset_events: multiball_mb_2ball_ended
+            events_when_complete: lock_lit
+
+shots:
+    left_lock:
+        profile: sp_lock
+        advance_events: 
+            - balldevice_bd_left_saucer_ball_enter
+            - balldevice_bd_right_saucer_ball_enter
+    right_lock:
+        profile: sp_lock
+        advance_events: 
+            - balldevice_bd_left_saucer_ball_enter
+            - balldevice_bd_right_saucer_ball_enter

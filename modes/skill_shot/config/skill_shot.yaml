@@ -1,0 +1,47 @@
+#config_version=4
+mode:
+    start_events: ball_starting
+    stop_events:
+        sw_skill_shot
+        sw_skill_shot_cancel
+    priority: 200
+
+shots:
+    skill_shot_h:
+        switch: pfs_top_lane_h
+        show_tokens:
+            light: pfl_top_lane_h
+    skill_shot_o:
+        advance_events: mode_skill_shot_started
+        switch: pfs_top_lane_o
+        show_tokens:
+            light: pfl_top_lane_o
+    skill_shot_t:
+        switch: pfs_top_lane_t
+        show_tokens:
+            light: pfl_top_lane_t
+
+shot_profiles:
+    sp_skill_shot:
+        states:
+            - name: unlit
+              show: off
+            - name: lit
+              show: flash
+              loops: -1
+              speed: 4
+            - name: hit
+              show: on
+        block: yes
+
+shot_groups:
+    skill_shot:
+        shots: skill_shot_h, skill_shot_o, skill_shot_t
+        profile: sp_skill_shot
+        rotate_left_events: cs_left_flipper_active
+        rotate_right_events: cs_right_flipper_active
+        reset_events: mode_skill_shot_starting
+
+scoring:
+    skill_shot_sp_skill_shot_lit_hit:
+        score: 1000

@@ -1,0 +1,54 @@
+#show_version=4
+
+- time: 0
+  duration: 100ms
+  lights:
+    pfl_top_lane_h: ff
+- duration: 100ms
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: ff
+- duration: 100ms
+  lights:
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: ff
+- duration: 200ms
+  lights:
+    pfl_top_lane_h: ff
+    pfl_top_lane_o: ff
+    pfl_top_lane_t: ff
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: 00
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: ff
+    pfl_top_lane_o: ff
+    pfl_top_lane_t: ff
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: 00
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: ff
+    pfl_top_lane_o: ff
+    pfl_top_lane_t: ff
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: 00
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: ff
+    pfl_top_lane_o: ff
+    pfl_top_lane_t: ff
+- duration: 50ms
+  lights:
+    pfl_top_lane_h: 00
+    pfl_top_lane_o: 00
+    pfl_top_lane_t: 00
