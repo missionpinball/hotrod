@@ -1,7 +1,7 @@
 #config_version=4
 mode:
     start_events: lock_start
-    stop_events: multiball_mb_2ball_started
+    stop_events: lock_lit
     priority: 130
 
 scoring:
@@ -25,19 +25,6 @@ scoring:
         score: 100
     drop_target_bank_rod_down:
         score: 300
-
-logic_blocks:
-    counters:
-        lb_lock:
-            count_events:
-                - balldevice_bd_left_saucer_ball_enter
-                - balldevice_bd_right_saucer_ball_enter
-            starting_count: 1
-            count_complete_value: 3
-            direction: up
-            persist_state: True
-            reset_events: multiball_mb_2ball_ended
-            events_when_complete: lock_lit
 
 shots:
     left_lock:

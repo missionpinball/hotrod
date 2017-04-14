@@ -72,11 +72,21 @@ logic_blocks:
             count_complete_value: 10000
             direction: up
             events_when_complete: bonus_max
+        lb_lock:
+            count_events:
+                - balldevice_bd_left_saucer_ball_enter
+                - balldevice_bd_right_saucer_ball_enter
+            starting_count: 1
+            count_complete_value: 3
+            direction: up
+            persist_state: True
+            enable_events: lock_start
+            reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
+            events_when_complete: lock_lit
     sequences:
         lb_skill_shot:
-            events: skill_shot_sp_skill_shot_lit_hit
-            disable_events: mode_2ball_started
-            reset_events: mode_2ball_stopped
+            events: sw_skill_shot_success
+            reset_events: ball_starting
             events_when_complete: lock_start
         lb_left_ball_locked:
             events: ball_lock_bl_left_lock_locked_ball

@@ -8,9 +8,11 @@ multiball_locks:
     bl_left_lock:
         balls_to_lock: 1
         lock_devices: bd_left_saucer
+        reset_count_for_current_player_events: start_2ball, start_3ball
     bl_right_lock:
         balls_to_lock: 1
         lock_devices: bd_right_saucer
+        reset_count_for_current_player_events: start_2ball, start_3ball
 
 event_player:
     # on eject start 2ball
