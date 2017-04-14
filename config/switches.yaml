@@ -116,13 +116,13 @@ switches:
         tags: playfield_active, skill_shot_cancel
     pfs_top_lane_h:
         number: 6-26
-        tags: playfield_active, skill_shot
+        tags: playfield_active
     pfs_top_lane_o:
         number: 6-27
-        tags: playfield_active, skill_shot
+        tags: playfield_active
     pfs_top_lane_t:
         number: 6-28
-        tags: playfield_active, skill_shot
+        tags: playfield_active
     pfs_right_saucer:
         number: 6-30
         tags: skill_shot_cancel

@@ -2,8 +2,8 @@
 mode:
     start_events: ball_starting
     stop_events:
-        sw_skill_shot
         sw_skill_shot_cancel
+        sw_skill_shot_success
     priority: 200
 
 shots:
@@ -41,6 +41,10 @@ shot_groups:
         rotate_left_events: cs_left_flipper_active
         rotate_right_events: cs_right_flipper_active
         reset_events: mode_skill_shot_starting
+
+event_player:
+    skill_shot_sp_skill_shot_unlit_hit: sw_skill_shot_cancel
+    skill_shot_sp_skill_shot_lit_hit: sw_skill_shot_success
 
 scoring:
     skill_shot_sp_skill_shot_lit_hit:
