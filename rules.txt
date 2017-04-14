@@ -29,6 +29,11 @@ Saucers:
 Extra Ball:  
 - Complete H-O-T, R-O-D Drops, In/Out lanes to qualify O lane as Extra Ball
 
+Lock:
+    - lock is lit after completing drop targets, or from getting the skill shot without touching the flippers
+    - hit saucer 3 times to lock ball
+    - 2 ball starts if you hit eject, or you can lock another ball and 3 ball starts on ball release from shooter lane
+
 Multiball:
 - 2 ball
 	- one ball locked: hit either eject to start
