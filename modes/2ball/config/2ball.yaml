@@ -48,11 +48,13 @@ achievements:
            lights: pfl_left_eb, pfl_right_eb
         show_when_started: flash
         show_when_completed: off
-        start_events: light_jackpot
+        start_events:
+            - light_jackpot
+            - multiball_mb_2ball_started
         events_when_started: jackpot_lit
         reset_events: 
-            - multiball_mb_2ball_started
-            - jackpot
+            - multiball_mb_2ball_started|1
+            - jackpot|1
         complete_events: sw_ejects
         events_when_completed: jackpot
 
