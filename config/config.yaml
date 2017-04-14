@@ -22,16 +22,16 @@ game:
 
 modes:
   - base
-#  - tilt
-#  - bonus
-#  - special
+  - tilt
+  - bonus
+  - special
   - ball_save
   - hot_lanes
   - saucer
-#  - lock
-#  - lock_lit
-#  - 2ball
-#  - extra_ball
+  - lock
+  - lock_lit
+  - 2ball
+  - extra_ball
   - super_pops_1
   - super_pops_2
   - skill_shot

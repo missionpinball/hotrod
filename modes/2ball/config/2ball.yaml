@@ -37,7 +37,6 @@ logic_blocks:
 
 achievements:
     light_jackpot:
-        start_enabled: True
         show_tokens:
            lights: pfl_left_eb, pfl_right_eb
         show_when_started: flash

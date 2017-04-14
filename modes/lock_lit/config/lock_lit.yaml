@@ -5,7 +5,7 @@ mode:
 #    restart_on_next_ball: True
     priority: 140
 
-ball_locks:
+multiball_locks:
     bl_left_lock:
         balls_to_lock: 1
         lock_devices: bd_left_saucer
@@ -20,4 +20,4 @@ multiballs:
         ball_count: 1
         shoot_again: 10s
         start_events: sw_ejects
-        ball_locks: bl_left_lock, bl_right_lock
+        ball_locks: bd_left_saucer, bd_right_saucer
