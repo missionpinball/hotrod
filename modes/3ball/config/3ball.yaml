@@ -15,6 +15,14 @@ scoring:
         score: 2000|block
     jackpot.2:  # just add the same value again
         score: 1000 + current_player.light_jackpot_required_hits * 1000
+    mode_3ball_started:
+        pf_multiplier:
+            float: 2
+            action: set
+    multiball_mb_3ball_ball_lost:
+        pf_multiplier:
+            float: 1.5
+            action: set
 
 event_player:
     balldevice_bd_shooter_lane_ball_eject_success: start_2ball
