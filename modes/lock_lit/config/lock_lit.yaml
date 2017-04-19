@@ -9,22 +9,21 @@ multiball_locks:
     bl_left_lock:
         balls_to_lock: 1
         lock_devices: bd_left_saucer
-        reset_count_for_current_player_events: start_2ball, start_3ball
+        keep_virtual_ball_count_per_player: False
     bl_right_lock:
         balls_to_lock: 1
         lock_devices: bd_right_saucer
-        reset_count_for_current_player_events: start_2ball, start_3ball
+        keep_virtual_ball_count_per_player: False
 
 scoring:
-    sw_ejects{(current_player.bl_left_lock_locked_balls > 0) != (current_player.bl_right_lock_locked_balls > 0)}:
+    sw_ejects{(device.ball_devices.bd_left_saucer["available_balls"] > 0) != (device.ball_devices.bd_right_saucer["available_balls"] > 0)}:
         pf_multiplier:
             float: 1.5
             action: set
 
-
 event_player:
     # on eject start 2ball
-    sw_ejects{(current_player.bl_left_lock_locked_balls > 0) != (current_player.bl_right_lock_locked_balls > 0)}: start_2ball
+    sw_ejects{(device.ball_devices.bd_left_saucer["available_balls"] > 0) != (device.ball_devices.bd_right_saucer["available_balls"] > 0)}: start_2ball
     # when both locks are full start 3ball
-    multiball_lock_bl_left_lock_locked_ball{(current_player.bl_left_lock_locked_balls > 0) and (current_player.bl_right_lock_locked_balls > 0)}: start_3ball
-    multiball_lock_bl_right_lock_locked_ball{(current_player.bl_left_lock_locked_balls > 0) and (current_player.bl_right_lock_locked_balls > 0)}: start_3ball
+    multiball_lock_bl_left_lock_locked_ball{(device.ball_devices.bd_left_saucer["available_balls"] > 0) and (device.ball_devices.bd_right_saucer["available_balls"] > 0)}: start_3ball
+    multiball_lock_bl_right_lock_locked_ball{(device.ball_devices.bd_left_saucer["available_balls"] > 0) and (device.ball_devices.bd_right_saucer["available_balls"] > 0)}: start_3ball

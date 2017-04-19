@@ -40,6 +40,11 @@ class TestMultiball(MpfMachineTestCase, MpfGameTestCase):
         self.assertModeNotRunning("lock_lit")
         self.assertBallsOnPlayfield(1)
         self.assertBallsInPlay(1)
+
+        self.advance_time_and_run(30)
+        self.drain_ball()
+        self.advance_time_and_run(3)
+
         self.hit_switch_and_run("pfs_right_saucer", 5)
         self.assertModeRunning("lock")
         self.assertModeRunning("lock_lit")
@@ -59,10 +64,6 @@ class TestMultiball(MpfMachineTestCase, MpfGameTestCase):
         self.assertBallsOnPlayfield(1)
         self.assertEqual(1, self.machine.ball_devices.bd_left_saucer.balls)
         self.assertEqual(0, self.machine.ball_devices.bd_right_saucer.balls)
-
-        self.advance_time_and_run(30)
-        self.drain_ball()
-        self.advance_time_and_run(3)
 
         self.hit_switch_and_run("pfs_right_saucer", 5)
         self.assertBallsOnPlayfield(0)
