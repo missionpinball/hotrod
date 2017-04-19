@@ -4,6 +4,78 @@ from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestMultiball(MpfMachineTestCase, MpfGameTestCase):
 
+    def test_ball_lost(self):
+        # start game
+        self.hit_and_release_switch("cs_start")
+        self.advance_time_and_run(5)
+        self.assertGameIsRunning()
+
+        # wait for ball in shooter
+        self.assertEqual(1, self.machine.ball_devices.bd_shooter_lane.balls)
+        self.assertModeRunning("skill_shot")
+
+        # check default
+        self.assertLightFlashing("pfl_top_lane_o")
+
+        # shoot ball
+        self.release_switch_and_run("pfs_shooter_lane", 2)
+
+        # hit skill shot
+        self.hit_and_release_switch("pfs_top_lane_o")
+        self.advance_time_and_run()
+        self.assertModeNotRunning("skill_shot")
+        self.assertModeRunning("lock")
+
+        # should do nothing
+        self.hit_and_release_switch("pfs_left_eject")
+
+        self.assertModeNotRunning("2ball")
+        self.assertModeNotRunning("3ball")
+
+        # shoot ball
+        self.release_switch_and_run("pfs_shooter_lane", 2)
+
+        self.hit_switch_and_run("pfs_left_saucer", 5)
+        self.assertModeRunning("lock")
+        self.assertModeNotRunning("lock_lit")
+        self.assertBallsOnPlayfield(1)
+        self.assertBallsInPlay(1)
+        self.hit_switch_and_run("pfs_right_saucer", 5)
+        self.assertModeRunning("lock")
+        self.assertModeRunning("lock_lit")
+        self.assertBallsOnPlayfield(1)
+        self.assertBallsInPlay(1)
+
+        self.advance_time_and_run(30)
+        self.drain_ball()
+        self.advance_time_and_run(3)
+
+        self.hit_switch_and_run("pfs_left_saucer", 5)
+        self.assertModeRunning("lock")
+        self.assertModeRunning("lock_lit")
+        self.assertBallsOnPlayfield(0)
+        self.assertBallsInPlay(1)
+        self.release_switch_and_run("pfs_shooter_lane", 4)
+        self.assertBallsOnPlayfield(1)
+        self.assertEqual(1, self.machine.ball_devices.bd_left_saucer.balls)
+        self.assertEqual(0, self.machine.ball_devices.bd_right_saucer.balls)
+
+        self.advance_time_and_run(30)
+        self.drain_ball()
+        self.advance_time_and_run(3)
+
+        self.hit_switch_and_run("pfs_right_saucer", 5)
+        self.assertBallsOnPlayfield(0)
+        self.assertBallsInPlay(1)
+        self.assertEqual(1, self.machine.ball_devices.bd_left_saucer.balls)
+        self.assertEqual(1, self.machine.ball_devices.bd_right_saucer.balls)
+
+        self.assertFalse(self.machine.multiballs.mb_2ball.balls_added_live)
+        self.assertFalse(self.machine.multiballs.mb_3ball.balls_added_live)
+
+        self.assertModeNotRunning("2ball")
+        self.assertModeRunning("3ball")
+
     def test_lock_on_skillshot_and_three_ball(self):
         # start game
         self.hit_and_release_switch("cs_start")

@@ -3,6 +3,7 @@ mode:
     start_events: lock_start
     stop_events: mode_2ball_stopped
     priority: 130
+    restart_on_next_ball: True
 
 scoring:
     left_lock_sp_left_lock_lock_1_complete:

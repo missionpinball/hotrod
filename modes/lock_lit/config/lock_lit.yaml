@@ -3,6 +3,7 @@ mode:
     start_events: lock_lit
     stop_events: start_2ball, start_3ball
     priority: 140
+    restart_on_next_ball: True
 
 multiball_locks:
     bl_left_lock:
