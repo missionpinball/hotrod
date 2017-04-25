@@ -2,15 +2,6 @@
 
 - time: 0
   lights:
-    pfl_top_lane_t: 00
-    bbl_match_90: ff
-- time: +1
-  lights:
-    bbl_match_90: 00
-    bbl_match_80: ff
-- time: +1
-  lights:
-    bbl_match_80: 00
     bbl_ball_in_play_1: ff
 - time: +1
   lights:
@@ -30,5 +21,4 @@
     bbl_ball_in_play_5: ff
 - time: +1
   lights:
-    bbl_tilt: ff
     bbl_ball_in_play_5: 00

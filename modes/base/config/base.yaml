@@ -121,7 +121,7 @@ logic_blocks:
 
 timers:
     2x_multiplier:
-        start_value: 10
+        start_value: 15
         end_value: 0
         direction: down
         start_running: no

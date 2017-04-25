@@ -56,36 +56,42 @@ matrix_lights:
         number: 1-21
         label: Match
 
-    bbl_player_1_gi_1:
+    bbl_player_1_100k:
+        number: 0-19
+        label: Player 1 100,000
+    bbl_player_1_10k:
         number: 1-22
-        label: Player 1 GI 1
-    bbl_player_1_gi_2:
+        label: Player 1 10,000
+    bbl_player_1_1k:
         number: 1-23
-        label: Player 1 GI 2
-    bbl_player_1_gi_3:
+        label: Player 1 1,000
+    bbl_player_1_100:
         number: 1-24
-        label: Player 1 GI 3
-    bbl_player_1_gi_4:
+        label: Playe  1 100
+    bbl_player_1_10:
         number: 1-25
-        label: Player 1 GI 4
-    bbl_player_1_gi_5:
+        label: Player 1 10
+    bbl_player_1_0:
         number: 1-26
-        label: Player 1 GI 5
-    bbl_player_2_gi_1:
+        label: Player 1 0
+    bbl_player_2_100k:
+        number: 0-20
+        label: Player 2 100,000
+    bbl_player_2_10k:
         number: 1-27
-        label: Player 2 GI 1
-    bbl_player_2_gi_2:
+        label: Player 2 10,000
+    bbl_player_2_1k:
         number: 1-28
-        label: Player 2 GI 2
-    bbl_player_2_gi_3:
+        label: Player 2 1,000
+    bbl_player_2_100:
         number: 1-29
-        label: Player 2 GI 3
-    bbl_player_2_gi_4:
+        label: Player 2 100
+    bbl_player_2_10:
         number: 1-30
-        label: Player 2 GI 4
-    bbl_player_2_gi_5:
+        label: Player 2 10
+    bbl_player_2_0:
         number: 1-31
-        label: Player 2 GI 5
+        label: Player 2 0
 
     bbl_player_1_up:
         number: 0-25
@@ -93,61 +99,55 @@ matrix_lights:
     bbl_player_2_up:
         number: 0-26
         label: Player 2 Up
-    bbl_player_1_100k:
-        number: 0-19
-        label: Player 1 100K
-    bbl_player_2_100k:
-        number: 0-20
-        label: Player 2 100K
 
-    bbl_gi_1:
+    bbl_corvette_blower:
         number: 0-21
-        label: Backbox GI 1
-    bbl_gi_2:
+        label: Corvette Blower
+    bbl_corvette_left:
         number: 0-22
-        label: Backbox GI 2
-    bbl_gi_3:
+        label: Corvette Left
+    bbl_corvette_right:
         number: 0-23
-        label: Backbox GI 3
-    bbl_gi_4:
+        label: Corvette Right
+    bbl_chevy_driver:
         number: 0-24
-        label: Backbox GI 4
-    bbl_gi_5:
+        label: Chevy Driver
+    bbl_chevy_headlight_left:
         number: 0-25
-        label: Backbox GI 5
-    bbl_gi_6:
+        label: Chevy Headlight Left
+    bbl_chevy_headlight_right:
         number: 0-26
-        label: Backbox GI 6
-    bbl_gi_7:
-        number: 0-27
-        label: Backbox GI 7
-    bbl_gi_8:
-        number: 0-28
-        label: Backbox GI 8
-    bbl_gi_9:
-        number: 0-29
-        label: Backbox GI 9
-    bbl_gi_10:
-        number: 0-30
-        label: Backbox GI 10
-    bbl_gi_11:
-        number: 0-31
-        label: Backbox GI 11
-    bbl_gi_12:
-        number: 1-16
-        label: Backbox GI 12
-    bbl_gi_13:
-        number: 1-17
-        label: Backbox GI 13
-    bbl_gi_14:
+        label: Chevy Headlight Right
+    bbl_flame_left:
         number: 1-18
-        label: Backbox GI 14
-    bbl_gi_15:
+        label: Flame Left
+    bbl_flame_right:
         number: 1-19
-        label: Backbox GI 15
-    bbl_gi_16:
+        label: Flame Right
+    bbl_title_left:
+        number: 0-27
+        label: Title Left
+    bbl_title_center:
+        number: 0-28
+        label: Title Center
+    bbl_title_right:
+        number: 0-29
+        label: Title Right
+    bbl_woman_face:
         number: 1-20
-        label: Backbox GI 16
+        label: Woman Face
+    bbl_woman_middle:
+        number: 0-30
+        label: Woman Middle
+    bbl_woman_foot_left:
+        number: 0-31
+        label: Woman Foot Left
+    bbl_woman_foot_right:
+        number: 1-16
+        label: Woman Foot Right
+    bbl_woman_leg:
+        number: 1-17
+        label: Woman Leg
 
     pfl_left_saucer_gi:
         number: 3-0

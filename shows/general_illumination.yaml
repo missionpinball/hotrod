@@ -10,6 +10,8 @@
     pfl_right_upper: ff
     pfl_left_saucer_gi: ff
     pfl_right_saucer_gi: ff
+    pfl_left_eject: ff
+    pfl_right_eject: ff
     pfl_left_pop: ff
     pfl_center_pop: ff
     pfl_right_pop: ff
@@ -17,3 +19,17 @@
     pfl_lane_2: ff
     pfl_lane_3: ff
     pfl_lane_4: ff
+    bbl_title_left: ff
+    bbl_title_center: ff
+    bbl_title_right: ff
+    bbl_corvette_blower: ff
+    bbl_corvette_left: ff
+    bbl_corvette_right: ff
+    bbl_chevy_driver: ff
+    bbl_chevy_headlight_left: ff
+    bbl_chevy_headlight_right: ff
+    bbl_woman_face: ff
+    bbl_woman_middle: ff
+    bbl_woman_leg: ff
+    bbl_woman_foot_left: ff
+    bbl_woman_foot_right: ff

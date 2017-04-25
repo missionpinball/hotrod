@@ -24,3 +24,7 @@ show_player:
         rollovers_multipliers:
             speed: 3
             loops: -1
+        title_flames_flash:
+            loops: -1
+        attract_sweep: 
+            loops: -1
