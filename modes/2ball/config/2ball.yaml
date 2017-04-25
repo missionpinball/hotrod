@@ -35,17 +35,16 @@ scoring:
             score: 0
             action: set
 
-logic_blocks:
-    counters:
-        lb_increase_drop_hits_for_light_jackpot:
-            count_events: jackpot
-            persist_state: True
-            events_when_complete: increase_light_jackpot
-        lb_enable_jackpot:
-            count_events: drop_target_bank_rod_down
-            restart_events: jackpot
-            count_complete_value: current_player.light_jackpot_required_hits + 1
-            events_when_complete: light_jackpot
+counters:
+    lb_increase_drop_hits_for_light_jackpot:
+        count_events: jackpot
+        persist_state: True
+        events_when_complete: increase_light_jackpot
+    lb_enable_jackpot:
+        count_events: drop_target_bank_rod_down
+        restart_events: jackpot
+        count_complete_value: current_player.light_jackpot_required_hits + 1
+        events_when_complete: light_jackpot
 
 achievements:
     light_jackpot:

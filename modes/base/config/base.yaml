@@ -58,66 +58,65 @@ scoring:
 #            score: 1
 #            action: set
 
-logic_blocks:
-    counters:
-        lb_increase_drop_hits_for_light_lock:
-            count_events: multiball_mb_2ball_ended
-            persist_state: True
-            events_when_complete: increase_required
-        lb_light_lock:
-            count_events: drop_target_bank_rod_down
-            enable_events: mode_saucer_started
-            disable_events: mode_saucer_stopped
-            reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
-            count_complete_value: current_player.required_hits + 1
-            events_when_complete: lock_start
-            persist_state: True
-        lb_bonus:
-            count_events: 
-                - hot_lanes_default_lit_complete
-                - bonus_lanes_default_lit_complete
-                - rollovers_hit
-                - left_saucer_hit
-                - right_saucer_hit
-            starting_count: 0
-            count_interval: 1000
-            count_complete_value: 10000
-            direction: up
-            events_when_complete: bonus_max
-        lb_lock:
-            count_events:
-                - balldevice_bd_left_saucer_ball_enter
-                - balldevice_bd_right_saucer_ball_enter
-            starting_count: 1
-            count_complete_value: 3
-            direction: up
-            persist_state: True
-            enable_events: lock_start
-            reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
-            events_when_complete: lock_lit
-    sequences:
-        lb_skill_shot:
-            events: sw_skill_shot_success
-            reset_events: ball_starting
-            events_when_complete: lock_start
-        lb_left_ball_locked:
-            events: ball_lock_bl_left_lock_locked_ball
-            reset_events: mode_lock_started
-            events_when_complete: ball_locked
-        lb_right_ball_locked:
-            events: ball_lock_bl_right_lock_locked_ball
-            reset_events: mode_lock_started
-            events_when_complete: ball_locked
-        lb_rollovers:
-            events: rollovers_default_lit_complete
-            events_when_hit: start_2x
-    accruals:
-        lb_extra_ball:
-            events:
-                - hot_lanes_default_lit_complete
-                - bonus_lanes_default_lit_complete
-                - drop_target_bank_rod_down
-            events_when_complete: extra_ball_lit
+counters:
+    lb_increase_drop_hits_for_light_lock:
+        count_events: multiball_mb_2ball_ended
+        persist_state: True
+        events_when_complete: increase_required
+    lb_light_lock:
+        count_events: drop_target_bank_rod_down
+        enable_events: mode_saucer_started
+        disable_events: mode_saucer_stopped
+        reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
+        count_complete_value: current_player.required_hits + 1
+        events_when_complete: lock_start
+        persist_state: True
+    lb_bonus:
+        count_events:
+            - hot_lanes_default_lit_complete
+            - bonus_lanes_default_lit_complete
+            - rollovers_hit
+            - left_saucer_hit
+            - right_saucer_hit
+        starting_count: 0
+        count_interval: 1000
+        count_complete_value: 10000
+        direction: up
+        events_when_complete: bonus_max
+    lb_lock:
+        count_events:
+            - balldevice_bd_left_saucer_ball_enter
+            - balldevice_bd_right_saucer_ball_enter
+        starting_count: 1
+        count_complete_value: 3
+        direction: up
+        persist_state: True
+        enable_events: lock_start
+        reset_events: multiball_mb_2ball_ended, multiball_mb_3ball_ended
+        events_when_complete: lock_lit
+sequences:
+    lb_skill_shot:
+        events: sw_skill_shot_success
+        reset_events: ball_starting
+        events_when_complete: lock_start
+    lb_left_ball_locked:
+        events: ball_lock_bl_left_lock_locked_ball
+        reset_events: mode_lock_started
+        events_when_complete: ball_locked
+    lb_right_ball_locked:
+        events: ball_lock_bl_right_lock_locked_ball
+        reset_events: mode_lock_started
+        events_when_complete: ball_locked
+    lb_rollovers:
+        events: rollovers_default_lit_complete
+        events_when_hit: start_2x
+accruals:
+    lb_extra_ball:
+        events:
+            - hot_lanes_default_lit_complete
+            - bonus_lanes_default_lit_complete
+            - drop_target_bank_rod_down
+        events_when_complete: extra_ball_lit
 
 timers:
     2x_multiplier:

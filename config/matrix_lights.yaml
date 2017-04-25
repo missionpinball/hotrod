@@ -1,6 +1,6 @@
 #config_version=4
 
-matrix_lights:
+lights:
     bbl_ball_in_play_1:
         number: 0-0
         label: Ball In Play 1

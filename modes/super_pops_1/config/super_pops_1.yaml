@@ -8,14 +8,13 @@ scoring:
     sw_pop:
         score: 10
 
-logic_blocks:
-    counters:
-        sw_pop:
-            count_events: sw_pop
-            starting_count: 50
-            count_complete_value: 0
-            direction: down
-            events_when_complete: super_pops_2_start
+counters:
+    sw_pop:
+        count_events: sw_pop
+        starting_count: 50
+        count_complete_value: 0
+        direction: down
+        events_when_complete: super_pops_2_start
 
 show_player:
     mode_super_pops_1_started:
