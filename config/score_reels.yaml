@@ -72,10 +72,8 @@ score_reel_groups:
          tags: player1
          max_simultaneous_coils: 3
          chimes: none, cc_chime_1, cc_chime_2, cc_chime_3, none
-         confirm: lazy
      player2:
          reels: score_player_2_10000,score_player_2_1000,score_player_2_100,score_player_2_10,None
          tags: player2
          max_simultaneous_coils: 3
          chimes: none, cc_chime_1, cc_chime_2, cc_chime_3, none
-         confirm: lazy
