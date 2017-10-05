@@ -13,22 +13,26 @@ multiballs:
 
 scoring:
     left_saucer_hit:
-        score: 200
+        score: 200 * current_player.pf_multiplier
     right_saucer_hit:
-        score: 200
+        score: 200 * current_player.pf_multiplier
     pfs_drop_r_active:
-        score: 20
+        score: 20 * current_player.pf_multiplier
     pfs_drop_o_active:
-        score: 20
+        score: 20 * current_player.pf_multiplier
     pfs_drop_d_active:
-        score: 20
+        score: 20 * current_player.pf_multiplier
     drop_target_bank_rod_down:
-        score: 300
+        score: 300 * current_player.pf_multiplier
     rod_in_order_complete:
-        score: 500
+        score: 300 * current_player.pf_multiplier
     jackpot.2:
-        score: 1000 + current_player.light_jackpot_required_hits * 1000
+        score: 1000 + current_player.light_jackpot_required_hits * 1000 * current_player.pf_multiplier
     jackpot.1:
+        light_jackpot_required_hits: 1
+    super_jackpot.2:
+        score: 2000 + current_player.light_jackpot_required_hits * 1000 * current_player.pf_multiplier
+    super_jackpot.1:
         light_jackpot_required_hits: 1
     mode_2ball_started:
         light_jackpot_required_hits:
@@ -43,15 +47,21 @@ logic_blocks:
             events_when_complete: increase_light_jackpot
         lb_enable_jackpot:
             count_events: drop_target_bank_rod_down
+            disable_events: light_super_jackpot
             restart_events: jackpot
             count_complete_value: current_player.light_jackpot_required_hits + 1
             events_when_complete: light_jackpot
+        lb_enable_super_jackpot:
+            count_events: rod_in_order_complete
+            restart_events: super_jackpot
+            count_complete_value: current_player.light_jackpot_required_hits + 1
+            events_when_complete: light_super_jackpot
 
 achievements:
     light_jackpot:
         show_tokens:
            lights: pfl_left_jackpot, pfl_right_jackpot
-        show_when_started: flash
+        show_when_started: on
         show_when_completed: off
         start_events:
             - light_jackpot
@@ -62,6 +72,18 @@ achievements:
             - jackpot|1
         complete_events: sw_ejects
         events_when_completed: jackpot
+    light_super_jackpot:
+        show_tokens:
+            lights: pfl_left_jackpot, pfl_right_jackpot
+        show_when_started: flash
+        show_when_completed: off
+        start_events:
+            - light_super_jackpot
+        events_when_started: super_jackpot_lit
+        reset_events:
+            - super_jackpot|1
+        complete_events: sw_ejects
+        events_when_completed: super_jackpot
 
 show_player:
     balldevice_bd_left_saucer_ball_enter:

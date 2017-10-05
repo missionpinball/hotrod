@@ -477,10 +477,12 @@ shows:
               pfl_right_saucer_3: ff
               pfl_right_saucer_2: ff
               pfl_right_saucer_1: ff
+
     same_player_shoots_again:
         - time: 0
           lights:
               pfl_same_player: ff
+
     flash_extra_ball:
         - time: 0
           coils: 
@@ -505,8 +507,6 @@ shows:
         - time: +1
           lights:
               (light): 00
-
-
 
 slide_player:
   mode_base_started:
