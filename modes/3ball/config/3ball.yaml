@@ -8,7 +8,7 @@ scoring:
     drop_target_bank_rod_down:
         score: 300|block
     rod_in_order_complete:
-        score: 1000|block
+        score: 500|block
     balldevice_bd_left_saucer_ball_enter:
         score: 2000|block
     balldevice_bd_right_saucer_ball_enter:
@@ -17,7 +17,7 @@ scoring:
         score: 1000 + current_player.light_jackpot_required_hits * 1000
     mode_3ball_started:
         pf_multiplier:
-            float: 2
+            float: 4
             action: set
     multiball_mb_3ball_ball_lost:
         pf_multiplier:

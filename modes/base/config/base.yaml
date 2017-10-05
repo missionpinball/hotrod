@@ -49,6 +49,10 @@ scoring:
         pf_multiplier:
             score: 4
             action: set
+    timer_4x_multiplier_stopped:
+        pf_multiplier:
+            score: 1
+            action: set
 #    mode_2ball_started:
 #        pf_multiplier:
 #            score: 1.5
@@ -128,8 +132,6 @@ timers:
         control_events:
             - event: start_2x
               action: start
-            - event: reset_2x
-              action: restart
 
 shots:
     right_outlane:
@@ -176,12 +178,6 @@ shot_profiles:
               show: flash_lock_3
             - name: lit
               show: flash_lock_4
-    sp_extra_ball:
-        states:
-            - name: lit
-              show: on
-            - name: hit
-              show: flash_extra_ball
 
 shot_groups:
     bonus_lanes:
@@ -488,14 +484,14 @@ shows:
               pfl_right_saucer_3: ff
               pfl_right_saucer_2: ff
               pfl_right_saucer_1: ff
-              
     same_player_shoots_again:
         - time: 0
           lights:
               pfl_same_player: ff
-
     flash_extra_ball:
         - time: 0
+          coils: 
+              cc_knocker: pulse                  
           lights:
               (light): 00
         - time: +1
@@ -516,6 +512,8 @@ shows:
         - time: +1
           lights:
               (light): 00
+
+
 
 slide_player:
   mode_base_started:

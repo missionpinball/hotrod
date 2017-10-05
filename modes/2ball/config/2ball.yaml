@@ -13,19 +13,19 @@ multiballs:
 
 scoring:
     left_saucer_hit:
-        score: 300
+        score: 200
     right_saucer_hit:
-        score: 300
+        score: 200
     pfs_drop_r_active:
-        score: 100
+        score: 20
     pfs_drop_o_active:
-        score: 100
+        score: 20
     pfs_drop_d_active:
-        score: 100
+        score: 20
     drop_target_bank_rod_down:
         score: 300
     rod_in_order_complete:
-        score: 300
+        score: 500
     jackpot.2:
         score: 1000 + current_player.light_jackpot_required_hits * 1000
     jackpot.1:
@@ -50,7 +50,7 @@ logic_blocks:
 achievements:
     light_jackpot:
         show_tokens:
-           lights: pfl_left_eb, pfl_right_eb
+           lights: pfl_left_jackpot, pfl_right_jackpot
         show_when_started: flash
         show_when_completed: off
         start_events:
@@ -77,8 +77,8 @@ shows:
     left_eject_off:
         - time: 0
           lights:
-              pfl_left_eject: ff
+              pfl_left_eject: 00
     right_eject_off:
         - time: 0
           lights:
-              pfl_right_eject: ff
+              pfl_right_eject: 00

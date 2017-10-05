@@ -10,7 +10,15 @@ shots:
         reset_events: mode_extra_ball_started
         profile: sp_extra_ball
         show_tokens:
-            light: pfl_special
+            light: pfl_eb
+
+shot_profiles:
+    sp_extra_ball:
+        states:
+            - name: lit
+              show: on
+            - name: hit
+              show: flash_extra_ball
 
 show_player:
     extra_ball_hit:

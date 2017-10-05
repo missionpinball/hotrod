@@ -182,21 +182,21 @@ matrix_lights:
     pfl_right_saucer_4:
         number: 3-10
         label: Right Saucer 4
-    pfl_special:
+    pfl_eb:
         number: 3-11
-        label: Special
+        label: Extra Ball
     pfl_left_upper:
         number: 3-12
         label: Left Upper
     pfl_right_upper:
         number: 3-13
         label: Right Upper
-    pfl_right_eb:
+    pfl_right_jackpot:
         number: 3-14
-        label: Right Extra Ball
-    pfl_left_eb:
+        label: Right Jackpot
+    pfl_left_jackpot:
         number: 3-15
-        label: Left Extra Ball
+        label: Left Jackpot
     pfl_left_sling_1:
         number: 3-16
         label: Left Sling 1
