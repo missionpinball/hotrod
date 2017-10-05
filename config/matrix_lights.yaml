@@ -57,41 +57,41 @@ matrix_lights:
         label: Match
 
     bbl_player_1_100k:
-        number: 0-19
+        number: 0-20
         label: Player 1 100,000
-    bbl_player_1_10k:
+    bbl_player_1_gi_1:
+        number: 0-19
+        label: Player 1 GI 1
+    bbl_player_1_gi_2:
         number: 1-22
-        label: Player 1 10,000
-    bbl_player_1_1k:
+        label: Player 1 GI 2
+    bbl_player_1_gi_3:
         number: 1-23
-        label: Player 1 1,000
-    bbl_player_1_100:
+        label: Player 1 GI 3
+    bbl_player_1_gi_4:
         number: 1-24
-        label: Playe  1 100
-    bbl_player_1_10:
+        label: Player 1 GI 4
+    bbl_player_1_gi_5:
         number: 1-25
-        label: Player 1 10
-    bbl_player_1_0:
-        number: 1-26
-        label: Player 1 0
+        label: Player 1 GI 5
     bbl_player_2_100k:
         number: 0-20
         label: Player 2 100,000
-    bbl_player_2_10k:
+    bbl_player_2_gi_1:
         number: 1-27
-        label: Player 2 10,000
-    bbl_player_2_1k:
+        label: Player 2 GI 1
+    bbl_player_2_gi_2:
         number: 1-28
-        label: Player 2 1,000
-    bbl_player_2_100:
+        label: Player 2 GI 2
+    bbl_player_2_gi_3:
         number: 1-29
-        label: Player 2 100
-    bbl_player_2_10:
+        label: Player 2 GI 3
+    bbl_player_2_gi_4:
         number: 1-30
-        label: Player 2 10
-    bbl_player_2_0:
+        label: Player 2 GI 4
+    bbl_player_2_gi_5:
         number: 1-31
-        label: Player 2 0
+        label: Player 2 GI 5
 
     bbl_player_1_up:
         number: 0-25

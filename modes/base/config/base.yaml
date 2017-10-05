@@ -128,6 +128,8 @@ timers:
         control_events:
             - event: start_2x
               action: start
+            - event: reset_2x
+              action: restart
 
 shots:
     right_outlane:
@@ -221,6 +223,16 @@ show_player:
             action: stop
             show_tokens:
                 light: pfl_2x
+    timer_4x_multiplier_started:
+        flash:
+            action: play
+            show_tokens:
+                light: pfl_4x
+    timer_4x_multiplier_stopped:
+        flash:
+            action: stop
+            show_tokens:
+                light: pfl_4x
     game_starting:
         player1_start:
             speed: 2
@@ -242,6 +254,17 @@ shows:
         - time: 0
           lights:
               pfl_2x: 00
+    flash_4x:
+        - time: 0
+          lights:
+              pfl_4x: ff
+        - time: +1
+          lights: 
+              pfl_4x: 00
+    stop_4x:
+        - time: 0
+          lights:
+              pfl_4x: 00
     ejects:
         - time: 0
           lights:
