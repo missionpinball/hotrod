@@ -27,11 +27,7 @@ scoring:
         score: 500 * current_player.pf_multiplier
     pfs_right_eject_active:
         score: 500 * current_player.pf_multiplier
-    bonus_lanes_default_unlit_hit:
-        score: 20 * current_player.pf_multiplier
-    bonus_lanes_default_lit_hit:
-        score: 20 * current_player.pf_multiplier
-    bonus_lanes_default_lit_complete:
+    bonus_lanes_hit:
         score: 300 * current_player.pf_multiplier
     rollovers_default_lit_complete:
         score: 1000 * current_player.pf_multiplier
@@ -79,10 +75,7 @@ logic_blocks:
         lb_bonus:
             count_events: 
                 - hot_lanes_default_lit_complete
-                - bonus_lanes_default_lit_complete
-                - rollovers_hit
-                - left_saucer_hit
-                - right_saucer_hit
+                - bonus_lanes_hit
             starting_count: 0
             count_interval: 1000
             count_complete_value: 10000
@@ -165,7 +158,7 @@ shots:
     hot_in_order:
         switch_sequence: pfs_top_lane_h,pfs_top_lane_o,pfs_top_lane_t
     rod_in_order:
-        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
+        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d        
 
 shot_profiles:
     sp_lock:
