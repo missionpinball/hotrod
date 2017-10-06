@@ -30,10 +30,6 @@ scoring:
         score: 1000 + current_player.light_jackpot_required_hits * 1000 * current_player.pf_multiplier
     jackpot.1:
         light_jackpot_required_hits: 1
-    super_jackpot.2:
-        score: 2000 + current_player.light_jackpot_required_hits * 1000 * current_player.pf_multiplier
-    super_jackpot.1:
-        light_jackpot_required_hits: 1
     mode_2ball_started:
         light_jackpot_required_hits:
             score: 0
@@ -47,22 +43,15 @@ logic_blocks:
             events_when_complete: increase_light_jackpot
         lb_enable_jackpot:
             count_events: drop_target_bank_rod_down
-            disable_events: light_super_jackpot
             restart_events: jackpot
             count_complete_value: current_player.light_jackpot_required_hits + 1
             events_when_complete: light_jackpot
-        lb_enable_super_jackpot:
-            count_events: rod_in_order_complete
-            restart_events: super_jackpot
-            count_complete_value: current_player.light_jackpot_required_hits + 1
-            events_when_complete: light_super_jackpot
 
 achievements:
     light_jackpot:
         show_tokens:
            lights: pfl_left_jackpot, pfl_right_jackpot
         show_when_started: on
-        show_when_completed: off
         start_events:
             - light_jackpot
             - multiball_mb_2ball_started
@@ -72,28 +61,14 @@ achievements:
             - jackpot|1
         complete_events: sw_ejects
         events_when_completed: jackpot
-    light_super_jackpot:
-        show_tokens:
-            lights: pfl_left_jackpot, pfl_right_jackpot
-        show_when_started: flash
-        show_when_completed: off
-        start_events:
-            - light_super_jackpot
-        events_when_started: super_jackpot_lit
-        reset_events:
-            - super_jackpot|1
-        complete_events: sw_ejects
-        events_when_completed: super_jackpot
 
 show_player:
-    balldevice_bd_left_saucer_ball_enter:
-        left_saucer_eject:
-            loops: 0
-            speed: 6
-    balldevice_bd_right_saucer_ball_enter:
-        right_saucer_eject:
-            loops: 0
-            speed: 6
+    jackpot:
+        flash_jackpot:
+            loops: 10
+            speed: 10
+    mode_2ball_started:
+        ejects_on: play
 
 shows:
     left_eject_off:
@@ -104,3 +79,12 @@ shows:
         - time: 0
           lights:
               pfl_right_eject: 00
+    flash_jackpot:
+        - time: 0
+          lights:
+              pfl_left_jackpot: ff
+              pfl_right_jackpot: ff
+        - time: +1
+          lights:
+              pfl_left_jackpot: 00
+              pfl_right_jackpot: 00

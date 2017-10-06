@@ -18,14 +18,6 @@ scoring:
         score: 170
     right_lock_sp_right_lock_lock_3_complete:
         score: 200
-    pfs_drop_r_active:
-        score: 100
-    pfs_drop_o_active:
-        score: 100
-    pfs_drop_d_active:
-        score: 100
-    drop_target_bank_rod_down:
-        score: 300
 
 shots:
     left_lock:
@@ -40,3 +32,28 @@ shots:
         advance_events: 
             - balldevice_bd_left_saucer_ball_enter
             - balldevice_bd_right_saucer_ball_enter
+            
+show_player:
+    mode_lock_started:
+        flash_ejects:
+            loops: 0
+            speed: 10
+    mode_2ball_stopped:
+        on_ejects: play
+            
+shows:
+    on_ejects:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+              pfl_right_eject: ff
+
+    flash_ejects:
+        - time: 0
+          lights:
+              pfl_left_eject: ff
+              pfl_right_eject: 00
+        - time: +1
+          lights:
+              pfl_left_eject: 00
+              pfl_right_eject: ff

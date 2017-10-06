@@ -25,11 +25,19 @@ shots:
         hit_events: balldevice_bd_right_saucer_ball_enter
 
 show_player:
-    balldevice_bd_left_saucer_ball_enter:
-        left_saucer_eject:
-            loops: 0
-            speed: 6
-    balldevice_bd_right_saucer_ball_enter:
-        right_saucer_eject:
-            loops: 0
-            speed: 6
+    mode_saucer_started:
+        ejects_on: play
+    mode_saucer_ended:
+        ejects_off: play
+
+shows:
+    ejects_on:
+        - time: 0
+          lights:
+              pfl_right_eject: ff
+              pfl_left_eject: ff
+    ejects_off:
+        - time: 0
+          lights:
+              pfl_right_eject: 00
+              pfl_left_eject: 00
