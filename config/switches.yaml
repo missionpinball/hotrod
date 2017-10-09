@@ -28,7 +28,7 @@ switches:
 
     cs_tilt_bob:
         number: 2-24
-        tags: playfield_active, tilt
+        tags: playfield_active, tilt_warning
     cs_coin_1:
         number: 2-26
     cs_coin_2:
