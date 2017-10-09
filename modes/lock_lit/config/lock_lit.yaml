@@ -14,7 +14,7 @@ multiball_locks:
 
 scoring:
     sw_ejects{device.multiball_locks.bl_lock["locked_balls"] == 1}:
-        pf_multiplier:
+        mb_multiplier:
             float: 1.5
             action: set
 

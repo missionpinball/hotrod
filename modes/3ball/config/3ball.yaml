@@ -8,11 +8,11 @@ scoring:
     jackpot.2:  # just add the same value again
         score: 1000 + current_player.light_jackpot_required_hits * 1000 * current_player.pf_multiplier
     mode_3ball_started:
-        pf_multiplier:
+        mb_multiplier:
             float: 4
             action: set
     multiball_mb_3ball_ball_lost:
-        pf_multiplier:
+        mb_multiplier:
             float: 1.5
             action: set
 

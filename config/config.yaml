@@ -20,6 +20,14 @@ game:
     balls_per_game: 3
     max_players: 2
 
+player_vars:
+  pf_multiplier:
+    initial_value: 1
+  mb_multiplier:
+    initial_value: 1
+  lane_multiplier:
+    initial_value: 1
+
 modes:
   - base
   - tilt
