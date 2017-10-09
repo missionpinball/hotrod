@@ -231,6 +231,9 @@ show_player:
             speed: 2
             loops: 0
 
+    extra_ball_hit:
+        same_player_shoots_again: play
+
 shows:
     flash_2x:
         - time: 0

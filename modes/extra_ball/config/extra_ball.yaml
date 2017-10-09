@@ -20,6 +20,3 @@ shot_profiles:
             - name: hit
               show: flash_extra_ball
 
-show_player:
-    extra_ball_hit:
-        same_player_shoots_again: play
