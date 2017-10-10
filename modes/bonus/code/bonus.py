@@ -3,6 +3,8 @@ from mpf.core.mode import Mode
 class Count(Mode):
 
     def mode_start(self, **kwargs):
+        if self.machine.game.tilted:
+            self.stop()
         #if not self.machine.mode_controller.is_active('base'):
         #    self.machine.events.post("bonus_complete")
         #    self.stop()
