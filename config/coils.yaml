@@ -1,72 +1,76 @@
-#config_version=4
+#config_version=5
 
 coils:
-    bbc_player_1_10000:
-        number: 1-0
+    bbc_player_2_10000:
+        number: 2-3
         default_pulse_ms: 10ms
         label: Player 1 10,000
-    bbc_player_1_1000:
-        number: 1-1
+    bbc_player_2_1000:
+        number: 2-2
         default_pulse_ms: 10ms
         label: Player 1 1,000
-    bbc_player_1_100:
-        number: 1-2
+    bbc_player_2_100:
+        number: 2-1
         default_pulse_ms: 10ms
         label: Player 1 100
-    bbc_player_1_10:
-        number: 1-3
+    bbc_player_2_10:
+        number: 2-0
         default_pulse_ms: 10ms
         label: Player 1 10
 
-    bbc_player_2_10000:
-        number: 1-4
+    bbc_player_1_10000:
+        number: 2-7
         default_pulse_ms: 10ms
         label: Player 2 10,000        
-    bbc_player_2_1000:
-        number: 1-5
+    bbc_player_1_1000:
+        number: 2-6
         default_pulse_ms: 10ms
         label: Player 2 1,000
-    bbc_player_2_100:
-        number: 1-6
+    bbc_player_1_100:
+        number: 2-5
         default_pulse_ms: 10ms
         label: Player 2 100
-    bbc_player_2_10:
-        number: 1-7
+    bbc_player_1_10:
+        number: 2-4
         default_pulse_ms: 10ms
         label: Player 2 10
 
     pfc_flipper_left_main:
-        number: 2-0
-        default_pulse_ms: 20ms
-        default_hold_power: 0.128
+        number: 5-4
+        default_pulse_ms: 30ms
+        default_hold_power: 1
         label: Left Flipper
     pfc_flipper_right_main:
-        number: 2-1
-        default_pulse_ms: 20ms
-        default_hold_power: 0.128
+        number: 5-7
+        default_pulse_ms: 30ms
+        default_hold_power: 1
         label: Right Flipper
 
     bbc_credit_down:
-        number: 2-2
+        number: 1-3
         label: Credit Down
     bbc_credit_up:
-        number: 2-3
+        number: 1-0
         label: Credit Up
 
+    bbc_bell:
+        number: 1-1
+        label: Bell
+
     cc_knocker:
-        number: 2-4
+        number: 1-2
         label: Knocker
 
     cc_chime_1:
-        number: 2-5
+        number: 1-6
         default_pulse_ms: 10ms
         label: Chime 1
     cc_chime_2:
-        number: 2-6
+        number: 1-4
         default_pulse_ms: 10ms
         label: Chime 2
     cc_chime_3:
-        number: 2-7
+        number: 1-5
         default_pulse_ms: 10ms
         label: Chime 3
 
@@ -79,7 +83,7 @@ coils:
         default_pulse_ms: 10ms
         label: Right Sling
     pfc_trough_eject:
-        number: 5-4
+        number: 5-5
         default_pulse_ms: 30ms
         label: Trough Eject
     pfc_right_pop:

@@ -1,45 +1,49 @@
-#config_version=4
+#config_version=5
 
 switches:
     cs_left_flipper:
-        number: 2-0
-        tags: flipper
+        number: 5-8
+        tags: playfield_active,flipper
     cs_right_flipper:
-        number: 2-1
-        tags: flipper
-
-    bbs_player_1_10000:
-        number: 2-16
-    bbs_player_1_1000:
-        number: 2-17
-    bbs_player_1_100:
-        number: 2-18
-    bbs_player_1_10:
-        number: 2-19
+        number: 5-11
+        tags: playfield_active,flipper
 
     bbs_player_2_10000:
-        number: 2-20
+        number: 2-16
     bbs_player_2_1000:
-        number: 2-21
+        number: 2-17
     bbs_player_2_100:
-        number: 2-22
+        number: 2-18
     bbs_player_2_10:
+        number: 2-19
+
+    bbs_player_1_10000:
         number: 2-23
+    bbs_player_1_1000:
+        number: 2-22
+    bbs_player_1_100:
+        number: 2-21
+    bbs_player_1_10:
+        number: 2-20
 
-    cs_tilt_bob:
+    bbs_credit_down:
         number: 2-24
-        tags: playfield_active, tilt
-    cs_coin_1:
-        number: 2-26
-    cs_coin_2:
-        number: 2-27
-    cs_start:
-        number: 2-28
-        tags: start
-    cs_slam_tilt:
-        number: 2-29
-        tags: slam_tilt
+    bbs_credit_up:
+        number: 2-25
 
+    cs_coin_1:
+        number: 2-27
+    cs_coin_2:
+        number: 2-28
+    cs_start:
+        number: 2-26
+        tags: start
+    cs_tilt_bob:
+        number: 2-29
+        tags: playfield_active, tilt_warning
+    cs_slam_tilt:
+        number: 2-30
+        tags: slam_tilt
 
     pfs_left_sling:
         number: 5-0
