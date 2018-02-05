@@ -24,20 +24,20 @@ shot_groups:
         rotate_left_events: cs_left_flipper_active
         rotate_right_events: cs_right_flipper_active
         reset_events: 
-            hot_lanes_default_lit_complete: 1s
+            hot_lanes_lit_complete: 1s
 
 show_player:
-    hot_lanes_default_lit_complete: 
+    hot_lanes_lit_complete: 
         flash_hot_lanes: 
             loops: 4
             speed: 4
 
 scoring:
-    hot_lanes_default_unlit_hit:
+    hot_lanes_unlit_hit:
         score: 100
-    hot_lanes_default_lit_hit:
+    hot_lanes_lit_hit:
         score: 10
-    hot_lanes_default_lit_complete:
+    hot_lanes_lit_complete:
         score: 300
 
 shows:

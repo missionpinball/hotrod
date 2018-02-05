@@ -5,6 +5,10 @@ mode:
     stop_events: extra_ball_hit
     priority: 170
 
+extra_balls:
+    eb:
+        award_events: extra_ball_hit
+
 shots:
     extra_ball:
         switch: pfs_top_lane_o

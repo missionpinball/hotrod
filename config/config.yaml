@@ -20,6 +20,10 @@ game:
     balls_per_game: 3
     max_players: 2
 
+playfields:
+    playfield:
+        default_source_device: bd_shooter_lane
+
 modes:
   - base
   - tilt
@@ -58,7 +62,6 @@ ball_devices:
     bd_shooter_lane:
         ball_switches: pfs_shooter_lane
         eject_timeouts: 3s
-        tags: ball_add_live
         mechanical_eject: true
     bd_left_eject:
         ball_switches: pfs_left_eject

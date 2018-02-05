@@ -33,7 +33,7 @@ class TestSkillshot(MpfMachineTestCase, MpfGameTestCase):
         self.assertEventCalled("sw_skill_shot_success")
         self.assertEventNotCalled("sw_skill_shot_cancel")
 
-        self.assertPlayerVarEqual(1100, "score")
+        self.assertPlayerVarEqual(1000, "score")
 
     def test_miss(self):
         self.mock_event("sw_skill_shot_success")
@@ -64,4 +64,4 @@ class TestSkillshot(MpfMachineTestCase, MpfGameTestCase):
         self.assertEventNotCalled("sw_skill_shot_success")
         self.assertEventCalled("sw_skill_shot_cancel")
 
-        self.assertPlayerVarEqual(100, "score")
+        self.assertPlayerVarEqual(0, "score")

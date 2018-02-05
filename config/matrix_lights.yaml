@@ -112,12 +112,12 @@ lights:
     bbl_gi_4:
         number: 0-24
         label: Backbox GI 4
-    bbl_gi_5:
-        number: 0-25
-        label: Backbox GI 5
-    bbl_gi_6:
-        number: 0-26
-        label: Backbox GI 6
+#    bbl_gi_5: # duplicate
+#        number: 0-25
+#        label: Backbox GI 5
+#    bbl_gi_6: # duplicate
+#        number: 0-26
+#        label: Backbox GI 6
     bbl_gi_7:
         number: 0-27
         label: Backbox GI 7

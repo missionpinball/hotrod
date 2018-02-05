@@ -28,13 +28,13 @@ scoring:
         score: 500 * current_player.pf_multiplier
     pfs_right_eject_active:
         score: 500 * current_player.pf_multiplier
-    bonus_lanes_default_unlit_hit:
+    bonus_lanes_unlit_hit:
         score: 20 * current_player.pf_multiplier
-    bonus_lanes_default_lit_hit:
+    bonus_lanes_lit_hit:
         score: 20 * current_player.pf_multiplier
-    bonus_lanes_default_lit_complete:
+    bonus_lanes_lit_complete:
         score: 300 * current_player.pf_multiplier
-    rollovers_default_lit_complete:
+    rollovers_lit_complete:
         score: 1000 * current_player.pf_multiplier
     increase_required:
         required_hits: 1
@@ -74,8 +74,8 @@ counters:
         persist_state: True
     lb_bonus:
         count_events:
-            - hot_lanes_default_lit_complete
-            - bonus_lanes_default_lit_complete
+            - hot_lanes_lit_complete
+            - bonus_lanes_lit_complete
             - rollovers_hit
             - left_saucer_hit
             - right_saucer_hit
@@ -109,13 +109,13 @@ sequences:
         reset_events: mode_lock_started
         events_when_complete: ball_locked
     lb_rollovers:
-        events: rollovers_default_lit_complete
+        events: rollovers_lit_complete
         events_when_hit: start_2x
 accruals:
     lb_extra_ball:
         events:
-            - hot_lanes_default_lit_complete
-            - bonus_lanes_default_lit_complete
+            - hot_lanes_lit_complete
+            - bonus_lanes_lit_complete
             - drop_target_bank_rod_down
         events_when_complete: extra_ball_lit
 
@@ -128,6 +128,13 @@ timers:
         control_events:
             - event: start_2x
               action: start
+
+
+sequence_shots:
+    hot_in_order:
+        switch_sequence: pfs_top_lane_h,pfs_top_lane_o,pfs_top_lane_t
+    rod_in_order:
+        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
 
 shots:
     right_outlane:
@@ -158,10 +165,6 @@ shots:
         switch: pfs_right_rollover
         show_tokens:
             light: pfl_right_rollover
-    hot_in_order:
-        switch_sequence: pfs_top_lane_h,pfs_top_lane_o,pfs_top_lane_t
-    rod_in_order:
-        switch_sequence: pfs_drop_r,pfs_drop_o,pfs_drop_d
 
 shot_profiles:
     sp_lock:
@@ -187,27 +190,22 @@ shot_groups:
         rotate_left_events: cs_left_flipper_active
         rotate_right_events: cs_right_flipper_active
         reset_events: 
-            bonus_lanes_default_lit_complete: 1s
+            bonus_lanes_lit_complete: 1s
     rollovers:
         shots: left_rollover,center_rollover,right_rollover
         reset_events:
-            rollovers_default_lit_complete: 1s
-
-extra_balls:
-    eb:
-        award_events: extra_ball_hit
-        reset_events: mode_extra_ball_stopped
+            rollovers_lit_complete: 1s
 
 show_player:
     mode_base_started:
         general_illumination:
             priority: 100
         ejects: play
-    bonus_lanes_default_lit_complete: 
+    bonus_lanes_lit_complete: 
         bonus_lanes_complete:
             loops: 4
             speed: 4
-    rollovers_default_lit_complete:
+    rollovers_lit_complete:
         flash_rollover:
             loops: 4
             speed: 4

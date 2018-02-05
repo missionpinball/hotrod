@@ -25,7 +25,7 @@ scoring:
         score: 100
     drop_target_bank_rod_down:
         score: 300
-    rod_in_order_complete:
+    rod_in_order_hit:
         score: 300
     jackpot.2:
         score: 1000 + current_player.light_jackpot_required_hits * 1000

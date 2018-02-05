@@ -8,7 +8,7 @@ mode:
 scoring:
     drop_target_bank_rod_down:
         score: 5000|block
-    rod_in_order_complete:
+    rod_in_order_hit:
         score: 5000|block
     balldevice_bd_left_saucer_ball_enter:
         score: 2000|block
