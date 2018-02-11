@@ -1,201 +1,184 @@
 #config_version=5
 
 lights:
-    bbl_ball_in_play_1:
-        number: 0-0
-        subtype: matrix
-        label: Ball In Play 1
-    bbl_ball_in_play_2:
-        number: 0-1
-        subtype: matrix
-        label: Ball In Play 2
-    bbl_ball_in_play_3:
-        number: 0-2
-        subtype: matrix
-        label: Ball In Play 3
-    bbl_ball_in_play_4:
-        number: 0-3
-        subtype: matrix
-        label: Ball In Play 4
-    bbl_ball_in_play_5:
-        number: 0-4
-        subtype: matrix
-        label: Ball In Play 5
-    bbl_game_over:
-        number: 0-5
-        subtype: matrix
-        label: Game Over
     bbl_tilt:
-        number: 0-6
+        number: 0-27
         subtype: matrix
         label: Tilt
-    bbl_match_90:
-        number: 0-7
-        subtype: matrix
-        label: Match 90
-    bbl_match_80:
-        number: 0-8
-        subtype: matrix
-        label: Match 80
-    bbl_match_70:
-        number: 0-9
-        subtype: matrix
-        label: Match 70
-    bbl_match_60:
-        number: 0-10
-        subtype: matrix
-        label: Match 60
-    bbl_match_50:
-        number: 0-11
-        subtype: matrix
-        label: Match 50
-    bbl_match_40:
-        number: 0-12
-        subtype: matrix
-        label: Match 40
-    bbl_match_30:
-        number: 0-13
-        subtype: matrix
-        label: Match 30
-    bbl_match_20:
-        number: 0-14
-        subtype: matrix
-        label: Match 20
-    bbl_match_10:
-        number: 0-15
-        subtype: matrix
-        label: Match 10
-    bbl_match_00:
-        number: 0-16
-        subtype: matrix
-        label: Match 10
-    bbl_match:
-        number: 1-21
-        subtype: matrix
-        label: Match
-
-    bbl_player_1_gi_1:
-        number: 1-22
-        subtype: matrix
-        label: Player 1 GI 1
-    bbl_player_1_gi_2:
-        number: 1-23
-        subtype: matrix
-        label: Player 1 GI 2
-    bbl_player_1_gi_3:
-        number: 1-24
-        subtype: matrix
-        label: Player 1 GI 3
-    bbl_player_1_gi_4:
-        number: 1-25
-        subtype: matrix
-        label: Player 1 GI 4
-    bbl_player_1_gi_5:
-        number: 1-26
-        subtype: matrix
-        label: Player 1 GI 5
-    bbl_player_2_gi_1:
-        number: 1-27
-        subtype: matrix
-        label: Player 2 GI 1
-    bbl_player_2_gi_2:
-        number: 1-28
-        subtype: matrix
-        label: Player 2 GI 2
-    bbl_player_2_gi_3:
-        number: 1-29
-        subtype: matrix
-        label: Player 2 GI 3
-    bbl_player_2_gi_4:
-        number: 1-30
-        subtype: matrix
-        label: Player 2 GI 4
-    bbl_player_2_gi_5:
-        number: 1-31
-        subtype: matrix
-        label: Player 2 GI 5
 
     bbl_player_1_up:
-        number: 0-25
+        number: 0-28
         subtype: matrix
         label: Player 1 Up
     bbl_player_2_up:
-        number: 0-26
-        subtype: matrix
-        label: Player 2 Up
-    bbl_player_1_100k:
-        number: 0-19
-        subtype: matrix
-        label: Player 1 100K
-    bbl_player_2_100k:
-        number: 0-20
-        subtype: matrix
-        label: Player 2 100K
-
-    bbl_gi_1:
-        number: 0-21
-        subtype: matrix
-        label: Backbox GI 1
-    bbl_gi_2:
-        number: 0-22
-        subtype: matrix
-        label: Backbox GI 2
-    bbl_gi_3:
-        number: 0-23
-        subtype: matrix
-        label: Backbox GI 3
-    bbl_gi_4:
-        number: 0-24
-        subtype: matrix
-        label: Backbox GI 4
-#    bbl_gi_5: # duplicate
-#        number: 0-25
-#        subtype: matrix
-#        label: Backbox GI 5
-#    bbl_gi_6: # duplicate
-#        number: 0-26
-+        subtype: matrix
-#        label: Backbox GI 6
-    bbl_gi_7:
-        number: 0-27
-        subtype: matrix
-        label: Backbox GI 7
-    bbl_gi_8:
-        number: 0-28
-        subtype: matrix
-        label: Backbox GI 8
-    bbl_gi_9:
         number: 0-29
         subtype: matrix
-        label: Backbox GI 9
-    bbl_gi_10:
-        number: 0-30
+        label: Player 2 Up
+
+    bbl_ball_in_play_1:
+        number: 0-22
         subtype: matrix
-        label: Backbox GI 10
-    bbl_gi_11:
-        number: 0-31
+        label: Ball 1
+    bbl_ball_in_play_2:
+        number: 1-23
         subtype: matrix
-        label: Backbox GI 11
-    bbl_gi_12:
+        label: Ball 1
+    bbl_ball_in_play_3:
+        number: 0-20
+        subtype: matrix
+        label: Ball 3
+    bbl_ball_in_play_4:
+        number: 0-19
+        subtype: matrix
+        label: Ball 4
+    bbl_ball_in_play_5:
+        number: 0-18
+        subtype: matrix
+        label: Ball 5
+
+    bbl_game_over:
+        number: 0-24
+        subtype: matrix
+        label: Game Over
+
+    bbl_match:
+        number: 0-10
+        subtype: matrix
+        label: Match
+    bbl_match_00:
+        number: 0-9
+        subtype: matrix
+        label: Match 00
+    bbl_match_10:
+        number: 0-8
+        subtype: matrix
+        label: Match 10
+    bbl_match_20:
+        number: 0-7
+        subtype: matrix
+        label: Match 20
+    bbl_match_30:
+        number: 0-6
+        subtype: matrix
+        label: Match 30
+    bbl_match_40:
+        number: 0-5
+        subtype: matrix
+        label: Match 40
+    bbl_match_50:
+        number: 0-4
+        subtype: matrix
+        label: Match 50
+    bbl_match_60:
+        number: 0-3
+        subtype: matrix
+        label: Match 60
+    bbl_match_70:
+        number: 0-2
+        subtype: matrix
+        label: Match 70
+    bbl_match_80:
+        number: 0-1
+        subtype: matrix
+        label: Match 80
+    bbl_match_90:
+        number: 0-0
+        subtype: matrix
+        label: Match 90
+
+    bbl_girl_right_leg:
+        number: 0-11
+        subtype: matrix
+        label: Girl Right Leg
+    bbl_girl_mid:
+        number: 0-15
+        subtype: matrix
+        label: Girl Middle
+
+    bbl_belair_right_hl:
+        number: 0-12
+        subtype: matrix
+        label: Belair Right Headlight
+    bbl_belair_left_hl:
+        number: 0-13
+        subtype: matrix
+        label: Belair Left Headlight
+    bbl_belair_driver:
+        number: 0-14
+        subtype: matrix
+        label: Belair Driver
+
+    bbl_corvette_right_hl:
+        number: 0-16
+        subtype: matrix
+        label: Corvette Right Headlight
+    bbl_corvette_left_hl:
+        number: 1-24
+        subtype: matrix
+        label: Corvette Left Headlight
+    bbl_corvette_driver:
+        number: 0-26
+        subtype: matrix
+        label: Corvette Driver
+
+    bbl_player_1_100k:
+        number: 0-25
+        subtype: matrix
+        label: Player 1 100,000
+    bbl_player_1_10k:
         number: 1-16
         subtype: matrix
-        label: Backbox GI 12
-    bbl_gi_13:
+        label: Player 1 10,000
+    bbl_player_1_1000:
         number: 1-17
         subtype: matrix
-        label: Backbox GI 13
-    bbl_gi_14:
+        label: Player 1 1,000
+    bbl_player_1_100:
         number: 1-18
         subtype: matrix
-        label: Backbox GI 14
-    bbl_gi_15:
+        label: Player 1 100
+    bbl_player_1_10:
         number: 1-19
         subtype: matrix
-        label: Backbox GI 15
-    bbl_gi_16:
+        label: Player 1 10
+    bbl_player_1_1:
         number: 1-20
         subtype: matrix
-        label: Backbox GI 16
+        label: Player 1 1
+
+    bbl_player_2_100k:
+        number: 1-21
+        subtype: matrix
+        label: Player 2 100,000
+    bbl_player_2_10k:
+        number: 1-25
+        subtype: matrix
+        label: Player 2 10,000
+    bbl_player_2_1000:
+        number: 1-28
+        subtype: matrix
+        label: Player 2 1,000
+    bbl_player_2_100:
+        number: 1-27
+        subtype: matrix
+        label: Player 2 100
+
+    bbl_title_flame_left:
+        number: 0-30
+        subtype: matrix
+        label: Title Flame Left
+    bbl_title_left:
+        number: 0-31
+        subtype: matrix
+        label: Title Left
+    bbl_title_mid:
+        number: 1-30
+        subtype: matrix
+        label: Title Middle
+    bbl_title_right:
+        number: 1-29
+        subtype: matrix
+        label: Title Right
 
     pfl_left_saucer_gi:
         number: 3-0
