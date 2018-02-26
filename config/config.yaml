@@ -23,6 +23,7 @@ game:
 playfields:
     playfield:
         default_source_device: bd_shooter_lane
+        tags: default
 
 modes:
   - base
