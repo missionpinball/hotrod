@@ -20,7 +20,7 @@ lights:
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_2:
-        number: 1-21
+        number: 0-21
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_3:
@@ -180,7 +180,7 @@ lights:
         subtype: matrix
         label: Title Flame Right
     bbl_title_left:
-        number: 0-31
+        number: 1-31
         subtype: matrix
         label: Title Left
     bbl_title_mid:
@@ -399,20 +399,11 @@ lights:
     unused_0_17:
         number: 0-17
         subtype: matrix
-    unused_0_21:
-        number: 0-21
-        subtype: matrix
-    unused_0_23:
-        number: 0-23
-        subtype: matrix
     unused_1_22:
         number: 1-22
         subtype: matrix
     unused_1_26:
         number: 1-26
-        subtype: matrix
-    unused_1_31:
-        number: 1-31
         subtype: matrix
     unused_3_20:
         number: 3-20
