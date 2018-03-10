@@ -20,7 +20,7 @@ lights:
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_2:
-        number: 1-23
+        number: 1-21
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_3:
@@ -113,7 +113,7 @@ lights:
         subtype: matrix
         label: Corvette Right Headlight
     bbl_corvette_left_hl:
-        number: 1-24
+        number: 0-23
         subtype: matrix
         label: Corvette Left Headlight
     bbl_corvette_driver:
@@ -162,21 +162,33 @@ lights:
         number: 1-27
         subtype: matrix
         label: Player 2 100
+    bbl_player_2_10:
+        number: 1-24
+        subtype: matrix
+        label: Player 2 10
+    bbl_player_2_1:
+        number: 1-23
+        subtype: matrix
+        label: Player 2 1
 
     bbl_title_flame_left:
         number: 0-30
         subtype: matrix
         label: Title Flame Left
+    bbl_title_flame_right:
+        number: 0-31
+        subtype: matrix
+        label: Title Flame Right
     bbl_title_left:
         number: 0-31
         subtype: matrix
         label: Title Left
     bbl_title_mid:
-        number: 1-30
+        number: 1-29
         subtype: matrix
         label: Title Middle
     bbl_title_right:
-        number: 1-29
+        number: 1-30
         subtype: matrix
         label: Title Right
 
@@ -384,6 +396,60 @@ lights:
         number: 4-31
         subtype: matrix
         label: Right Pop
+    unused_0_17:
+        number: 0-17
+        subtype: matrix
+    unused_0_21:
+        number: 0-21
+        subtype: matrix
+    unused_0_23:
+        number: 0-23
+        subtype: matrix
+    unused_1_22:
+        number: 1-22
+        subtype: matrix
+    unused_1_26:
+        number: 1-26
+        subtype: matrix
+    unused_1_31:
+        number: 1-31
+        subtype: matrix
+    unused_3_20:
+        number: 3-20
+        subtype: matrix
+    unused_3_21:
+        number: 3-21
+        subtype: matrix
+    unused_3_22:
+        number: 3-22
+        subtype: matrix
+    unused_3_23:
+        number: 3-23
+        subtype: matrix
+    unused_3_24:
+        number: 3-24
+        subtype: matrix
+    unused_3_25:
+        number: 3-25
+        subtype: matrix
+    unused_3_26:
+        number: 3-26
+        subtype: matrix
+    unused_3_27:
+        number: 3-27
+        subtype: matrix
+    unused_3_28:
+        number: 3-28
+        subtype: matrix
+    unused_3_29:
+        number: 3-29
+        subtype: matrix
+    unused_3_30:
+        number: 3-30
+        subtype: matrix
+    unused_3_31:
+        number: 3-31
+        subtype: matrix
 
 info_lights:
     match_00:
@@ -427,39 +493,3 @@ info_lights:
     game_over:
         light: bbl_game_over
 
-    unused_0_17:
-        number: 0-17
-    unused_0_21:
-        number: 0-21
-    unused_0_23:
-        number: 0-23
-    unused_1_22:
-        number: 1-22
-    unused_1_26:
-        number: 1-26
-    unused_1_31:
-        number: 1-31
-    unused_3_20:
-        number: 3-20
-    unused_3_21:
-        number: 3-21
-    unused_3_22:
-        number: 3-22
-    unused_3_23:
-        number: 3-23
-    unused_3_24:
-        number: 3-24
-    unused_3_25:
-        number: 3-25
-    unused_3_26:
-        number: 3-26
-    unused_3_27:
-        number: 3-27
-    unused_3_28:
-        number: 3-28
-    unused_3_29:
-        number: 3-29
-    unused_3_30:
-        number: 3-30
-    unused_3_31:
-        number: 3-31

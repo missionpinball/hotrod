@@ -71,9 +71,9 @@ score_reel_groups:
          reels: score_player_1_10000,score_player_1_1000,score_player_1_100,score_player_1_10,None
          tags: player1
          max_simultaneous_coils: 3
-         chimes: none, cc_chime_1, cc_chime_2, cc_chime_3, bbc_bell
+         chimes: bbc_bell, cc_chime_1, cc_chime_2, cc_chime_3, none
      player2:
          reels: score_player_2_10000,score_player_2_1000,score_player_2_100,score_player_2_10,None
          tags: player2
          max_simultaneous_coils: 3
-         chimes: none, cc_chime_1, cc_chime_2, cc_chime_3, bbc_bell
+         chimes: bbc_bell, cc_chime_1, cc_chime_2, cc_chime_3, none
