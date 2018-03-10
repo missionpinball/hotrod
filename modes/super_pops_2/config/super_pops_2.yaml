@@ -12,7 +12,7 @@ scoring:
 show_player:
     mode_super_pops_2_started:
         flash_pops:
-            loop: -1
+            loops: -1
             speed: 4
                 
 shows:

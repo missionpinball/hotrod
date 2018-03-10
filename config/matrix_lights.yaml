@@ -426,3 +426,40 @@ info_lights:
         light: bbl_tilt
     game_over:
         light: bbl_game_over
+
+    unused_0_17:
+        number: 0-17
+    unused_0_21:
+        number: 0-21
+    unused_0_23:
+        number: 0-23
+    unused_1_22:
+        number: 1-22
+    unused_1_26:
+        number: 1-26
+    unused_1_31:
+        number: 1-31
+    unused_3_20:
+        number: 3-20
+    unused_3_21:
+        number: 3-21
+    unused_3_22:
+        number: 3-22
+    unused_3_23:
+        number: 3-23
+    unused_3_24:
+        number: 3-24
+    unused_3_25:
+        number: 3-25
+    unused_3_26:
+        number: 3-26
+    unused_3_27:
+        number: 3-27
+    unused_3_28:
+        number: 3-28
+    unused_3_29:
+        number: 3-29
+    unused_3_30:
+        number: 3-30
+    unused_3_31:
+        number: 3-31

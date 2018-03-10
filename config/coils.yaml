@@ -38,12 +38,12 @@ coils:
     pfc_flipper_left_main:
         number: 5-4
         default_pulse_ms: 30ms
-        default_hold_power: 1
+        default_hold_power: 0.125
         label: Left Flipper
     pfc_flipper_right_main:
         number: 5-7
         default_pulse_ms: 30ms
-        default_hold_power: 1
+        default_hold_power: 0.125
         label: Right Flipper
 
     bbc_credit_down:
@@ -58,15 +58,15 @@ coils:
         label: Bell
 
     cc_knocker:
-        number: 1-2
+        number: 1-7
         label: Knocker
 
     cc_chime_1:
-        number: 1-6
+        number: 1-4
         default_pulse_ms: 10ms
         label: Chime 1
     cc_chime_2:
-        number: 1-4
+        number: 1-6
         default_pulse_ms: 10ms
         label: Chime 2
     cc_chime_3:
@@ -83,7 +83,7 @@ coils:
         default_pulse_ms: 10ms
         label: Right Sling
     pfc_trough_eject:
-        number: 5-5
+        number: 5-2
         default_pulse_ms: 30ms
         label: Trough Eject
     pfc_right_pop:
@@ -118,3 +118,13 @@ coils:
         number: 6-7
         default_pulse_ms: 30ms
         label: Left Saucer
+
+    unused_1_2:
+        number: 1-2
+    unused_5_3:
+        number: 5-3
+    unused_5_5:
+        number: 5-5
+    unused_5_6:
+        number: 5-6
+    
