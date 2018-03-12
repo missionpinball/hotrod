@@ -7,23 +7,15 @@ mode:
 
 scoring:
     drop_target_bank_rod_down:
-        score: 5000|block
+        score: 2000 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block
     rod_in_order_hit:
-        score: 5000|block
+        score: 2500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block
     balldevice_bd_left_saucer_ball_enter:
-        score: 2000|block
+        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block
     balldevice_bd_right_saucer_ball_enter:
-        score: 2000|block
+        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block
     jackpot.2:  # just add the same value again
-        score: 1000 + current_player.light_jackpot_required_hits * 1000
-    mode_3ball_started:
-        pf_multiplier:
-            float: 2
-            action: set
-    multiball_mb_3ball_ball_lost:
-        pf_multiplier:
-            float: 1.5
-            action: set
+        score: (1000 + current_player.light_jackpot_required_hits * 1000) * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier) 
 
 event_player:
     balldevice_bd_shooter_lane_ball_eject_success: start_2ball
@@ -36,16 +28,32 @@ multiballs:
         ball_locks: bd_left_saucer, bd_right_saucer
 
 show_player:
+    start_3ball:
+        flash:
+            action: play
+            show_tokens:
+                light: pfl_4x
+    multiball_mb_3ball_ball_lost:
+        flash:
+            action: stop
+            show_tokens:
+                light: pfl_4x
     balldevice_bd_left_saucer_ball_enter:
         left_saucer_3ball:
             loops: 0
             speed: 8
             priority: 100
+        bell_ring:
+            loops: current_player.light_jackpot_required_hits
+            speed: 10
     balldevice_bd_right_saucer_ball_enter:
         right_saucer_3ball:
             loops: 0
             speed: 8
             priority: 100
+        bell_ring:
+            loops: current_player.light_jackpot_required_hits
+            speed: 10
 
 shows:
     saucer_ramps:

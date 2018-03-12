@@ -1,0 +1,9 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_player_2_1: 00
+      bbl_player_2_10: 00
+      bbl_player_2_100: 00
+      bbl_player_2_1000: 00
+      bbl_player_2_10k: 00

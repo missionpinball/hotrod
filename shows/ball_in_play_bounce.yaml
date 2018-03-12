@@ -1,0 +1,58 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_ball_in_play_1: ff
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: ff
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: ff
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: ff
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: ff
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: ff
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: 00
+      bbl_ball_in_play_3: ff
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: 00
+- time: +1
+  lights:
+      bbl_ball_in_play_1: 00
+      bbl_ball_in_play_2: ff
+      bbl_ball_in_play_3: 00
+      bbl_ball_in_play_4: 00
+      bbl_ball_in_play_5: 00

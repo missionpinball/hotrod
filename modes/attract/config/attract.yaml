@@ -24,3 +24,9 @@ show_player:
         rollovers_multipliers:
             speed: 3
             loops: -1
+        ball_in_play_bounce: 
+            speed: 1
+            loops: -1
+        flash_flames:
+            speed: 10
+            loops: -1

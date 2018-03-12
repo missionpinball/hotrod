@@ -25,6 +25,14 @@ playfields:
         default_source_device: bd_shooter_lane
         tags: default
 
+player_vars:
+    pf_multiplier:
+        initial_value: 1
+    2ball_multiplier:
+        initial_value: 0
+    3ball_multiplier:
+        initial_value: 0
+
 modes:
   - base
   - tilt
