@@ -7,7 +7,7 @@ mode:
 
 scoring:
     sw_pop:
-        score: 10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block
+        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
 
 counters:
     sw_pop:

@@ -1,0 +1,6 @@
+#show_version=5
+
+- time: 0
+  lights:
+       bbl_title_flame_left: ff
+       bbl_title_flame_right: ff

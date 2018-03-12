@@ -7,5 +7,5 @@ class Bonus(Mode):
         
     def light_bonus_lamp(self, count, **kwargs):
         self.machine.events.post('light_bonus_lamp')
-        self.machine.shows['flash_bonus_lamp'].play(show_tokens=dict(lamp='pfl_bonus_' + str(count)), speed=10.0, loops=0)
+        self.machine.shows['flash'].play(show_tokens=dict(lamp='pfl_bonus_' + str(count)), speed=10.0, loops=4)
         

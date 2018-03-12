@@ -7,35 +7,35 @@ mode:
 
 scoring:
     pfs_left_sling_active:
-        score: 10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_right_sling_active:
-        score: 10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_left_upper_active:
-        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_right_upper_active:
-        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_left_side_active:
-        score: 10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_right_side_active:
-        score: 10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_right_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_center_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_left_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_left_eject_active:
-        score: 500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     pfs_right_eject_active:
-        score: 500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     bonus_lanes_unlit_hit:
-        score: 30 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "30 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     bonus_lanes_lit_hit:
-        score: 20 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "20 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     bonus_lanes_lit_complete:
-        score: 300 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "300 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     rollovers_lit_complete:
-        score: 1000 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)
+        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
     increase_required:
         required_hits: 1
     timer_2x_multiplier_started:
@@ -240,50 +240,11 @@ show_player:
             speed: 10
             loops: 10
         flames_on: play
-        skill_shot_bell:
-            speed: 1
+        bell_ring:
+            speed: 5
             loops: 2
 
 shows:
-    skill_shot_bell:
-        - time: 0
-          coils:
-            bbc_bell:
-               pulse_ms: 30
-
-    flash_flames:
-        - time: 0
-          lights:
-             bbl_title_flame_left: ff
-             bbl_title_flame_right: 00
-        - time: +1
-          lights:
-             bbl_title_flame_left: 00
-             bbl_title_flame_right: ff
-
-    flames_on:
-        - time: 0
-          lights:
-             bbl_title_flame_left: ff
-             bbl_title_flame_right: ff
-
-    flash_2x:
-        - time: 0
-          lights:
-              pfl_2x: ff
-        - time: +1
-          lights: 
-              pfl_2x: 00
-    stop_2x:
-        - time: 0
-          lights:
-              pfl_2x: 00
-    ejects:
-        - time: 0
-          lights:
-              pfl_left_eject: ff
-              pfl_right_eject: ff
-
     player_1_start:
         - time: 0
           coils:
@@ -302,24 +263,6 @@ shows:
         - time: +1
           coils:
               cc_chime_2: pulse
-
-    flash_bonus_lamp:
-        - time: 0
-          lights:
-              (lamp): ff
-        - time: +1
-          lights:
-              (lamp): 00
-        - time: +1
-          lights:
-              (lamp): ff
-        - time: +1
-          lights:
-              (lamp): 00
-        - time: +1
-          lights:
-              (lamp): ff
-        - duration: -1
 
     flash_left_1:
         - time: 0
