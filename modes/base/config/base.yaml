@@ -7,35 +7,35 @@ mode:
 
 scoring:
     pfs_left_sling_active:
-        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_sling_active:
-        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_left_upper_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_upper_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_left_side_active:
-        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_side_active:
-        score: "10 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_rollover_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_center_rollover_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_left_rollover_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_left_eject_active:
-        score: "500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_eject_active:
-        score: "500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     bonus_lanes_unlit_hit:
-        score: "30 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 30 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     bonus_lanes_lit_hit:
-        score: "20 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     bonus_lanes_lit_complete:
-        score: "300 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     rollovers_lit_complete:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     increase_required:
         required_hits: 1
     timer_2x_multiplier_started:
@@ -47,19 +47,19 @@ scoring:
             score: 1
             action: set
     mode_2ball_started:
-        2ball_multiplier:
-            score: 1.5
+        mb_2ball_multipler:
+            score: 15 / 10
             action: set
     mode_2ball_stopped:
-        2ball_multiplier:
+        mb_2ball_multipler:
             score: 0
             action: set
     mode_3ball_started:
-        3ball_multiplier:
-            score: 2.5
+        mb_3ball_multipler:
+            score: 25 / 10
             action: set
     mode_3ball_stopped:
-        3ball_multiplier:
+        mb_3ball_multipler:
             score: 0
             action: set
 

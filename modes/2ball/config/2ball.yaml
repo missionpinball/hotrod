@@ -14,27 +14,25 @@ multiballs:
 
 scoring:
     left_saucer_hit:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     right_saucer_hit:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     pfs_drop_r_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     pfs_drop_o_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     pfs_drop_d_active:
-        score: "100 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     drop_target_bank_rod_down:
-        score: "300 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     rod_in_order_hit:
-        score: "500 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     jackpot.2:
-        score: "(1000 + current_player.light_jackpot_required_hits * 1000) * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: (1000 + current_player.light_jackpot_required_hits * 1000) * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     jackpot.1:
         light_jackpot_required_hits: 1
     mode_2ball_started:
-        light_jackpot_required_hits:
-            score: 0
-            action: set
+        light_jackpot_required_hits: 0
 
 counters:
     lb_increase_drop_hits_for_light_jackpot:

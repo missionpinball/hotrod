@@ -28,9 +28,9 @@ playfields:
 player_vars:
     pf_multiplier:
         initial_value: 1
-    2ball_multiplier:
+    mb_2ball_multiplier:
         initial_value: 0
-    3ball_multiplier:
+    mb_3ball_multiplier:
         initial_value: 0
 
 modes:

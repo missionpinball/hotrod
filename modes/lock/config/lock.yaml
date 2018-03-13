@@ -8,25 +8,25 @@ mode:
 
 scoring:
     left_lock_sp_left_lock_lock_1_complete:
-        score: "150 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     left_lock_sp_left_lock_lock_2_complete:
-        score: "170 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 170 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     left_lock_sp_left_lock_lock_3_complete:
-        score: "200 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 200 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_lock_sp_right_lock_lock_1_complete:
-        score: "150 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_lock_sp_right_lock_lock_2_complete:
-        score: "170 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 170 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_lock_sp_right_lock_lock_3_complete:
-        score: "200 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 200 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_drop_r_active:
-        score: "50 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_drop_o_active:
-        score: "50 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_drop_d_active:
-        score: "50 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     drop_target_bank_rod_down:
-        score: "300 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)"
+        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
 
 shots:
     left_lock:

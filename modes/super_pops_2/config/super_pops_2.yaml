@@ -7,7 +7,7 @@ mode:
 
 scoring:
     sw_pop:
-        score: "50 * (current_player.pf_multiplier + current_player.2ball_multiplier + current_player.3ball_multiplier)|block"
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
 
 show_player:
     mode_super_pops_2_started:
