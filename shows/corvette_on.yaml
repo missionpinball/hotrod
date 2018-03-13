@@ -1,0 +1,41 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_corvette_driver: ff
+      bbl_corvette_left_hl: ff
+      bbl_corvette_right_hl: ff
+- time: +5s
+  lights:
+      bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
+- time: +50ms
+  lights:
+      bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
+- time: +50ms
+  lights:
+      bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
+- time: +50ms
+  lights:
+      bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
+- time: +50ms
+  lights:
+      bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
+- time: +50ms
+  lights:
+      bbl_corvette_driver: 00
+      

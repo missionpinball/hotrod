@@ -60,13 +60,13 @@ switches:
     pfs_left_eject:
         number: 5-18
         tags: skill_shot_cancel, ejects
-    pfs_drop_d:
+    pfs_drop_r:
         number: 5-19
         tags: playfield_active, skill_shot_cancel
     pfs_drop_o:
         number: 5-20
         tags: playfield_active, skill_shot_cancel
-    pfs_drop_r:
+    pfs_drop_d:
         number: 5-21
         tags: playfield_active, skill_shot_cancel
     pfs_left_rollover:

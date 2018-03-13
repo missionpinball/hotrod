@@ -36,6 +36,8 @@ scoring:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     rollovers_lit_complete:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    nudge_bonus:
+        score: 500
     increase_required:
         required_hits: 1
     timer_2x_multiplier_started:
@@ -48,7 +50,7 @@ scoring:
             action: set
     mode_2ball_started:
         mb_2ball_multipler:
-            score: 15 / 10
+            float: 1.5
             action: set
     mode_2ball_stopped:
         mb_2ball_multipler:
@@ -56,7 +58,7 @@ scoring:
             action: set
     mode_3ball_started:
         mb_3ball_multipler:
-            score: 25 / 10
+            float: 2.5
             action: set
     mode_3ball_stopped:
         mb_3ball_multipler:
@@ -101,7 +103,8 @@ sequences:
     lb_skill_shot:
         events: sw_skill_shot_success
         reset_events: ball_starting
-        events_when_complete: lock_start
+        events_when_complete: lock_start, nudge_bonus
+        disable_events: sw_flipper
     lb_left_ball_locked:
         events: ball_lock_bl_left_lock_locked_ball
         reset_events: mode_lock_started
@@ -131,6 +134,9 @@ timers:
         control_events:
             - event: start_2x
               action: start
+            - event: rollovers_lit_complete
+              action: add
+              value: 10
 
 sequence_shots:
     hot_in_order:
@@ -220,16 +226,22 @@ show_player:
             action: stop
             show_tokens:
                 light: pfl_2x
-    game_starting:
-        player_1_score_on: play
+    player_added{num==1}:
         player_1_start:
             speed: 2
-            loops: 0
-    player_add_success:
-        player_2_score_on: play
+    player_added{num==2}:
         player_2_start: 
             speed: 2
-            loops: 0
+    player_turn_started{number==1}:
+        player_1_score_on: play
+        corvette_on: play
+        player_2_score_off: play
+        belair_off: play
+    player_turn_started{number==2}:
+        player_2_score_on: play
+        belair_on: play
+        player_1_score_off: play        
+        corvette_off: play
     pfs_shooter_lane_inactive:
         flash_flames:
             speed: 10

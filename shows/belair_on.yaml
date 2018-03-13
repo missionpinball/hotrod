@@ -1,0 +1,41 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_belair_driver: ff
+      bbl_belair_left_hl: ff
+      bbl_belair_right_hl: ff
+- time: +5s
+  lights:
+      bbl_belair_driver: 00
+- time: +50ms
+  lights:
+      bbl_belair_driver: ff
+- time: +50ms
+  lights:
+      bbl_belair_driver: 00
+- time: +50ms
+  lights:
+      bbl_belair_driver: ff
+- time: +50ms
+  lights:
+      bbl_belair_driver: 00
+- time: +50ms
+  lights:
+      bbl_belair_driver: ff
+- time: +50ms
+  lights:
+      bbl_belair_driver: 00
+- time: +50ms
+  lights:
+      bbl_belair_driver: ff
+- time: +50ms
+  lights:
+      bbl_belair_driver: 00
+- time: +50ms
+  lights:
+      bbl_belair_driver: ff
+- time: +50ms
+  lights:
+      bbl_belair_driver: 00
+      

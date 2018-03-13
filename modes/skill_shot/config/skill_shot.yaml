@@ -51,4 +51,4 @@ event_player:
 
 scoring:
     skill_shot_lit_hit:
-        score: 1000
+        score: 500

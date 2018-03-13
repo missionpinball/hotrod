@@ -6,6 +6,10 @@ show_player:
         general_illumination:
             loops: -1
             priority: 3
+        player_1_score_on: play
+        player_2_score_on: play
+        corvette_on: play
+        belair_on: play
         bonus_lanes_sweep:
             speed: 3
             loops: -1
