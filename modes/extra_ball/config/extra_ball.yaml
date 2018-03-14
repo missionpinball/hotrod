@@ -16,7 +16,3 @@ shots:
         profile: sp_extra_ball
         show_tokens:
             light: pfl_special
-
-show_player:
-    extra_ball_hit:
-        same_player_shoots_again: play

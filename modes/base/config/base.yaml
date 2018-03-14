@@ -18,24 +18,30 @@ scoring:
         score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_side_active:
         score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    pfs_right_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    pfs_center_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    pfs_left_rollover_active:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_left_eject_active:
         score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_right_eject_active:
         score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    bonus_lanes_unlit_hit:
-        score: 30 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    bonus_lanes_lit_hit:
-        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     bonus_lanes_lit_complete:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    rollovers_lit_complete:
+    left_outlane_hit:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    right_outlane_hit:
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    left_inlane_hit:
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    right_inlane_hit:
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    left_rollover_hit:
+        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    center_rollover_hit:
+        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    right_rollover_hit:
+        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    hot_in_order_hit:
+        score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    rod_in_order_hit:
+        score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     nudge_bonus:
         score: 500
     increase_required:
@@ -82,6 +88,8 @@ counters:
         count_events:
             - hot_lanes_lit_complete
             - bonus_lanes_lit_complete
+            - left_outlane_hit
+            - right_outlane_hit
         starting_count: 0
         count_interval: 1000
         count_complete_value: 10000
@@ -135,8 +143,7 @@ timers:
             - event: start_2x
               action: start
             - event: rollovers_lit_complete
-              action: add
-              value: 10
+              action: restart
 
 sequence_shots:
     hot_in_order:
@@ -217,15 +224,11 @@ show_player:
             loops: 4
             speed: 4
     timer_2x_multiplier_started:
-        flash:
+        flash_2x: 
             action: play
-            show_tokens:
-                light: pfl_2x
+            sync_ms: 500
     timer_2x_multiplier_stopped:
-        flash:
-            action: stop
-            show_tokens:
-                light: pfl_2x
+        flash_2x: stop
     player_added{num==1}:
         player_1_start:
             speed: 2
@@ -255,8 +258,33 @@ show_player:
         bell_ring:
             speed: 5
             loops: 2
+    extra_ball_awarded:
+        same_player_shoots_again: play
+        flash_flames:
+            speed: 10
+            loops: 10
+        flames_on: play
+        bell_ring:
+            speed: 5
+            loops: 3
 
 shows:
+    flash_2x:
+        - duration: 250ms
+          lights:
+              pfl_2x: ff
+        - duration: 250ms
+          lights: 
+              pfl_2x: 00
+
+    flash_4x:
+        - duration: 250ms
+          lights:
+              pfl_4x: ff
+        - duration: 250ms
+          lights: 
+              pfl_4x: 00
+
     flash_left_1:
         - time: 0
           lights:

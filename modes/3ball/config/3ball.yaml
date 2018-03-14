@@ -29,15 +29,11 @@ multiballs:
 
 show_player:
     mode_3ball_started:
-        flash:
+        flash_4x: 
             action: play
-            show_tokens:
-                light: pfl_4x
+            sync_ms: 500
     multiball_mb_3ball_ball_lost:
-        flash:
-            action: stop
-            show_tokens:
-                light: pfl_4x
+        flash_4x: stop
     balldevice_bd_left_saucer_ball_enter:
         left_saucer_3ball:
             loops: 0
