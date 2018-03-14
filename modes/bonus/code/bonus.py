@@ -8,7 +8,7 @@ class Count(Mode):
         #    self.stop()
 
         self.bonus_value = 0
-        self.count_down = self.player['c_bonus_count']
+        self.count_down = self.player['lb_bonus']
         self.log.debug("Bonus: " + str(self.count_down))
         self.prepare_bonus()
 
@@ -17,7 +17,7 @@ class Count(Mode):
             self.log.debug("Ball has tilted. No bonus for you!")
             return
         
-        self.bonus_value = (self.config['scoring']['bonusvalue']['score'])
+        self.bonus_value = (self.config['scoring']['bonus_value']['score'])
         self.check_score_reels()
 
     def check_score_reels(self, **kwargs):
@@ -50,24 +50,34 @@ class Count(Mode):
         self.log.debug("Countdown: " + str(self.count_down))
 
         if self.count_down >= 10000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_10000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_10000.off()
         elif self.count_down == 9000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_9000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_9000.off()
         elif self.count_down == 8000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_8000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_8000.off()
         elif self.count_down == 7000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_7000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_7000.off()
         elif self.count_down == 6000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_6000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_6000.off()
         elif self.count_down == 5000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_5000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_5000.off()
         elif self.count_down == 4000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_4000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_4000.off()
         elif self.count_down == 3000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_3000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_3000.off()
         elif self.count_down == 2000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_2000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_2000.off()
         elif self.count_down <= 1000:
+            self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_1000'), speed=10.0, loops=4)
             self.machine.lights.pfl_bonus_1000.off()
 
         self.machine.scoring.add(self.bonus_value)

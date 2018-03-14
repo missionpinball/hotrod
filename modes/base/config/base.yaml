@@ -257,25 +257,6 @@ show_player:
             loops: 2
 
 shows:
-    player_1_start:
-        - time: 0
-          coils:
-              cc_chime_1: pulse
-        - time: +1
-          coils:
-              cc_chime_2: pulse
-        - time: +1
-          coils:
-              cc_chime_3: pulse
-
-    player_2_start:
-        - time: 0
-          coils:
-              cc_chime_1: pulse
-        - time: +1
-          coils:
-              cc_chime_2: pulse
-
     flash_left_1:
         - time: 0
           lights:

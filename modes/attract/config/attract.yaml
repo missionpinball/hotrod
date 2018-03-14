@@ -1,6 +1,10 @@
 #config_version=5
 
 show_player:
+    player_added{num==1}:
+    player_1_start:
+        speed: 2
+
     mode_attract_started:
         attract_display_loop: play
         general_illumination:

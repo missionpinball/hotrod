@@ -8,5 +8,5 @@ mode:
     priority: 600
 
 scoring:
-    bonusvalue: 
+    bonus_value: 
         score: 1000
