@@ -231,10 +231,12 @@ show_player:
         flash_2x: stop
     player_added{num==1}:
         player_1_start:
-            speed: 2
+            speed: 5
+            loops: 0
     player_added{num==2}:
         player_2_start: 
-            speed: 2
+            speed: 5
+            loops: 0
     player_turn_started{number==1}:
         player_1_score_on: play
         corvette_on: play
@@ -247,25 +249,20 @@ show_player:
         corvette_off: play
     pfs_shooter_lane_inactive:
         flash_flames:
-            speed: 10
             loops: 5
         flames_on: play
     skill_shot_hit:
         flash_flames:
-            speed: 10
             loops: 10
         flames_on: play
         bell_ring:
-            speed: 5
             loops: 2
     extra_ball_awarded:
         same_player_shoots_again: play
         flash_flames:
-            speed: 10
             loops: 10
         flames_on: play
         bell_ring:
-            speed: 5
             loops: 3
 
 shows:

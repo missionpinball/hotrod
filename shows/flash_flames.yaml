@@ -1,10 +1,10 @@
 #show_version=5
 
-- time: 0
+- duration: 100ms
   lights:
      bbl_title_flame_left: ff
      bbl_title_flame_right: 00
-- time: +1
+- duration: +100ms
   lights:
      bbl_title_flame_left: 00
      bbl_title_flame_right: ff

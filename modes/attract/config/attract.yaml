@@ -3,12 +3,12 @@
 show_player:
     player_added{num==1}:
         player_1_start:
-            speed: 2
+            speed: 5
+            loops: 0
 
     mode_attract_started:
         attract_display_loop: play
         general_illumination:
-            loops: -1
             priority: 3
         player_1_score_on: play
         player_2_score_on: play
@@ -35,6 +35,4 @@ show_player:
         ball_in_play_bounce: 
             speed: 1
             loops: -1
-        flash_flames:
-            speed: 10
-            loops: -1
+        flash_flames: play

@@ -7,9 +7,6 @@
       bbl_corvette_right_hl: ff
 - time: +5s
   lights:
-      bbl_corvette_driver: 00
-- time: +50ms
-  lights:
       bbl_corvette_driver: ff
 - time: +50ms
   lights:
@@ -38,4 +35,7 @@
 - time: +50ms
   lights:
       bbl_corvette_driver: 00
+- time: +50ms
+  lights:
+      bbl_corvette_driver: ff
       
