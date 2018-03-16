@@ -5,18 +5,6 @@ mode:
     stop_events: multiball_mb_3ball_ball_lost
     priority: 150
 
-scoring:
-    drop_target_bank_rod_down:
-        score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
-    rod_in_order_hit:
-        score: 2500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
-    balldevice_bd_left_saucer_ball_enter:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
-    balldevice_bd_right_saucer_ball_enter:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
-    jackpot.2:  # just add the same value again
-        score: (1000 + current_player.light_jackpot_required_hits * 1000) * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-
 event_player:
     balldevice_bd_shooter_lane_ball_eject_success: start_2ball
 

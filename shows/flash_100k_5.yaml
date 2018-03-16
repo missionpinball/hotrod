@@ -1,0 +1,32 @@
+#show_version=5
+
+- duration: 500ms
+  lights:
+      (light): 00
+- duration: 500ms
+  lights:
+      (light): ff
+- duration: 500ms
+  lights:
+      (light): 00
+- duration: 500ms
+  lights:
+      (light): ff
+- duration: 500ms
+  lights:
+      (light): 00
+- duration: 500ms
+  lights:
+      (light): ff
+- duration: 500ms
+  lights:
+      (light): 00
+- duration: 500ms
+  lights:
+      (light): ff
+- duration: 500ms
+  lights:
+      (light): 00
+- duration: 2s
+  lights:
+      (light): ff
