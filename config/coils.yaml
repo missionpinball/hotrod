@@ -99,7 +99,7 @@ coils:
         default_pulse_ms: 20ms
         label: Left Pop
     pfc_right_saucer:
-        number: 6-3
+        number: 5-6
         default_pulse_ms: 30ms 
         label: Right Saucer
     pfc_right_eject:
@@ -125,6 +125,3 @@ coils:
         number: 5-3
     unused_5_5:
         number: 5-5
-    unused_5_6:
-        number: 5-6
-    
