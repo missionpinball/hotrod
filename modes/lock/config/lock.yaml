@@ -7,18 +7,23 @@ mode:
     restart_on_next_ball: True
 
 scoring:
-    left_lock_sp_left_lock_lock_1_complete:
+    player_shot_right_lock{value==1}:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    left_lock_sp_left_lock_lock_2_complete:
-        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    left_lock_sp_left_lock_lock_3_complete:
-        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    right_lock_sp_right_lock_lock_1_complete:
+    player_shot_left_lock{value==1}:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    right_lock_sp_right_lock_lock_2_complete:
+    player_shot_right_lock{value==2}:
         score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    right_lock_sp_right_lock_lock_3_complete:
-        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    player_shot_left_lock{value==2}:
+        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    player_shot_right_lock{value==3}:
+        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    player_shot_left_lock{value==3}:
+        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    # Ejects
+    pfs_left_eject_active:
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
+    pfs_right_eject_active:
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
 
 shots:
     left_lock:
