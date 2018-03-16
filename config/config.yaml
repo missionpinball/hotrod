@@ -40,7 +40,6 @@ modes:
   - base
   - tilt
   - bonus
-  - special
   - ball_save
   - hot_lanes
   - saucer

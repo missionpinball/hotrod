@@ -7,6 +7,10 @@ mode:
         sw_skill_shot_success
     priority: 200
 
+scoring:
+    skill_shot_lit_hit:
+        score: 500
+
 shots:
     skill_shot_h:
         switch: pfs_top_lane_h
@@ -48,7 +52,3 @@ shot_groups:
 event_player:
     skill_shot_unlit_hit: sw_skill_shot_cancel
     skill_shot_lit_hit: sw_skill_shot_success
-
-scoring:
-    skill_shot_lit_hit:
-        score: 500

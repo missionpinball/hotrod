@@ -14,11 +14,11 @@ multiballs:
 
 scoring:
     left_saucer_hit:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_saucer_hit:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     jackpot.2:
-        score: (1000 + current_player.light_jackpot_required_hits * 1000) * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: (1000 + current_player.light_jackpot_required_hits * 1000) * current_player.pf_multiplier
     jackpot.1:
         light_jackpot_required_hits: 1
     mode_2ball_started:
@@ -60,13 +60,3 @@ show_player:
         right_saucer_eject:
             loops: 0
             speed: 6
-
-shows:
-    left_eject_off:
-        - time: 0
-          lights:
-              pfl_left_eject: ff
-    right_eject_off:
-        - time: 0
-          lights:
-              pfl_right_eject: ff
