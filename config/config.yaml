@@ -25,6 +25,9 @@ playfields:
         default_source_device: bd_shooter_lane
         tags: default
 
+scriptlets:
+    - 100k.SixDigits
+
 player_vars:
     pf_multiplier:
         initial_value: 1
