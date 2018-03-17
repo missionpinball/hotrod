@@ -120,7 +120,7 @@ coils:
         label: Left Saucer
 
     unused_1_2:
-        number: 1-2
+        number: 1-1-2
     unused_5_3:
         number: 0-2-3
     unused_5_5:
