@@ -7,7 +7,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_1_100:
          coil_inc: bbc_player_1_100
@@ -15,7 +15,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_1_1000:
          coil_inc: bbc_player_1_1000
@@ -23,7 +23,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_1_10000:
          coil_inc: bbc_player_1_10000
@@ -31,7 +31,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_2_10:
          coil_inc: bbc_player_2_10
@@ -39,7 +39,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_2_100:
          coil_inc: bbc_player_2_100
@@ -47,7 +47,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_2_1000:
          coil_inc: bbc_player_2_1000
@@ -55,7 +55,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
      score_player_2_10000:
          coil_inc: bbc_player_2_10000
@@ -63,7 +63,7 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 400ms
+         repeat_pulse_time: 250ms
          hw_confirm_time: 20ms
 
 score_reel_groups:
