@@ -2,444 +2,444 @@
 
 lights:
     bbl_tilt:
-        number: 0-27
+        number: 1-0-27
         subtype: matrix
         label: Tilt
 
     bbl_player_1_up:
-        number: 0-28
+        number: 1-0-28
         subtype: matrix
         label: Player 1 Up
     bbl_player_2_up:
-        number: 0-29
+        number: 1-0-29
         subtype: matrix
         label: Player 2 Up
 
     bbl_ball_in_play_1:
-        number: 0-22
+        number: 1-0-22
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_2:
-        number: 0-21
+        number: 1-0-21
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_3:
-        number: 0-20
+        number: 1-0-20
         subtype: matrix
         label: Ball 3
     bbl_ball_in_play_4:
-        number: 0-19
+        number: 1-0-19
         subtype: matrix
         label: Ball 4
     bbl_ball_in_play_5:
-        number: 0-18
+        number: 1-0-18
         subtype: matrix
         label: Ball 5
 
     bbl_game_over:
-        number: 0-24
+        number: 1-0-24
         subtype: matrix
         label: Game Over
 
     bbl_match:
-        number: 0-10
+        number: 1-0-10
         subtype: matrix
         label: Match
     bbl_match_00:
-        number: 0-9
+        number: 1-0-9
         subtype: matrix
         label: Match 00
     bbl_match_10:
-        number: 0-8
+        number: 1-0-8
         subtype: matrix
         label: Match 10
     bbl_match_20:
-        number: 0-7
+        number: 1-0-7
         subtype: matrix
         label: Match 20
     bbl_match_30:
-        number: 0-6
+        number: 1-0-6
         subtype: matrix
         label: Match 30
     bbl_match_40:
-        number: 0-5
+        number: 1-0-5
         subtype: matrix
         label: Match 40
     bbl_match_50:
-        number: 0-4
+        number: 1-0-4
         subtype: matrix
         label: Match 50
     bbl_match_60:
-        number: 0-3
+        number: 1-0-3
         subtype: matrix
         label: Match 60
     bbl_match_70:
-        number: 0-2
+        number: 1-0-2
         subtype: matrix
         label: Match 70
     bbl_match_80:
-        number: 0-1
+        number: 1-0-1
         subtype: matrix
         label: Match 80
     bbl_match_90:
-        number: 0-0
+        number: 1-0-0
         subtype: matrix
         label: Match 90
 
     bbl_girl_right_leg:
-        number: 0-11
+        number: 1-0-11
         subtype: matrix
         label: Girl Right Leg
     bbl_girl_mid:
-        number: 0-15
+        number: 1-0-15
         subtype: matrix
         label: Girl Middle
 
     bbl_belair_right_hl:
-        number: 0-12
+        number: 1-0-12
         subtype: matrix
         label: Belair Right Headlight
     bbl_belair_left_hl:
-        number: 0-13
+        number: 1-0-13
         subtype: matrix
         label: Belair Left Headlight
     bbl_belair_driver:
-        number: 0-14
+        number: 1-0-14
         subtype: matrix
         label: Belair Driver
 
     bbl_corvette_right_hl:
-        number: 0-16
+        number: 1-0-16
         subtype: matrix
         label: Corvette Right Headlight
     bbl_corvette_left_hl:
-        number: 0-23
+        number: 1-0-23
         subtype: matrix
         label: Corvette Left Headlight
     bbl_corvette_driver:
-        number: 0-26
+        number: 1-0-26
         subtype: matrix
         label: Corvette Driver
 
     bbl_player_1_100k:
-        number: 0-25
+        number: 1-0-25
         subtype: matrix
         label: Player 1 100,000
     bbl_player_1_10k:
-        number: 1-16
+        number: 1-1-16
         subtype: matrix
         label: Player 1 10,000
     bbl_player_1_1000:
-        number: 1-17
+        number: 1-1-17
         subtype: matrix
         label: Player 1 1,000
     bbl_player_1_100:
-        number: 1-18
+        number: 1-1-18
         subtype: matrix
         label: Player 1 100
     bbl_player_1_10:
-        number: 1-19
+        number: 1-1-19
         subtype: matrix
         label: Player 1 10
     bbl_player_1_1:
-        number: 1-20
+        number: 1-1-20
         subtype: matrix
         label: Player 1 1
 
     bbl_player_2_100k:
-        number: 1-21
+        number: 1-1-21
         subtype: matrix
         label: Player 2 100,000
     bbl_player_2_10k:
-        number: 1-25
+        number: 1-1-25
         subtype: matrix
         label: Player 2 10,000
     bbl_player_2_1000:
-        number: 1-28
+        number: 1-1-28
         subtype: matrix
         label: Player 2 1,000
     bbl_player_2_100:
-        number: 1-27
+        number: 1-1-27
         subtype: matrix
         label: Player 2 100
     bbl_player_2_10:
-        number: 1-24
+        number: 1-1-24
         subtype: matrix
         label: Player 2 10
     bbl_player_2_1:
-        number: 1-23
+        number: 1-1-23
         subtype: matrix
         label: Player 2 1
 
     bbl_title_flame_left:
-        number: 0-30
+        number: 1-0-30
         subtype: matrix
         label: Title Flame Left
     bbl_title_flame_right:
-        number: 1-31
+        number: 1-1-31
         subtype: matrix
         label: Title Flame Right
     bbl_title_left:
-        number: 0-31
+        number: 1-0-31
         subtype: matrix
         label: Title Left
     bbl_title_mid:
-        number: 1-29
+        number: 1-1-29
         subtype: matrix
         label: Title Middle
     bbl_title_right:
-        number: 1-30
+        number: 1-1-30
         subtype: matrix
         label: Title Right
 
     pfl_left_saucer_gi:
-        number: 3-0
+        number: 0-0-0
         subtype: matrix
         label: Left Saucer
     pfl_lane_4:
-        number: 3-1
+        number: 0-0-1
         subtype: matrix
         label: Lane 4
     pfl_lane_3:
-        number: 3-2
+        number: 0-0-2
         subtype: matrix
         label: Lane 3
     pfl_lane_2:
-        number: 3-3
+        number: 0-0-3
         subtype: matrix
         label: Lane 2
     pfl_lane_1:
-        number: 3-4
+        number: 0-0-4
         subtype: matrix
         label: Lane 1
     pfl_top_lane_t:
-        number: 3-5
+        number: 0-0-5
         subtype: matrix
         label: Top Lane T
     pfl_top_lane_o:
-        number: 3-6
+        number: 0-0-6
         subtype: matrix
         label: Top Lane O
     pfl_top_lane_h:
-        number: 3-7
+        number: 0-0-7
         subtype: matrix
         label: Top Lane H
     pfl_left_saucer_4:
-        number: 3-8
+        number: 0-0-8
         subtype: matrix
         label: Left Saucer 4
     pfl_right_saucer_gi:
-        number: 3-9
+        number: 0-0-9
         subtype: matrix
         label: Right Saucer
     pfl_right_saucer_4:
-        number: 3-10
+        number: 0-0-10
         subtype: matrix
         label: Right Saucer 4
     pfl_special:
-        number: 3-11
+        number: 0-0-11
         subtype: matrix
         label: Special
     pfl_left_upper:
-        number: 3-12
+        number: 0-0-12
         subtype: matrix
         label: Left Upper
     pfl_right_upper:
-        number: 3-13
+        number: 0-0-13
         subtype: matrix
         label: Right Upper
     pfl_right_eb:
-        number: 3-14
+        number: 0-0-14
         subtype: matrix
         label: Right Extra Ball
     pfl_left_eb:
-        number: 3-15
+        number: 0-0-15
         subtype: matrix
         label: Left Extra Ball
     pfl_left_sling_1:
-        number: 3-16
+        number: 0-0-16
         subtype: matrix
         label: Left Sling 1
     pfl_left_sling_2:
-        number: 3-17
+        number: 0-0-17
         subtype: matrix
         label: Left Sling 2
     pfl_right_sling_1:
-        number: 3-18
+        number: 0-0-18
         subtype: matrix
         label: Right Sling 1
     pfl_right_sling_2:
-        number: 3-19
+        number: 0-0-19
         subtype: matrix
         label: Right Sling 2
     pfl_bonus_3000:
-        number: 4-1
+        number: 0-1-1
         subtype: matrix
         label: Bonus 3,000
     pfl_bonus_5000:
-        number: 4-2
+        number: 0-1-2
         subtype: matrix
         label: Bonus 5,000
     pfl_bonus_7000:
-        number: 4-3
+        number: 0-1-3
         subtype: matrix
         label: Bonus 7,000
     pfl_bonus_9000:
-        number: 4-4
+        number: 0-1-4
         subtype: matrix
         label: Bonus 9,000
     pfl_left_outlane:
-        number: 4-5
+        number: 0-1-5
         subtype: matrix
         label: Left Outlane
     pfl_2x:
-        number: 4-6
+        number: 0-1-6
         subtype: matrix
         label: 2X
     pfl_left_inlane:
-        number: 4-7
+        number: 0-1-7
         subtype: matrix
         label: Left Inlane
     pfl_bonus_10000:
-        number: 4-8
+        number: 0-1-8
         subtype: matrix
         label: Bonus 10,000
     pfl_bonus_2000:
-        number: 4-9
+        number: 0-1-9
         subtype: matrix
         label: Bonus 2,000
     pfl_bonus_4000:
-        number: 4-10
+        number: 0-1-10
         subtype: matrix
         label: Bonus 4,000
     pfl_bonus_6000:
-        number: 4-11
+        number: 0-1-11
         subtype: matrix
         label: Bonus 6,000
     pfl_bonus_8000:
-        number: 4-12
+        number: 0-1-12
         subtype: matrix
         label: Bonus 8,000
     pfl_same_player:
-        number: 4-13
+        number: 0-1-13
         subtype: matrix
         label: Same Player Shoots Again
     pfl_bonus_1000:
-        number: 4-14
+        number: 0-1-14
         subtype: matrix
         label: Bonus 1,000
     pfl_center_pop:
-        number: 4-15
+        number: 0-1-15
         subtype: matrix
         label: Center Pop
     pfl_left_pop:
-        number: 4-16
+        number: 0-1-16
         subtype: matrix
         label: Right Pop
     pfl_right_rollover:
-        number: 4-17
+        number: 0-1-17
         subtype: matrix
         label: Right Rollover
     pfl_left_saucer_1:
-        number: 4-18
+        number: 0-1-18
         subtype: matrix
         label: Left Saucer 1
     pfl_left_saucer_2:
-        number: 4-19
+        number: 0-1-19
         subtype: matrix
         label: Left Saucer 2
     pfl_left_saucer_3:
-        number: 4-20
+        number: 0-1-20
         subtype: matrix
         label: Left Saucer 3
     pfl_right_saucer_1:
-        number: 4-21
+        number: 0-1-21
         subtype: matrix
         label: Right Saucer 1
     pfl_right_saucer_2:
-        number: 4-22
+        number: 0-1-22
         subtype: matrix
         label: Right Saucer 2
     pfl_right_saucer_3:
-        number: 4-23
+        number: 0-1-23
         subtype: matrix
         label: Right Saucer 3
     pfl_4x:
-        number: 4-24
+        number: 0-1-24
         subtype: matrix
         label: 4X
     pfl_right_outlane:
-        number: 4-25
+        number: 0-1-25
         subtype: matrix
         label: Right Outlane
     pfl_right_inlane:
-        number: 4-26
+        number: 0-1-26
         subtype: matrix
         label: Right Inlane
     pfl_right_eject:
-        number: 4-27
+        number: 0-1-27
         subtype: matrix
         label: Right Eject
     pfl_left_eject:
-        number: 4-28
+        number: 0-1-28
         subtype: matrix
         label: Left Eject
     pfl_left_rollover:
-        number: 4-29
+        number: 0-1-29
         subtype: matrix
         label: Left Rollover
     pfl_center_rollover:
-        number: 4-30
+        number: 0-1-30
         subtype: matrix
         label: Center Rollover
     pfl_right_pop:
-        number: 4-31
+        number: 0-1-31
         subtype: matrix
         label: Right Pop
     unused_0_17:
-        number: 0-17
+        number: 1-0-17
         subtype: matrix
     unused_1_22:
-        number: 1-22
+        number: 1-1-22
         subtype: matrix
     unused_1_26:
-        number: 1-26
+        number: 1-1-26
         subtype: matrix
     unused_3_20:
-        number: 3-20
+        number: 0-0-20
         subtype: matrix
     unused_3_21:
-        number: 3-21
+        number: 0-0-21
         subtype: matrix
     unused_3_22:
-        number: 3-22
+        number: 0-0-22
         subtype: matrix
     unused_3_23:
-        number: 3-23
+        number: 0-0-23
         subtype: matrix
     unused_3_24:
-        number: 3-24
+        number: 0-0-24
         subtype: matrix
     unused_3_25:
-        number: 3-25
+        number: 0-0-25
         subtype: matrix
     unused_3_26:
-        number: 3-26
+        number: 0-0-26
         subtype: matrix
     unused_3_27:
-        number: 3-27
+        number: 0-0-27
         subtype: matrix
     unused_3_28:
-        number: 3-28
+        number: 0-0-28
         subtype: matrix
     unused_3_29:
-        number: 3-29
+        number: 0-0-29
         subtype: matrix
     unused_3_30:
-        number: 3-30
+        number: 0-0-30
         subtype: matrix
     unused_3_31:
-        number: 3-31
+        number: 0-0-31
         subtype: matrix
 
 info_lights:

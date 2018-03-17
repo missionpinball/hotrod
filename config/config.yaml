@@ -12,8 +12,12 @@ hardware:
     driverboards: gen2
 
 opp:
-    ports: /dev/ttyACM0
-#    ports: /dev/cu.usbmodem1411
+    # OPP0 is Playfield (4 controllers), OPP1 is Backbox (3 controllers)
+    ports: /dev/ttyOPP0, /dev/ttyOPP1
+    debug: true
+    chains:
+        0: /dev/ttyOPP0
+        1: /dev/ttyOPP1
 
 game:
     allow_start_with_loose_balls: true
