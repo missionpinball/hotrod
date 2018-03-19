@@ -37,9 +37,7 @@ counters:
 
 achievements:
     light_jackpot:
-        show_tokens:
-           lights: pfl_left_eb, pfl_right_eb
-        show_when_started: flash
+        show_when_started: flash_jackpot
         show_when_completed: off
         start_events:
             - light_jackpot
@@ -52,11 +50,21 @@ achievements:
         events_when_completed: jackpot
 
 show_player:
+    mode_2ball_started:
+        saucer_bounce: play
+    left_saucer_eject_show_completed:
+        saucer_bounce: play
+    right_saucer_eject_show_completed:
+        saucer_bounce: play
     balldevice_bd_left_saucer_ball_enter:
         left_saucer_eject:
+            action: play
             loops: 0
-            speed: 6
+            priority: 10
+            events_when_completed: left_saucer_eject_show_completed
     balldevice_bd_right_saucer_ball_enter:
         right_saucer_eject:
+            action: play
             loops: 0
-            speed: 6
+            priority: 10
+            events_when_completed: right_saucer_eject_show_completed

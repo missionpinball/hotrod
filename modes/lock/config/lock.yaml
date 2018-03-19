@@ -32,9 +32,11 @@ shots:
         advance_events: 
             - balldevice_bd_left_saucer_ball_enter
             - balldevice_bd_right_saucer_ball_enter
+            - mode_2ball_started
     right_lock:
         profile: sp_lock
         reset_events: mode_2ball_stopped
         advance_events: 
             - balldevice_bd_left_saucer_ball_enter
             - balldevice_bd_right_saucer_ball_enter
+            - mode_2ball_started

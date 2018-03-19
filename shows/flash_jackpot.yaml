@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 250ms
+  lights:
+      pfl_left_jackpot: ff
+      pfl_right_jackpot: ff
+- duration: 250ms
+  lights:
+      pfl_left_jackpot: 00
+      pfl_right_jackpot: 00

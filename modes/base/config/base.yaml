@@ -210,6 +210,8 @@ shot_profiles:
               show: flash_lock_3
             - name: lit
               show: flash_lock_4
+            - name: unlit
+              show: flash_lock_off
     sp_extra_ball:
         states:
             - name: lit
@@ -231,48 +233,57 @@ shot_groups:
 
 show_player:
     mode_base_started:
-        general_illumination:
-            priority: 100
+        general_illumination: play
+
+    mode_2ball_started:
+        flash_left_eject: stop
+        flash_right_eject: stop
+        
+    player_shot_left_lock{value==3}:
+        flash_left_eject: 
+            action: play
+            priority: 10
+        flash_right_eject: 
+            action: play
+            priority: 10
+    player_shot_right_lock{value==3}:
+        flash_left_eject: 
+            action: play
+            priority: 10
+        flash_right_eject: 
+            action: play
+            priority: 10
+
     bonus_lanes_lit_complete: 
         bonus_lanes_complete:
             loops: 4
             speed: 4
+
     rollovers_lit_complete:
         flash_rollover:
             loops: 4
             speed: 4
+
     timer_2x_multiplier_started:
         flash_2x: 
             action: play
             sync_ms: 500
+
     timer_2x_multiplier_stopped:
         flash_2x: stop
-    player_added{num==1}:
-        player_1_start:
-            loops: 0
-    player_added{num==2}:
-        player_2_start: 
-            loops: 0
-    player_turn_started{number==1}:
-        player_1_score_on: play
-        corvette_on: play
-        player_2_score_off: play
-        belair_off: play
-    player_turn_started{number==2}:
-        player_2_score_on: play
-        belair_on: play
-        player_1_score_off: play        
-        corvette_off: play
+
     pfs_shooter_lane_inactive:
         flash_flames:
             loops: 5
         flames_on: play
+
     skill_shot_hit:
         flash_flames:
             loops: 10
         flames_on: play
         bell_ring:
-            loops: 2
+            loops: 5
+
     extra_ball_awarded:
         same_player_shoots_again: play
         flash_flames:
@@ -282,6 +293,7 @@ show_player:
             loops: 3
 
 shows:
+    # Multiplier lamps
     flash_2x:
         - duration: 250ms
           lights:
@@ -298,75 +310,77 @@ shows:
           lights: 
               pfl_4x: 00
 
+    # Left saucer lamps indicating lock status
     flash_left_1:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_left_saucer_1: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_left_saucer_1: 00
     flash_left_2:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_left_saucer_2: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_left_saucer_2: 00
     flash_left_3:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_left_saucer_3: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_left_saucer_3: 00
     flash_left_4:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_left_saucer_4: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_left_saucer_4: 00
     flash_left_eject:
-        - time: 0
+        - duration: 100ms
           lights:
               pfl_left_eject: ff
-        - time: +1
+        - duration: 100ms
           lights:
               pfl_left_eject: 00
 
+    # Right saucer lamps indicating lock status
     flash_right_1:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_right_saucer_1: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_right_saucer_1: 00
     flash_right_2:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_right_saucer_2: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_right_saucer_2: 00
     flash_right_3:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_right_saucer_3: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_right_saucer_3: 00
     flash_right_4:
-        - time: 0
+        - duration: 250ms
           lights:
               pfl_right_saucer_4: ff
-        - time: +1
+        - duration: 250ms
           lights:
               pfl_right_saucer_4: 00
     flash_right_eject:
-        - time: 0
+        - duration: 100ms
           lights:
               pfl_right_eject: ff
-        - time: +1
+        - duration: 100ms
           lights:
               pfl_right_eject: 00
 
@@ -377,7 +391,6 @@ shows:
               pfl_left_saucer_2: 00
               pfl_left_saucer_3: 00
               pfl_left_saucer_4: 00
-              pfl_left_eject: ff
     right_lock_off:
         - time: 0
           lights:
@@ -385,92 +398,55 @@ shows:
               pfl_right_saucer_2: 00
               pfl_right_saucer_3: 00
               pfl_right_saucer_4: 00
-              pfl_right_eject: ff
 
+    # No lock hit
     flash_lock_123:
         - time: 0
           shows:
-              flash_left_1:
-                  loops: -1
-                  speed: 2
-              flash_right_1:
-                  loops: -1
-                  speed: 2
-              flash_left_2:
-                  loops: -1
-                  speed: 2
-              flash_right_2:
-                  loops: -1
-                  speed: 2
-              flash_left_3:
-                  loops: -1
-                  speed: 2
-              flash_right_3:
-                  loops: -1
-                  speed: 2
+              flash_left_1: play
+              flash_right_1: play
+              flash_left_2: play
+              flash_right_2: play
+              flash_left_3: play
+              flash_right_3: play
           lights:
               pfl_left_saucer_4: 00
-              pfl_left_eject: ff
               pfl_right_saucer_4: 00
-              pfl_right_eject: ff
 
+    # One lock hit
     flash_lock_23:
         - time: 0
           shows:
-              flash_left_2:
-                  loops: -1
-                  speed: 2
-              flash_right_2:
-                  loops: -1
-                  speed: 2
-              flash_left_3:
-                  loops: -1
-                  speed: 2
-              flash_right_3:
-                  loops: -1
-                  speed: 2
+              flash_left_2: play
+              flash_right_2: play
+              flash_left_3: play
+              flash_right_3: play
           lights:
               pfl_left_saucer_4: 00
               pfl_left_saucer_1: ff
-              pfl_left_eject: ff
               pfl_right_saucer_4: 00
               pfl_right_saucer_1: ff
-              pfl_right_eject: ff
 
+    # Two lock hits
     flash_lock_3:
         - time: 0
           shows:
-              flash_left_3:
-                  loops: -1
-                  speed: 2
-              flash_right_3:
-                  loops: -1
-                  speed: 2
+              flash_left_3: play
+              flash_right_3: play
           lights:
               pfl_left_saucer_4: 00
               pfl_left_saucer_2: ff
               pfl_left_saucer_1: ff
-              pfl_left_eject: ff
               pfl_right_saucer_4: 00
               pfl_right_saucer_2: ff
               pfl_right_saucer_1: ff
-              pfl_right_eject: ff
 
+    # Three lock hits
     flash_lock_4:
         - time: 0
           shows:
-              flash_left_4:
-                  loops: -1
-                  speed: 2
-              flash_right_4:
-                  loops: -1
-                  speed: 2
-              flash_left_eject:
-                  loops: -1
-                  speed: 2
-              flash_right_eject:
-                  loops: -1
-                  speed: 2
+              flash_left_4: play
+              flash_right_4: play
           lights:
               pfl_left_saucer_3: ff
               pfl_left_saucer_2: ff
@@ -479,6 +455,21 @@ shows:
               pfl_right_saucer_2: ff
               pfl_right_saucer_1: ff
               
+    flash_lock_off:
+        - time: 0
+          lights:
+              pfl_left_saucer_4: 00
+              pfl_left_saucer_3: 00
+              pfl_left_saucer_2: 00
+              pfl_left_saucer_1: 00
+              pfl_left_eject: ff
+              pfl_right_saucer_4: 00
+              pfl_right_saucer_3: 00
+              pfl_right_saucer_2: 00
+              pfl_right_saucer_1: 00
+              pfl_right_eject: ff
+
+    # Extra Ball / Ball Saver lamp
     same_player_shoots_again:
         - time: 0
           lights:

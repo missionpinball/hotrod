@@ -7,4 +7,14 @@ tilt:
     multiple_hit_window: 300ms
     settle_time: 5s
     tilt_warnings_player_var: tilt_warnings
-    
+
+show_player:
+    tilt:
+        general_illumination: stop
+        flash:
+            loops: 8
+            speed: 8
+            show_tokens:
+                lights: bonus_lamp
+        bonus_drain:
+            loops: 0

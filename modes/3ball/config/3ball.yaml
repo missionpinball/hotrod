@@ -28,16 +28,14 @@ show_player:
             speed: 8
             priority: 100
         bell_ring:
-            loops: 3
-            speed: 4
+            loops: 5
     balldevice_bd_right_saucer_ball_enter:
         right_saucer_3ball:
             loops: 0
             speed: 8
             priority: 100
         bell_ring:
-            loops: 3
-            speed: 4
+            loops: 5
 
 shows:
     saucer_ramps:

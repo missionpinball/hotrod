@@ -22,3 +22,5 @@
     pfl_lane_2: ff
     pfl_lane_3: ff
     pfl_lane_4: ff
+    pfl_left_eject: ff
+    pfl_right_eject: ff

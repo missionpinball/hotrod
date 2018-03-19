@@ -55,6 +55,7 @@ modes:
   - super_pops_1
   - super_pops_2
   - skill_shot
+  - player_actions
 
 flippers:
     left_flipper:

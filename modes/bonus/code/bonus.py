@@ -16,8 +16,9 @@ class Count(Mode):
         if self.machine.game.tilted:
             self.log.debug("Ball has tilted. No bonus for you!")
             return
-        
+
         self.bonus_value = (self.config['scoring']['bonus_value']['score'])
+
         self.check_score_reels()
 
     def check_score_reels(self, **kwargs):

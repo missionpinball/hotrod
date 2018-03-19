@@ -15,4 +15,4 @@ shots:
         reset_events: mode_extra_ball_started
         profile: sp_extra_ball
         show_tokens:
-            light: pfl_special
+            light: pfl_extra_ball
