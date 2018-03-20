@@ -1,0 +1,18 @@
+#config_version=5
+
+mode:
+    start_events: player_turn_started
+    stop_events: ball_will_end
+    priority: 110
+
+show_player:
+    ball_starting{player==1}:
+        player_1_score_on: play
+        corvette_on: play
+        player_2_score_off: play
+        belair_off: play
+    ball_starting{player==2}:
+        player_2_score_on: play
+        belair_on: play
+        player_1_score_off: play        
+        corvette_off: play
