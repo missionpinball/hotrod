@@ -2,9 +2,7 @@
 
 mode:
     start_events: ball_starting
-    stop_events:
-        sw_skill_shot_cancel
-        sw_skill_shot_success
+    stop_events: sw_skill_shot_cancel, sw_skill_shot_success
     priority: 200
 
 scoring:
@@ -40,7 +38,6 @@ shot_profiles:
               speed: 4
             - name: hit
               show: on
-        block: yes
 
 shot_groups:
     skill_shot:

@@ -4,6 +4,14 @@ mode:
     start_events: ball_starting
     priority: 110
 
+scoring:
+    hot_lanes_unlit_hit:
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    hot_lanes_lit_hit:
+        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    hot_lanes_lit_complete:
+        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+
 shots:
     top_lane_h:
         switch: pfs_top_lane_h
@@ -28,27 +36,8 @@ shot_groups:
 
 show_player:
     hot_lanes_lit_complete: 
-        flash_hot_lanes: 
+        flash: 
             loops: 4
             speed: 4
-
-scoring:
-    hot_lanes_unlit_hit:
-        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    hot_lanes_lit_hit:
-        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    hot_lanes_lit_complete:
-        score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-
-shows:
-    flash_hot_lanes:
-        - time: 0
-          lights:
-              pfl_top_lane_h: ff
-              pfl_top_lane_o: ff
-              pfl_top_lane_t: ff
-        - time: +1
-          lights:
-              pfl_top_lane_h: 00
-              pfl_top_lane_o: 00
-              pfl_top_lane_t: 00
+            show_tokens:
+                lights: hot_lanes

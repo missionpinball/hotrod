@@ -2,7 +2,7 @@
 
 mode:
     start_events: extra_ball_lit
-    stop_events: extra_ball_hit
+    stop_events: extra_ball_hit, tilt
     priority: 170
 
 extra_balls:

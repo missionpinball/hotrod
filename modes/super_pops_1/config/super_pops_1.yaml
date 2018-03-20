@@ -19,15 +19,30 @@ counters:
 
 show_player:
     mode_super_pops_1_started:
-        normal_pops: 
-            loops: -1
-        
-shows:
-    normal_pops:
-        - time: 0
-          lights:
-              pfl_right_pop: ff
-              pfl_center_pop: ff
-              pfl_left_pop: ff
+        on:
+            show_tokens:
+                lights: pops
+    pfs_left_pop_active:
+        just_off:
+            loops: 0
+            priority: 1
+            show_tokens:
+                lights: pfl_left_pop
+    pfs_right_pop_active:
+        just_off:
+            loops: 0
+            priority: 1
+            show_tokens:
+                lights: pfl_right_pop
+    pfs_center_pop_active:
+        just_off:
+            loops: 0
+            priority: 1
+            show_tokens:
+                lights: pfl_center_pop
 
-          
+shows:
+    just_off:
+        - duration: 200ms
+          lights:
+              (lights): 00

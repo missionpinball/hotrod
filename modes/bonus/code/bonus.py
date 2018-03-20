@@ -3,18 +3,15 @@ from mpf.core.mode import Mode
 class Count(Mode):
 
     def mode_start(self, **kwargs):
-        #if not self.machine.mode_controller.is_active('base'):
-        #    self.machine.events.post("bonus_complete")
-        #    self.stop()
-
         self.bonus_value = 0
         self.count_down = self.player['lb_bonus']
-        self.log.debug("Bonus: " + str(self.count_down))
+        self.debug_log("Bonus: " + str(self.count_down))
         self.prepare_bonus()
 
     def prepare_bonus(self):
         if self.machine.game.tilted:
-            self.log.debug("Ball has tilted. No bonus for you!")
+            self.debug_log("Ball has tilted. No bonus for you!")
+            self.stop()
             return
 
         self.bonus_value = (self.config['scoring']['bonus_value']['score'])
@@ -48,7 +45,7 @@ class Count(Mode):
             self.bonus_done()
             
     def do_bonus_step(self):
-        self.log.debug("Countdown: " + str(self.count_down))
+        self.debug_log("Countdown: " + str(self.count_down))
 
         if self.count_down >= 10000:
             self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_10000'), speed=10.0, loops=4)
