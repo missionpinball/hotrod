@@ -1,0 +1,15 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_match: 00
+      bbl_match_00: 00
+      bbl_match_10: 00
+      bbl_match_20: 00
+      bbl_match_30: 00
+      bbl_match_40: 00
+      bbl_match_50: 00
+      bbl_match_60: 00
+      bbl_match_70: 00
+      bbl_match_80: 00
+      bbl_match_90: 00

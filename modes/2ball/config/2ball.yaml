@@ -68,3 +68,6 @@ show_player:
             loops: 0
             priority: 10
             events_when_completed: right_saucer_eject_show_completed
+    jackpot:
+        bell_ring_2ball:
+            loops: 0

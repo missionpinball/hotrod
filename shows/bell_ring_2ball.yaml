@@ -1,0 +1,32 @@
+#show_version=5
+
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 200ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
+- duration: 200ms
+  coils:
+      bbc_bell: pulse

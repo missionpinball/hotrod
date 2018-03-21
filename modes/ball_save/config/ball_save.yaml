@@ -39,7 +39,7 @@ show_player:
             show_tokens:
                 light: pfl_same_player
         bell_ring:
-            loops: 2
+            loops: 5
     ball_save_default_disabled:
         flash:
             action: stop

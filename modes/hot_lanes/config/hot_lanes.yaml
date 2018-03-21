@@ -5,10 +5,8 @@ mode:
     priority: 110
 
 scoring:
-    hot_lanes_unlit_hit:
+    hot_lanes_hit:
         score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-    hot_lanes_lit_hit:
-        score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     hot_lanes_lit_complete:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
 

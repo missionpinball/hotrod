@@ -7,7 +7,7 @@ mode:
 
 scoring:
     skill_shot_lit_hit:
-        score: 500
+        score: 450
 
 shots:
     skill_shot_h:
