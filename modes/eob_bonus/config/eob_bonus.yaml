@@ -2,11 +2,7 @@
 
 mode:
     code: eob_bonus.Count
-    start_events: ball_ending{not modes.game.tilted}
+    start_events: ball_ending
     stop_events: bonus_complete
     use_wait_queue: true
     priority: 600
-
-scoring:
-    bonus_value: 
-        score: 1000
