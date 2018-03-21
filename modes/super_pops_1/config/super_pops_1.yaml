@@ -12,7 +12,7 @@ scoring:
 counters:
     sw_pop:
         count_events: sw_pop
-        starting_count: 50
+        starting_count: 30
         count_complete_value: 0
         direction: down
         events_when_complete: super_pops_2_start
@@ -40,9 +40,3 @@ show_player:
             priority: 1
             show_tokens:
                 lights: pfl_center_pop
-
-shows:
-    just_off:
-        - duration: 200ms
-          lights:
-              (lights): 00

@@ -18,9 +18,3 @@ show_player:
             priority: 1
             show_tokens:
                 lights: pops
-
-shows:
-    just_on:
-        - duration: 200ms
-          lights:
-              (lights): ff

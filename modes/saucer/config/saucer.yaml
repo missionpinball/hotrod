@@ -26,8 +26,6 @@ show_player:
     balldevice_bd_left_saucer_ball_enter:
         left_saucer_eject:
             loops: 0
-            speed: 6
     balldevice_bd_right_saucer_ball_enter:
         right_saucer_eject:
             loops: 0
-            speed: 6

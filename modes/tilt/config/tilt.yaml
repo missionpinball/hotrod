@@ -10,17 +10,17 @@ tilt:
 
 show_player:
     tilt:
-        off:
+        just_off:
+            priority: 1
+            loops: 0
             show_tokens:
                 lights: tilt_lamps
         flash:
             priority: 1
-            loops: 8
+            loops: 4
             speed: 8
             show_tokens:
-                lights: bonus_lamp
+                lights: bonus_lamps
         bonus_drain:
             priority: 1
             loops: 0
-    ball_starting:
-        tilt: stop
