@@ -108,6 +108,7 @@ counters:
         count_interval: 1000
         count_complete_value: 10000
         direction: up
+        reset_on_complete: False
         reset_events: mode_base_starting
         events_when_complete: bonus_max
     # Top saucers are used as ball locks when enabled

@@ -30,7 +30,7 @@ class Count(Mode):
     def bonus_step(self, future=None, **kwargs):
         self.machine.events.post("bonus_code_step")
         if self.count_down > 0:
-            self.delay.add(ms=200, callback=self.do_bonus_step)
+            self.delay.add(ms=300, callback=self.do_bonus_step)
         else:
             self.bonus_done()
             
@@ -70,6 +70,8 @@ class Count(Mode):
 
         self.player.score += self.bonus_value
         self.count_down -= self.bonus_value
+
+        self.check_score_reels()
 
     def bonus_done(self):
         self.machine.events.post("bonus_complete")
