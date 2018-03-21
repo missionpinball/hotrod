@@ -1,6 +1,6 @@
 from mpf.core.mode import Mode
 
-class Bonus(Mode):
+class End_of_Ball_Bonus(Mode):
 
     def mode_start(self, **kwargs):
         self.machine.events.add_handler('logicblock_lb_bonus_hit', self.light_bonus_lamp)

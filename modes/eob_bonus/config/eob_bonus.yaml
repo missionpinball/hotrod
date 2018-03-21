@@ -1,8 +1,8 @@
 #config_version=5
 
 mode:
-    code: bonus.Count
-    start_events: ball_ended{not modes.game.tilted}
+    code: eob_bonus.Count
+    start_events: ball_ending{not modes.game.tilted}
     stop_events: bonus_complete
     use_wait_queue: true
     priority: 600
