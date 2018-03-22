@@ -236,8 +236,8 @@ shot_groups:
 show_player:
     mode_base_started:
         general_illumination: play
-        match_off:
-            loops: 0
+        #match_off:
+        #    loops: 0
 
     mode_2ball_started:
         flash_left_eject: stop

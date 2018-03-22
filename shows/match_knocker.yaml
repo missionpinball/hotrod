@@ -2,4 +2,4 @@
 
 - duration: 500ms
   coils:
-      bbc_knocker: pulse
+      cc_knocker: pulse
