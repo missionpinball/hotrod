@@ -59,6 +59,7 @@ coils:
 
     cc_knocker:
         number: 1-1-7
+        default_pulse_ms: 30ms
         label: Knocker
 
     cc_chime_1:
