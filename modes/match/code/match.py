@@ -55,7 +55,7 @@ class Match(Mode):
 
             self.machine.lights[previous_match_light_circle].off()
             self.machine.lights[match_light_circle].on()
-            sleep(2)
+            sleep(0.1)
             
             if lamp == self.match:
                 break
@@ -70,7 +70,6 @@ class Match(Mode):
     def match_done(self):
         # Leave Match and Match Number lit
         self.machine.lights['bbl_match'].on()
-        self.machine.lights['bbl_match_10'].on()
         self.machine.lights[self.match_light].on()
 
         # Fire knocker if match
