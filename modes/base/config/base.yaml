@@ -235,7 +235,11 @@ shot_groups:
 
 show_player:
     mode_base_starting:
-        general_illumination: play
+        general_illumination:
+            action: play
+            priority: -10
+        girl_on: play
+        title_on: play
         match_off:
             loops: 0
 

@@ -7,6 +7,11 @@ class Count(Mode):
     def mode_start(self, **kwargs):
         self.bonus_value = 1000
         self.count_down = self.machine.counters.lb_bonus.value
+        
+        if self.count_down == 0:
+            self.machine.events.post("no_bonus")
+            self.bonus_done()
+            
         self.machine.events.post("bonus_code_starting_value_" + str(self.count_down))
         self.prepare_bonus()
 
@@ -74,7 +79,7 @@ class Count(Mode):
         self.check_score_reels()
 
     def bonus_pause(self):
-        self.delay.add(ms=1500, callback=self.bonus_done)
+        self.delay.add(ms=1000, callback=self.bonus_done)
 
     def bonus_done(self):
         self.machine.events.post("bonus_complete")

@@ -1,0 +1,7 @@
+#show_version=5
+
+- time: 0
+  lights:
+      bbl_girl_mid: 00
+      bbl_girl_right_leg: 00
+      

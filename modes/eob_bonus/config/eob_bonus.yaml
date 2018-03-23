@@ -5,4 +5,11 @@ mode:
     start_events: ball_ending
     stop_events: bonus_complete
     use_wait_queue: true
-    priority: 600
+    priority: 105
+
+show_player:
+    mode_eob_bonus_starting:
+        general_illumination: play
+        girl_on: play
+        title_on: play
+ 
