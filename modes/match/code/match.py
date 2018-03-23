@@ -20,6 +20,7 @@ class Match(Mode):
         
         # Determine last two digits of player 1 score for match
         player_1_score = self.machine.get_machine_var('player1_score')
+        self.log.info('player 1 score: ' + str(player_1_score))    
         match_score_player_1 = '{:02}'.format(int(str(int(str(player_1_score)[-2:]))[-2:1]) * 10)
 
         if self.match == match_score_player_1:
@@ -29,6 +30,7 @@ class Match(Mode):
         # If a 2 player game, also determine last two digits for player 2
         if self.machine.game.num_players == 2:
             player_2_score = self.machine.get_machine_var('player2_score')
+            self.log.info('player 2 score: ' + str(player_2_score))
             match_score_player_2 = '{:02}'.format(int(str(int(str(player_2_score)[-2:]))[-2:1]) * 10)
 
             if match == match_score_player_2:
