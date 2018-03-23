@@ -1,6 +1,7 @@
 from mpf.core.mode import Mode
-from random import shuffle
+from mpf.core.delays import DelayManager
 from time import sleep
+from random import *
 
 class Match(Mode):
 
@@ -35,26 +36,62 @@ class Match(Mode):
                 self.player_match = True
 
         self.machine.events.post('match_' + self.match)
+        
+        match_show = 1
 
-        self.match_show_circle()
+        if match_show == 1:
+            self.match_show_circle_right()
+        if match_show == 2:
+            self.match_show_circle_left()
+        if match_show == 3:
+            self.match_show_classic()
         
     def match_show_classic(self):
         # Just turn on lamps
-        self.machine.lights['bbl_match'].on()
-        self.machine.lights[self.match_light].on()
+        self.machine.events.post('match_show_classic')
+        self.machine.lights['bbl_match'].on(key="match")
+        self.machine.lights[self.match_light].on(key="match")
         self.match_done()
 
-    def match_show_circle(self):
+    def match_show_circle_right(self):
         # Rotating Match lamps
-        self.machine.shows['match_circle'].play(loops=4)
+        self.machine.events.post('match_show_circle_right')
+        match_numbers_circle = ['00','20','40','60','80','90','70','50','30','10']
+         
+        self.machine.shows['match_circle_right'].play(loops=4)
+
+        previous_match_light_circle = 'bbl_match_00'
+
+        for lamp in match_numbers_circle:
+            match_light_circle = 'bbl_match_' + lamp
+
+            self.machine.lights[previous_match_light_circle].off(key="match")
+            self.machine.lights[match_light_circle].on(key="match")
+            
+            if lamp == self.match:
+                break
+
+            previous_match_light_circle = match_light_circle
+
+        if self.player_match:
+            self.machine.shows['flash'].play(show_tokens=dict(light=match_light_circle), speed=10.0, loops=8)
+
+        self.match_done()
+
+    def match_show_circle_left(self):
+        # Rotating Match lamps
+        self.machine.events.post('match_show_circle_left')
+        match_numbers_circle = ['90','70','50','30','10','00','20','40','60','80']
+         
+        self.machine.shows['match_circle_left'].play(loops=4)
 
         previous_match_light_circle = 'bbl_match_90'
 
-        for lamp in self.match_numbers:
+        for lamp in match_numbers_circle:
             match_light_circle = 'bbl_match_' + lamp
 
-            self.machine.lights[previous_match_light_circle].off()
-            self.machine.lights[match_light_circle].on()
+            self.machine.lights[previous_match_light_circle].off(key="match")
+            self.machine.lights[match_light_circle].on(key="match")
             sleep(0.1)
             
             if lamp == self.match:
@@ -69,8 +106,8 @@ class Match(Mode):
 
     def match_done(self):
         # Leave Match and Match Number lit
-        self.machine.lights['bbl_match'].on()
-        self.machine.lights[self.match_light].on()
+        self.machine.lights['bbl_match'].on(key="match")
+        self.machine.lights[self.match_light].on(key="match")
 
         # Fire knocker if match
         if self.player_1_match:
@@ -81,5 +118,4 @@ class Match(Mode):
             self.machine.events.post('match_player_2')
 
         self.machine.events.post('match_code_ended')
-        self.stop()
            
