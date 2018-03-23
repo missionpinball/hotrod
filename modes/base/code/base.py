@@ -11,9 +11,9 @@ class End_of_Ball_Bonus(Mode):
         for lamp in ['00','10','20','30','40','50','60','70','80','90']:
             self.machine.lights['bbl_match_' + lamp].remove_from_stack_by_key(key="match")
 
-    def bonus_maxed(self, count, **kwargs):
+    def bonus_maxed(self, **kwargs):
         self.machine.events.remove_handler(self.light_bonus_lamp)
-        self.light_bonus_lamp(count)
+        self.light_bonus_lamp(count=10000)
 
     def light_bonus_lamp(self, count, **kwargs):
         self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_' + str(count)), speed=10.0, loops=4)
