@@ -19,8 +19,11 @@ class Match(Mode):
         self.match_light = "bbl_match_" + self.match
         
         # Determine last two digits of player 1 score for match
-        player_1_score = self.machine.get_machine_var('player1_score')
-        self.log.info('player 1 score: ' + str(player_1_score))    
+        if self.machine.is_machine_var('player1_score'):
+            player_1_score = self.machine.get_machine_var('player1_score')
+        else:
+            player_1_score = 0
+            
         match_score_player_1 = '{:02}'.format(int(str(int(str(player_1_score)[-2:]))[-2:1]) * 10)
 
         if self.match == match_score_player_1:
@@ -29,8 +32,11 @@ class Match(Mode):
 
         # If a 2 player game, also determine last two digits for player 2
         if self.machine.game.num_players == 2:
-            player_2_score = self.machine.get_machine_var('player2_score')
-            self.log.info('player 2 score: ' + str(player_2_score))
+            if self.machine.is_machine_var('player1_score'):
+                player_2_score = self.machine.get_machine_var('player2_score')
+            else:
+                player_2_score = 0
+                
             match_score_player_2 = '{:02}'.format(int(str(int(str(player_2_score)[-2:]))[-2:1]) * 10)
 
             if match == match_score_player_2:
@@ -39,7 +45,7 @@ class Match(Mode):
 
         self.machine.events.post('match_' + self.match)
         
-        match_show = 1
+        match_show = randint(1,3)
 
         if match_show == 1:
             self.match_show_circle_right()
@@ -94,7 +100,7 @@ class Match(Mode):
 
             self.machine.lights[previous_match_light_circle].off(key="match")
             self.machine.lights[match_light_circle].on(key="match")
-            sleep(0.1)
+            yield from asyncio.sleep(0.1)
             
             if lamp == self.match:
                 break

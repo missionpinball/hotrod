@@ -234,14 +234,10 @@ shot_groups:
             rollovers_lit_complete: 1s
 
 show_player:
-    mode_base_starting:
-        general_illumination:
-            action: play
-            priority: -10
+    ball_started:
+        general_illumination: play
         girl_on: play
         title_on: play
-        match_off:
-            loops: 0
 
     mode_2ball_started:
         flash_left_eject: stop
