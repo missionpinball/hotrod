@@ -1,6 +1,17 @@
 #config_version=5
 
 coils:
+    pfc_flipper_left_main:
+        number: 0-2-4
+        default_pulse_ms: 30ms
+        default_hold_power: 0.25
+        label: Left Flipper
+    pfc_flipper_right_main:
+        number: 0-2-7
+        default_pulse_ms: 30ms
+        default_hold_power: 0.25
+        label: Right Flipper
+
     bbc_player_2_10000:
         number: 1-2-0
         default_pulse_ms: 10ms
@@ -34,17 +45,6 @@ coils:
         number: 1-2-4
         default_pulse_ms: 10ms
         label: Player 2 10
-
-    pfc_flipper_left_main:
-        number: 0-2-4
-        default_pulse_ms: 20ms
-        default_hold_power: 0.125
-        label: Left Flipper
-    pfc_flipper_right_main:
-        number: 0-2-7
-        default_pulse_ms: 20ms
-        default_hold_power: 0.125
-        label: Right Flipper
 
     bbc_credit_down:
         number: 1-1-3

@@ -17,14 +17,13 @@ class Match(Mode):
         shuffle(random_match_numbers)
         self.match = random_match_numbers[0]
         self.match_light = "bbl_match_" + self.match
-        
+
         # Determine last two digits of player 1 score for match
-        if self.machine.is_machine_var('player1_score'):
-            player_1_score = self.machine.get_machine_var('player1_score')
-        else:
-            player_1_score = 0
+        player_1_score = self.machine.game.player_list[0].score
             
+        self.log.info("Player 1 score: " + str(player_1_score))
         match_score_player_1 = '{:02}'.format(int(str(int(str(player_1_score)[-2:]))[-2:1]) * 10)
+        self.log.info("Player 1 Match Score: " + str(match_score_player_1))
 
         if self.match == match_score_player_1:
             self.player_1_match = True
@@ -32,10 +31,7 @@ class Match(Mode):
 
         # If a 2 player game, also determine last two digits for player 2
         if self.machine.game.num_players == 2:
-            if self.machine.is_machine_var('player1_score'):
-                player_2_score = self.machine.get_machine_var('player2_score')
-            else:
-                player_2_score = 0
+            player_2_score = self.machine.game.player_list[1].score
                 
             match_score_player_2 = '{:02}'.format(int(str(int(str(player_2_score)[-2:]))[-2:1]) * 10)
 
@@ -46,6 +42,7 @@ class Match(Mode):
         self.machine.events.post('match_' + self.match)
         
         match_show = randint(1,3)
+        self.log.info("Match Show: " + str(match_show))
 
         if match_show == 1:
             self.match_show_circle_right()
@@ -54,6 +51,8 @@ class Match(Mode):
         if match_show == 3:
             self.match_show_classic()
         
+        self.match_done()
+
     def match_show_classic(self):
         # Just turn on lamps
         self.machine.events.post('match_show_classic')
@@ -100,7 +99,7 @@ class Match(Mode):
 
             self.machine.lights[previous_match_light_circle].off(key="match")
             self.machine.lights[match_light_circle].on(key="match")
-            yield from asyncio.sleep(0.1)
+            yield from asyncio.sleep(0.2)
             
             if lamp == self.match:
                 break
