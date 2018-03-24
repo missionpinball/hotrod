@@ -35,7 +35,7 @@ class Match(Mode):
                 
             match_score_player_2 = '{:02}'.format(int(str(int(str(player_2_score)[-2:]))[-2:1]) * 10)
 
-            if match == match_score_player_2:
+            if self.match == match_score_player_2:
                 self.player_2_match = True
                 self.player_match = True
 

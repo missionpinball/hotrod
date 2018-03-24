@@ -8,11 +8,11 @@ mode:
 scoring:
     # R-O-D Drop Targets
     pfs_drop_r_active:
-        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_drop_o_active:
-        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     pfs_drop_d_active:
-        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     # Slings
     pfs_left_sling_active:
         score: 10 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
@@ -39,20 +39,20 @@ scoring:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     # Middle Playfield Rollovers
     left_rollover_hit:
-        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 70 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     center_rollover_hit:
-        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 70 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_rollover_hit:
-        score: 20 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 70 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     # Achievement Awards
     bonus_lanes_lit_complete:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     drop_target_bank_rod_down:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     hot_in_order_hit:
-        score: 1000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     rod_in_order_hit:
-        score: 1000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     nudge_bonus:
         score: 500
     # Jackpot and Multiplier values
@@ -155,7 +155,7 @@ accruals:
 
 timers:
     2x_multiplier:
-        start_value: 10
+        start_value: 20
         end_value: 0
         direction: down
         start_running: no
@@ -238,6 +238,22 @@ show_player:
         general_illumination: play
         girl_on: play
         title_on: play
+
+    pfs_left_sling_active:
+        flash:
+           loops: 0
+           speed: 2
+           priority: 1
+           show_tokens:
+               light: pfl_left_sling_2
+
+    pfs_right_sling_active:
+        flash:
+           loops: 0
+           speed: 2
+           priority: 1
+           show_tokens:
+               light: pfl_right_sling_2
 
     mode_2ball_started:
         flash_left_eject: stop

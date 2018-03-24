@@ -1,0 +1,17 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+     pfl_left_pop: ff
+     pfl_center_pop: 00
+     pfl_right_pop: 00
+- duration: 100ms
+  lights:
+     pfl_left_pop: 00
+     pfl_center_pop: ff
+     pfl_right_pop: 00
+- duration: 100ms
+  lights:
+     pfl_left_pop: 00
+     pfl_center_pop: 00
+     pfl_right_pop: ff

@@ -9,6 +9,7 @@ show_player:
     mode_attract_started:
         general_illumination: play
         attract_display_loop: play
+        attract_pops: play
         player_1_score_on: play
         player_2_score_on: play
         corvette_on: play

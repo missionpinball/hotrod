@@ -70,6 +70,7 @@ ball_devices:
     bd_trough:
         ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3
         jam_switch: pfs_trough_jam
+        eject_coil_jam_pulse: 40ms
         entrance_count_delay: 300ms
         eject_coil: pfc_trough_eject
         tags: trough, home, drain
