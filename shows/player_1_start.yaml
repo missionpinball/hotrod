@@ -1,12 +1,11 @@
 #show_version=5
 
-- duration: 100ms
+- duration: 200ms
   coils:
       cc_chime_1: pulse
-- duration: 100ms
+- duration: 200ms
   coils:
       cc_chime_2: pulse
-- duration: 100ms
+- duration: 200ms
   coils:
       cc_chime_3: pulse
-      

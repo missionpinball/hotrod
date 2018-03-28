@@ -1,0 +1,53 @@
+#show_version=5
+
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+- duration: 50ms
+  lights:
+      (light): ff
+- duration: 50ms
+  lights:
+      (light): 00
+  events:
+      - flash_match_complete
+      

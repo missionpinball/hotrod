@@ -18,12 +18,14 @@ class Match(Mode):
         self.match = random_match_numbers[0]
         self.match_light = "bbl_match_" + self.match
 
+        self.machine.lights['bbl_match'].on(key="match")
+
         # Determine last two digits of player 1 score for match
         player_1_score = self.machine.game.player_list[0].score
             
-        self.log.info("Player 1 score: " + str(player_1_score))
+        self.log.info('Player 1 score: ' + str(player_1_score))
         match_score_player_1 = '{:02}'.format(int(str(int(str(player_1_score)[-2:]))[-2:1]) * 10)
-        self.log.info("Player 1 Match Score: " + str(match_score_player_1))
+        self.log.info('Player 1 Match Score: ' + str(match_score_player_1))
 
         if self.match == match_score_player_1:
             self.player_1_match = True
@@ -42,14 +44,14 @@ class Match(Mode):
         self.machine.events.post('match_' + self.match)
         
         match_show = randint(1,3)
-        self.log.info("Match Show: " + str(match_show))
+        self.log.info('Match Show: ' + str(match_show))
 
-        if match_show == 1:
-            self.match_show_circle_right()
-        if match_show == 2:
-            self.match_show_circle_left()
-        if match_show == 3:
-            self.match_show_classic()
+        #if match_show == 1:
+        self.match_show_circle_right()
+        #if match_show == 2:
+        #    self.match_show_circle_left()
+        #if match_show == 3:
+        #    self.match_show_classic()
         
         self.match_done()
 
@@ -58,14 +60,16 @@ class Match(Mode):
         self.machine.events.post('match_show_classic')
         self.machine.lights['bbl_match'].on(key="match")
         self.machine.lights[self.match_light].on(key="match")
-        self.match_done()
+        self.match_flash()
 
     def match_show_circle_right(self):
         # Rotating Match lamps
+        self.machine.events.add_handler('match_show_circle_right_complete', self.match_show_circle_right_complete)
         self.machine.events.post('match_show_circle_right')
+        self.machine.shows['match_circle_right'].play(events_when_completed=["match_show_circle_right_complete"],loops=0)
+
+    def match_show_circle_right_complete(self, **kwargs):
         match_numbers_circle = ['00','20','40','60','80','90','70','50','30','10']
-         
-        self.machine.shows['match_circle_right'].play(loops=4)
 
         previous_match_light_circle = 'bbl_match_00'
 
@@ -74,46 +78,25 @@ class Match(Mode):
 
             self.machine.lights[previous_match_light_circle].off(key="match")
             self.machine.lights[match_light_circle].on(key="match")
+            yield from asyncio.sleep(0.1)
             
             if lamp == self.match:
                 break
-
+                
             previous_match_light_circle = match_light_circle
 
-        if self.player_match:
-            self.machine.shows['flash'].play(show_tokens=dict(light=match_light_circle), speed=10.0, loops=8)
+        self.match_flash()
 
-        self.match_done()
-
-    def match_show_circle_left(self):
-        # Rotating Match lamps
-        self.machine.events.post('match_show_circle_left')
-        match_numbers_circle = ['90','70','50','30','10','00','20','40','60','80']
-         
-        self.machine.shows['match_circle_left'].play(loops=4)
-
-        previous_match_light_circle = 'bbl_match_90'
-
-        for lamp in match_numbers_circle:
-            match_light_circle = 'bbl_match_' + lamp
-
-            self.machine.lights[previous_match_light_circle].off(key="match")
-            self.machine.lights[match_light_circle].on(key="match")
-            yield from asyncio.sleep(0.2)
-            
-            if lamp == self.match:
-                break
-
-            previous_match_light_circle = match_light_circle
+    def match_flash(self):
+        # Flash Match number if matched
+        self.machine.events.add_handler('match_flash_complete', self.match_done)
 
         if self.player_match:
-            self.machine.shows['flash'].play(show_tokens=dict(light=match_light_circle), speed=10.0, loops=8)
-
-        self.match_done()
-
+            self.machine.shows['flash_match'].play(show_tokens=dict(light=match_light_circle))
+        else:
+            self.match_done()
+        
     def match_done(self):
-        # Leave Match and Match Number lit
-        self.machine.lights['bbl_match'].on(key="match")
         self.machine.lights[self.match_light].on(key="match")
 
         # Fire knocker if match

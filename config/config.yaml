@@ -41,6 +41,7 @@ player_vars:
         initial_value: 0
 
 modes:
+  - gi
   - base
   - tilt
   - eob_bonus
@@ -68,7 +69,7 @@ flippers:
 
 ball_devices:
     bd_trough:
-        ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3
+        ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3, pfs_trough_jam
         jam_switch: pfs_trough_jam
         eject_coil_jam_pulse: 40ms
         entrance_count_delay: 300ms
@@ -76,7 +77,6 @@ ball_devices:
         tags: trough, home, drain
         eject_targets: bd_shooter_lane
         confirm_eject_type: target
-        debug: yes
     bd_shooter_lane:
         ball_switches: pfs_shooter_lane
         eject_timeouts: 3s

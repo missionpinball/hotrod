@@ -1,0 +1,11 @@
+#config_version=5
+
+mode:
+    start_events: mode_base_starting
+    priority: 400
+
+show_player:
+    mode_gi_started:
+        general_illumination: play
+        girl_on: play
+        title_on: play

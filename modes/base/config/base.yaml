@@ -234,11 +234,6 @@ shot_groups:
             rollovers_lit_complete: 1s
 
 show_player:
-    ball_started:
-        general_illumination: play
-        girl_on: play
-        title_on: play
-
     pfs_left_sling_active:
         flash:
            loops: 0
