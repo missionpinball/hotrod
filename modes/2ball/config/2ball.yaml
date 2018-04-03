@@ -39,7 +39,7 @@ counters:
     lb_enable_jackpot:
         count_events: drop_target_bank_rod_down
         restart_events: jackpot
-        count_complete_value: current_player.light_jackpot_required_hits + 1
+        count_complete_value: current_player.light_jackpot_required_hits
         events_when_complete: light_jackpot
 
 achievements:
