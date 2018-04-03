@@ -1,0 +1,14 @@
+#show_version=5
+
+- time: 0
+  lights:
+      pfl_bonus_1000: ff
+      pfl_bonus_2000: ff
+      pfl_bonus_3000: 00
+      pfl_bonus_4000: 00
+      pfl_bonus_5000: 00
+      pfl_bonus_6000: 00
+      pfl_bonus_7000: 00
+      pfl_bonus_8000: 00
+      pfl_bonus_9000: 00
+      pfl_bonus_10000: 00

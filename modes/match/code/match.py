@@ -3,7 +3,6 @@ import asyncio
 from mpf.core.async_mode import AsyncMode
 from random import *
 
-
 class Match(AsyncMode):
 
     @asyncio.coroutine

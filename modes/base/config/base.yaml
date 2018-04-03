@@ -103,7 +103,9 @@ counters:
             - hot_lanes_lit_complete
             - bonus_lanes_lit_complete
             - left_outlane_hit
+            - left_inlane_hit
             - right_outlane_hit
+            - right_inlane_hit
         starting_count: 0
         count_interval: 1000
         count_complete_value: 10000
@@ -234,11 +236,66 @@ shot_groups:
             rollovers_lit_complete: 1s
 
 show_player:
+    mode_base_started:
+        bonus_off:
+            loops: 0
+            key: bonus_show
+    bonus_lamp_1000_lit:
+        bonus_1000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_2000_lit:
+        bonus_1000: stop
+        bonus_2000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_3000_lit:
+        bonus_2000: stop
+        bonus_3000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_4000_lit:
+        bonus_3000: stop
+        bonus_4000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_5000_lit:
+        bonus_4000: stop
+        bonus_5000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_6000_lit:
+        bonus_5000: stop
+        bonus_6000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_7000_lit:
+        bonus_6000: stop
+        bonus_7000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_8000_lit:
+        bonus_7000: stop
+        bonus_8000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_9000_lit:
+        bonus_8000: stop
+        bonus_9000: 
+            action: play
+            key: bonus_show
+    bonus_lamp_10000_lit:
+        bonus_9000: stop
+        bonus_10000: 
+            action: play
+            key: bonus_show
+    stop_bonus_shows:
+        bonus_show: stop
     pfs_left_sling_active:
         flash:
            loops: 0
            speed: 2
-           priority: 1
+           priority: 500
            show_tokens:
                light: pfl_left_sling_2
 
@@ -246,7 +303,7 @@ show_player:
         flash:
            loops: 0
            speed: 2
-           priority: 1
+           priority: 500
            show_tokens:
                light: pfl_right_sling_2
 
@@ -257,17 +314,17 @@ show_player:
     player_shot_left_lock{value==3}:
         flash_left_eject: 
             action: play
-            priority: 10
+            priority: 500
         flash_right_eject: 
             action: play
-            priority: 10
+            priority: 500
     player_shot_right_lock{value==3}:
         flash_left_eject: 
             action: play
-            priority: 10
+            priority: 500
         flash_right_eject: 
             action: play
-            priority: 10
+            priority: 500
 
     bonus_lanes_lit_complete: 
         bonus_lanes_complete:

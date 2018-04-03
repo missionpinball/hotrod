@@ -24,6 +24,20 @@ scoring:
     mode_2ball_started:
         light_jackpot_required_hits: 0
 
+sequences:
+    jackpot_right:
+        events:
+            - jackpot_lit
+            - balldevice_bd_right_saucer_ball_enter
+        restart_events: jackpot
+        events_when_complete: jackpot_right_show
+    jackpot_left:
+        events:
+            - jackpot_lit
+            - balldevice_bd_left_saucer_ball_enter
+        restart_events: jackpot
+        events_when_complete: jackpot_left_show
+
 counters:
     lb_increase_drop_hits_for_light_jackpot:
         count_events: jackpot
@@ -52,6 +66,26 @@ achievements:
 show_player:
     mode_2ball_started:
         saucer_bounce: play
+    multiball_mb_2ball_started:
+        flash:
+            speed: 2
+            loops: 20
+            priority: 1000
+            show_tokens:
+                light: pfl_same_player        
+    multiball_mb_2ball_shoot_again:
+        bell_ring:
+            loops: 5
+    jackpot_left_show:
+        jackpot_left:
+            loops: 0
+            speed: 10
+            priority: 10000
+    jackpot__right_show:
+        jackpot_right:
+            loops: 0
+            speed: 10
+            priority: 10000
     left_saucer_eject_show_completed:
         saucer_bounce: play
     right_saucer_eject_show_completed:
