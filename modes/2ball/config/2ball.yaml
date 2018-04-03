@@ -28,13 +28,13 @@ sequences:
     jackpot_right:
         events:
             - jackpot_lit
-            - pfs_right_eject_active
-        restart_events: jackpot
+            - balldevice_right_eject_ball_enter
+        reset_events: jackpot
     jackpot_left:
         events:
             - jackpot_lit
-            - pfs_left_eject_active
-        restart_events: jackpot
+            - balldevice_right_eject_ball_enter
+        reset_events: jackpot
 
 counters:
     lb_increase_drop_hits_for_light_jackpot:
@@ -74,13 +74,13 @@ show_player:
     multiball_mb_2ball_shoot_again:
         bell_ring:
             loops: 5
-    balldevice_bd_left_eject_ball_eject_attempt{device.sequences.jackpot_left.value>=1}:
+    balldevice_bd_left_eject_ball_eject_attempt{device.sequences.jackpot_left["value"]>=1}:
         jackpot_left:
             loops: 0
             speed: 10
             priority: 10000
             block_queue: yes
-    balldevice_bd_right_eject_ball_eject_attempt{device.sequences.jackpot_right.value>=1}:
+    balldevice_bd_right_eject_ball_eject_attempt{device.sequences.jackpot_right["value"]>=1}:
         jackpot_right:
             loops: 0
             speed: 10
