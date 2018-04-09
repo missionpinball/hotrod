@@ -5,7 +5,11 @@ from mpf.core.utility_functions import Util
 class Count(Mode):
 
     def mode_start(self, **kwargs):
-        self.bonus_value = 1000
+        if self.player['ball'] == 3:
+           self.bonus_value = 2000
+        else:
+           self.bonus_value = 1000
+
         self.count_down = self.machine.counters.lb_bonus.value
         self.machine.events.post("bonus_code_starting_value_" + str(self.count_down))
         self.prepare_bonus()
