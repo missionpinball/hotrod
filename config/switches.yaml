@@ -49,7 +49,7 @@ switches:
         number: 0-2-8
         tags: playfield_active, skill_shot_cancel
     pfs_right_sling:
-        number: 0-2-11
+        number: 0-2-9
         tags: playfield_active, skill_shot_cancel
     pfs_left_upper:
         number: 0-2-16
