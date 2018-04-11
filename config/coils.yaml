@@ -2,48 +2,48 @@
 
 coils:
     pfc_flipper_left_main:
-        number: 0-2-4
-        default_pulse_ms: 25ms
-        default_hold_power: 0.125
+        number: 0-2-0
+        default_pulse_ms: 20ms
+        default_hold_power: 0.25
         label: Left Flipper
     pfc_flipper_right_main:
-        number: 0-2-7
-        default_pulse_ms: 25ms
-        default_hold_power: 0.125
+        number: 0-2-1
+        default_pulse_ms: 20ms
+        default_hold_power: 0.25
         label: Right Flipper
 
     bbc_player_2_10000:
         number: 1-2-0
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 1 10,000
     bbc_player_2_1000:
         number: 1-2-1
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 1 1,000
     bbc_player_2_100:
         number: 1-2-2
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 1 100
     bbc_player_2_10:
         number: 1-2-3
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 1 10
 
     bbc_player_1_10000:
         number: 1-2-7
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 2 10,000        
     bbc_player_1_1000:
         number: 1-2-6
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 2 1,000
     bbc_player_1_100:
         number: 1-2-5
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 2 100
     bbc_player_1_10:
         number: 1-2-4
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Player 2 10
 
     bbc_credit_down:
@@ -59,70 +59,63 @@ coils:
 
     cc_knocker:
         number: 1-1-7
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Knocker
 
     cc_chime_1:
         number: 1-1-4
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Chime 1
     cc_chime_2:
         number: 1-1-6
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Chime 2
     cc_chime_3:
         number: 1-1-5
-        default_pulse_ms: 5ms
+        default_pulse_ms: 10ms
         label: Chime 3
 
     pfc_left_sling:
-        number: 0-2-0
-        default_pulse_ms: 5ms
+        number: 0-2-4
+        default_pulse_ms: 20ms
         label: Left Sling
     pfc_right_sling:
-        number: 0-2-1
-        default_pulse_ms: 5ms
+        number: 0-2-5
+        default_pulse_ms: 20ms
         label: Right Sling
     pfc_trough_eject:
-        number: 0-2-2
-        default_pulse_ms: 10ms
+        number: 0-2-3
+        default_pulse_ms: 20ms
         label: Trough Eject
     pfc_right_pop:
-        number: 0-3-0
+        number: 0-3-7
         default_pulse_ms: 20ms
         label: Right Pop
     pfc_center_pop:
-        number: 0-3-1
+        number: 0-3-6
         default_pulse_ms: 20ms
         label: Center Pop
     pfc_left_pop:
-        number: 0-3-2
+        number: 0-3-1
         default_pulse_ms: 20ms
         label: Left Pop
     pfc_right_saucer:
-        number: 0-2-6
+        number: 0-3-0
         default_pulse_ms: 20ms 
         label: Right Saucer
     pfc_right_eject:
-        number: 0-3-4
+        number: 0-3-5
         default_pulse_ms: 20ms
         label: Left Saucer
     pfc_drop_reset:
-        number: 0-3-5
+        number: 0-3-4
         default_pulse_ms: 40ms
         label: Drop Reset
     pfc_left_eject:
-        number: 0-3-6
+        number: 0-3-3
         default_pulse_ms: 20ms
         label: Left Eject
     pfc_left_saucer:
-        number: 0-3-7
+        number: 0-3-2
         default_pulse_ms: 20ms
         label: Left Saucer
-
-    unused_1_2:
-        number: 1-1-2
-    unused_5_3:
-        number: 0-2-3
-    unused_5_5:
-        number: 0-2-5

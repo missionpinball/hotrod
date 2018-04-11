@@ -2,10 +2,10 @@
 
 switches:
     cs_left_flipper:
-        number: 0-2-8
+        number: 0-2-0
         tags: playfield_active,flipper
     cs_right_flipper:
-        number: 0-2-11
+        number: 0-2-1
         tags: playfield_active,flipper
 
     bbs_player_2_10000:
@@ -46,10 +46,10 @@ switches:
         tags: slam_tilt
 
     pfs_left_sling:
-        number: 0-2-0
+        number: 0-2-8
         tags: playfield_active, skill_shot_cancel
     pfs_right_sling:
-        number: 0-2-1
+        number: 0-2-11
         tags: playfield_active, skill_shot_cancel
     pfs_left_upper:
         number: 0-2-16
@@ -90,13 +90,13 @@ switches:
     pfs_trough_jam:
         number: 0-2-30
     pfs_right_pop:
-        number: 0-3-0
+        number: 0-3-11
         tags: playfield_active, pop, skill_shot_cancel
     pfs_center_pop:
-        number: 0-3-1
+        number: 0-3-10
         tags: playfield_active, pop, skill_shot_cancel
     pfs_left_pop:
-        number: 0-3-2
+        number: 0-3-1
         tags: playfield_active, pop, skill_shot_cancel
     pfs_shooter_lane:
         number: 0-3-16
@@ -133,3 +133,4 @@ switches:
     pfs_left_saucer:
         number: 0-3-31
         tags: skill_shot_cancel
+

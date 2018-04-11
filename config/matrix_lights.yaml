@@ -93,17 +93,17 @@ lights:
 
     # HOT Lamps
     pfl_top_lane_h:
-        number: 0-0-7
+        number: 0-0-15
         subtype: matrix
         label: Top Lane H
         tags: tilt_lamps, hot_lanes
     pfl_top_lane_o:
-        number: 0-0-6
+        number: 0-0-14
         subtype: matrix
         label: Top Lane O
         tags: tilt_lamps, hot_lanes
     pfl_top_lane_t:
-        number: 0-0-5
+        number: 0-0-13
         subtype: matrix
         label: Top Lane T
         tags: tilt_lamps, hot_lanes
@@ -147,25 +147,25 @@ lights:
         label: Right Saucer 3
         tags: tilt_lamps
     pfl_right_saucer_4:
-        number: 0-0-10
+        number: 0-0-2
         subtype: matrix
         label: Right Saucer 4
         tags: tilt_lamps
 
     pfl_extra_ball:
-        number: 0-0-11
+        number: 0-0-3
         subtype: matrix
         label: Extra Ball
         tags: tilt_lamps
 
     # Jackpots
     pfl_right_jackpot:
-        number: 0-0-14
+        number: 0-0-6
         subtype: matrix
         label: Right Jackpot
         tags: tilt_lamps
     pfl_left_jackpot:
-        number: 0-0-15
+        number: 0-0-7
         subtype: matrix
         label: Left Jackpot
         tags: tilt_lamps
@@ -246,7 +246,7 @@ lights:
 
     # Multipliers 
     pfl_2x:
-        number: 0-1-6
+        number: 0-1-0
         subtype: matrix
         label: 2X
         tags: tilt_lamps
@@ -437,17 +437,17 @@ lights:
         label: Left Saucer
         tags: gi, tilt_lamps
     pfl_right_saucer_gi:
-        number: 0-0-9
+        number: 0-0-1
         subtype: matrix
         label: Right Saucer
         tags: gi, tilt_lamps
     pfl_left_upper:
-        number: 0-0-12
+        number: 0-0-4
         subtype: matrix
         label: Left Upper
         tags: gi, tilt_lamps
     pfl_right_upper:
-        number: 0-0-13
+        number: 0-0-5
         subtype: matrix
         label: Right Upper
         tags: gi, tilt_lamps
@@ -462,94 +462,47 @@ lights:
         label: Left Eject
         tags: gi, tilt_lamps
     pfl_left_sling_1:
-        number: 0-0-16
+        number: 0-0-19
         subtype: matrix
         label: Left Sling 1
         tags: gi, tilt_lamps
     pfl_left_sling_2:
-        number: 0-0-17
+        number: 0-0-18
         subtype: matrix
         label: Left Sling 2
         tags: gi, tilt_lamps
     pfl_right_sling_1:
-        number: 0-0-18
+        number: 0-0-17
         subtype: matrix
         label: Right Sling 1
         tags: gi, tilt_lamps
     pfl_right_sling_2:
-        number: 0-0-19
+        number: 0-0-16
         subtype: matrix
         label: Right Sling 2
         tags: gi, tilt_lamps
 
     # HOT Lanes GI
     pfl_lane_4:
-        number: 0-0-1
+        number: 0-0-9
         subtype: matrix
         label: Lane 4
         tags: gi, tilt_lamps
     pfl_lane_3:
-        number: 0-0-2
+        number: 0-0-10
         subtype: matrix
         label: Lane 3
         tags: gi, tilt_lamps
     pfl_lane_2:
-        number: 0-0-3
+        number: 0-0-11
         subtype: matrix
         label: Lane 2
         tags: gi, tilt_lamps
     pfl_lane_1:
-        number: 0-0-4
+        number: 0-0-12
         subtype: matrix
         label: Lane 1
         tags: gi, tilt_lamps
-
-    # Unused Lamps
-    unused_0_17:
-        number: 1-0-17
-        subtype: matrix
-    unused_1_22:
-        number: 1-1-22
-        subtype: matrix
-    unused_1_26:
-        number: 1-1-26
-        subtype: matrix
-    unused_3_20:
-        number: 0-0-20
-        subtype: matrix
-    unused_3_21:
-        number: 0-0-21
-        subtype: matrix
-    unused_3_22:
-        number: 0-0-22
-        subtype: matrix
-    unused_3_23:
-        number: 0-0-23
-        subtype: matrix
-    unused_3_24:
-        number: 0-0-24
-        subtype: matrix
-    unused_3_25:
-        number: 0-0-25
-        subtype: matrix
-    unused_3_26:
-        number: 0-0-26
-        subtype: matrix
-    unused_3_27:
-        number: 0-0-27
-        subtype: matrix
-    unused_3_28:
-        number: 0-0-28
-        subtype: matrix
-    unused_3_29:
-        number: 0-0-29
-        subtype: matrix
-    unused_3_30:
-        number: 0-0-30
-        subtype: matrix
-    unused_3_31:
-        number: 0-0-31
-        subtype: matrix
 
 # Bacxkbox status lights
 info_lights:
