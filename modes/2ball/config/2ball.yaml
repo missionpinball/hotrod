@@ -70,12 +70,12 @@ show_player:
             loops: 5
     balldevice_bd_left_eject_ball_eject_attempt{device.sequences.jackpot_sequence["value"]==1}:
         flash_playfield:
-            loops: 10
+            loops: 15
             priority: 10000
             block_queue: yes
     balldevice_bd_right_eject_ball_eject_attempt{device.sequences.jackpot_sequence["value"]==1}:
         flash_playfield:
-            loops: 10
+            loops: 15
             priority: 10000
             block_queue: yes
     left_saucer_eject_show_completed:
