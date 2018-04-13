@@ -37,7 +37,7 @@ show_player:
             speed: 8
             priority: 1
     jackpot:
-        ring_bell_3ball:
+        bell_ring_3ball:
             loops: 0
 
 shows:
