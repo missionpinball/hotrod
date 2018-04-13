@@ -1,0 +1,32 @@
+#show_version=5
+
+- duration: 20ms
+  coils:
+      cc_chime_1: pulse
+- duration: 20ms
+  coils:
+      cc_chime_1: pulse
+- duration: 20ms
+  coils:
+      cc_chime_1: pulse
+- duration: 20ms
+  coils:
+      cc_chime_2: pulse
+- duration: 20ms
+  coils:
+      cc_chime_2: pulse
+- duration: 20ms
+  coils:
+      cc_chime_2: pulse
+- duration: 20ms
+  coils:
+      cc_chime_3: pulse
+- duration: 20ms
+  coils:
+      cc_chime_3: pulse
+- duration: 20ms
+  coils:
+      cc_chime_3: pulse
+- duration: 20ms
+  coils:
+      bbc_bell: pulse
