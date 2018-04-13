@@ -3,12 +3,11 @@
 mode:
     code: match.Match
     start_events: game_ending
-    stop_events: match_code_ended
     use_wait_queue: true
     priority: 110
 
 show_player:
-    mode_match_ending:
+    match_code_ended:
         game_over: 
             loops: 0
             block_queue: yes
