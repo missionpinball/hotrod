@@ -10,4 +10,3 @@ show_player:
     match_code_ended:
         game_over: 
             loops: 0
-            block_queue: yes

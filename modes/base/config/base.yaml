@@ -335,6 +335,8 @@ show_player:
         flash_rollover:
             loops: 4
             speed: 4
+        bell_ring:
+            loops: 3
 
     timer_2x_multiplier_started:
         flash_2x: 
