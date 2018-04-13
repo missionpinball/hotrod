@@ -8,6 +8,20 @@ switches:
         number: 0-2-1
         tags: playfield_active,flipper
 
+    cs_coin_1:
+        number: 1-2-27
+    cs_coin_2:
+        number: 1-2-28
+    cs_start:
+        number: 1-2-26
+        tags: start
+    cs_tilt_bob:
+        number: 1-2-29
+        tags: playfield_active, tilt_warning
+    cs_slam_tilt:
+        number: 1-2-30
+        tags: slam_tilt
+
     bbs_player_2_10000:
         number: 1-2-16
     bbs_player_2_1000:
@@ -30,20 +44,6 @@ switches:
         number: 1-2-24
     bbs_credit_up:
         number: 1-2-25
-
-    cs_coin_1:
-        number: 1-2-27
-    cs_coin_2:
-        number: 1-2-28
-    cs_start:
-        number: 1-2-26
-        tags: start
-    cs_tilt_bob:
-        number: 1-2-29
-        tags: playfield_active, tilt_warning
-    cs_slam_tilt:
-        number: 1-2-30
-        tags: slam_tilt
 
     pfs_left_sling:
         number: 0-2-8
