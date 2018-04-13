@@ -6,3 +6,8 @@ mode:
     stop_events: match_code_ended
     use_wait_queue: true
     priority: 110
+    
+show_player:
+    mode_match_ending:
+        game_over: 
+            loops: 0

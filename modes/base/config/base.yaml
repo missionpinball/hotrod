@@ -236,9 +236,6 @@ shot_groups:
             rollovers_lit_complete: 1s
 
 show_player:
-    mode_game_stopped:
-        game_over: 
-            loops: 0
     mode_base_started:
         bonus_off:
             loops: 0
