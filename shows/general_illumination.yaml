@@ -2,9 +2,11 @@
 
 - time: 0
   lights:
-    bbl_title_left: ff
-    bbl_title_mid: ff
-    bbl_title_right: ff
+    bbl_title_1: ff
+    bbl_title_2: ff
+    bbl_title_3: ff
+    bbl_title_4: ff
+    bbl_title_5: ff
     bbl_girl_mid: ff
     bbl_girl_right_leg: ff
     pfl_left_sling_1: ff

@@ -125,7 +125,7 @@ lights:
         label: Left Saucer 3
         tags: tilt_lamps
     pfl_left_saucer_4:
-        number: 0-0-8
+        number: 0-0-0
         subtype: matrix
         label: Left Saucer 4
         tags: tilt_lamps
@@ -412,27 +412,35 @@ lights:
         subtype: matrix
         label: Title Flame Left
     bbl_title_flame_right:
-        number: 1-1-31
+        number: 1-3-0
         subtype: matrix
         label: Title Flame Right
 
     # HOT ROD Title
-    bbl_title_left:
-        number: 1-0-31
+    bbl_title_1:
+        number: 1-3-5
         subtype: matrix
-        label: Title Left
-    bbl_title_mid:
-        number: 1-1-29
+        label: Title 1
+    bbl_title_2:
+        number: 1-3-1
         subtype: matrix
-        label: Title Middle
-    bbl_title_right:
-        number: 1-1-30
+        label: Title 2
+    bbl_title_3:
+        number: 1-3-3
         subtype: matrix
-        label: Title Right
+        label: Title 3
+    bbl_title_4:
+        number: 1-3-2
+        subtype: matrix
+        label: Title 4
+    bbl_title_5:
+        number: 1-3-4
+        subtype: matrix
+        label: Title 5
 
     # Playfield General Illumination
     pfl_left_saucer_gi:
-        number: 0-0-0
+        number: 0-0-8
         subtype: matrix
         label: Left Saucer
         tags: gi, tilt_lamps
@@ -503,6 +511,19 @@ lights:
         subtype: matrix
         label: Lane 1
         tags: gi, tilt_lamps
+
+    unused_1_0_17:
+        number: 1-0-17
+    unused_1_0_31:
+        number: 1-0-31
+    unused_1_1_26:
+        number: 1-1-26
+    unused_1_1_29:
+        number: 1-1-29 
+    unused_1_1_30:
+        number: 1-1-30 
+    unused_1_1_31:
+        number: 1-1-31 
 
 # Bacxkbox status lights
 info_lights:

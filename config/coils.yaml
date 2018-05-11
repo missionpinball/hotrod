@@ -3,13 +3,13 @@
 coils:
     pfc_flipper_left_main:
         number: 0-2-0
-        default_pulse_ms: 27ms
-        default_hold_power: 0.25
+        default_pulse_ms: 25ms
+        default_hold_power: 0.125
         label: Left Flipper
     pfc_flipper_right_main:
         number: 0-2-1
-        default_pulse_ms: 27ms
-        default_hold_power: 0.25
+        default_pulse_ms: 25ms
+        default_hold_power: 0.125
         label: Right Flipper
 
     bbc_player_2_10000:
@@ -119,3 +119,11 @@ coils:
         number: 0-3-2
         default_pulse_ms: 20ms
         label: Left Saucer
+
+    unused_2_2:
+        number: 0-2-2
+    unused_2_6:
+        number: 0-2-6
+    unused_2_7:
+        number: 0-2-7
+

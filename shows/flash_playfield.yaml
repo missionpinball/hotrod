@@ -39,9 +39,11 @@
       bbl_tilt: 00
       bbl_title_flame_left: ff
       bbl_title_flame_right: 00
-      bbl_title_left: ff
-      bbl_title_mid: 00
-      bbl_title_right: ff
+      bbl_title_1: ff
+      bbl_title_2: 00
+      bbl_title_3: ff
+      bbl_title_4: 00
+      bbl_title_5: ff
       pfl_2x: 00
       pfl_4x: ff
       pfl_bonus_10000: 00
@@ -130,9 +132,11 @@
       bbl_tilt: ff
       bbl_title_flame_left: 00
       bbl_title_flame_right: ff
-      bbl_title_left: 00
-      bbl_title_mid: ff
-      bbl_title_right: 00
+      bbl_title_1: 00
+      bbl_title_2: ff
+      bbl_title_3: 00
+      bbl_title_4: ff
+      bbl_title_5: 00
       pfl_2x: ff
       pfl_4x: 00
       pfl_bonus_10000: ff

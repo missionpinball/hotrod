@@ -39,9 +39,11 @@
       bbl_tilt: 00
       bbl_title_flame_left: 00
       bbl_title_flame_right: 00
-      bbl_title_left: 00
-      bbl_title_mid: 00
-      bbl_title_right: 00
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
       pfl_2x: 00
       pfl_4x: 00
       pfl_bonus_10000: 00
@@ -128,7 +130,7 @@
       pfl_right_inlane: ff
 - time: +1
   lights: 
-      bbl_title_right: ff
+      bbl_title_3: ff
       bbl_match: ff
       pfl_right_saucer_2: ff
       pfl_right_jackpot: ff
@@ -152,7 +154,7 @@
       pfl_4x: ff
 - time: +1
   lights:
-      bbl_title_mid: ff
+      bbl_title_3: ff
       pfl_lane_2: ff
       pfl_bonus_10000: ff
       pfl_bonus_8000: ff
@@ -181,7 +183,7 @@
       pfl_2x: ff
 - time: +1
   lights:
-      bbl_title_left: ff
+      bbl_title_1: ff
       bbl_player_1_100k: ff
       bbl_corvette_right_hl: ff
       pfl_lane_4: ff

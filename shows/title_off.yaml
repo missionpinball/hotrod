@@ -2,6 +2,9 @@
 
 - time: 0
   lights:
-      bbl_title_left: 00
-      bbl_title_mid: 00
-      bbl_title_right: 00
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
+
