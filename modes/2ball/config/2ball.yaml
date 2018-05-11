@@ -12,7 +12,7 @@ multiballs:
         shoot_again: 10s
         ball_locks: bd_left_saucer, bd_right_saucer
 
-scoring:
+variable_player:
     balldevice_bd_left_saucer_ball_enter:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     balldevice_bd_right_saucer_ball_enter:

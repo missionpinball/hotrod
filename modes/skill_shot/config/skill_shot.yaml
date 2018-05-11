@@ -5,7 +5,7 @@ mode:
     stop_events: sw_skill_shot_cancel, sw_skill_shot_success
     priority: 200
 
-scoring:
+variable_player:
     skill_shot_lit_hit:
         score: 450
 

@@ -6,7 +6,7 @@ mode:
     priority: 140
     restart_on_next_ball: True
 
-scoring:
+variable_player:
     # Ejects
     pfs_left_eject_active:
         score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block

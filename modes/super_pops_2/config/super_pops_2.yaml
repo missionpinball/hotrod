@@ -5,7 +5,7 @@ mode:
     stop_events: super_pops_1_start
     priority: 300
 
-scoring:
+variable_player:
     sw_pop:
         score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
 

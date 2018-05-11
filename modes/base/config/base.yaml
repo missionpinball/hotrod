@@ -5,7 +5,7 @@ mode:
     code: base.End_of_Ball_Bonus
     priority: 100
 
-scoring:
+variable_player:
     # R-O-D Drop Targets
     pfs_drop_r_active:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
@@ -57,14 +57,15 @@ scoring:
         score: 500
     # Jackpot and Multiplier values
     increase_required:
-        required_hits: 1
+        required_hits: 
+            int: 1
     timer_2x_multiplier_started:
         pf_multiplier:
-            score: 2
+            int: 2
             action: set
     timer_2x_multiplier_stopped:
         pf_multiplier:
-            score: 1
+            int: 1
             action: set
     mode_2ball_started:
         mb_2ball_multipler:
@@ -72,7 +73,7 @@ scoring:
             action: set
     mode_2ball_stopped:
         mb_2ball_multipler:
-            score: 0
+            float: 0
             action: set
     mode_3ball_started:
         mb_3ball_multipler:
@@ -80,7 +81,7 @@ scoring:
             action: set
     mode_3ball_stopped:
         mb_3ball_multipler:
-            score: 0
+            float: 0
             action: set
 
 counters:
@@ -106,6 +107,8 @@ counters:
             - left_inlane_hit
             - right_outlane_hit
             - right_inlane_hit
+            - pfs_left_eject_active
+            - pfs_right_eject_active
         starting_count: 0
         count_interval: 1000
         count_complete_value: 10000
@@ -237,6 +240,7 @@ shot_groups:
 
 show_player:
     mode_base_started:
+        match_off: play
         bonus_off:
             loops: 0
             key: bonus_show

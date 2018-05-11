@@ -14,6 +14,9 @@ class Match(AsyncMode):
         player_2_score = 0
         self.match_numbers = ['00', '10', '20', '30', '40', '50', '60', '70', '80', '90']
 
+        for loop in self.match_numbers:
+            self.machine.lights[loop].off(key="match")
+
         random_match_numbers = self.match_numbers
         shuffle(random_match_numbers)
         self.match = random_match_numbers[0]
@@ -97,8 +100,9 @@ class Match(AsyncMode):
     def match_flash(self):
         # Flash Match number if matched
         if self.player_match:
-            self.machine.shows['flash_match'].play(show_tokens=dict(light="match_light_circle"))
-            yield from self.machine.events.wait_for_event("match_flash_complete")
+            self.machine.shows['flash'].play(show_tokens=dict(light=match_light_circle), loops=5, speed=4)
+
+        self.match_done()
 
     @asyncio.coroutine
     def match_done(self):
@@ -113,4 +117,4 @@ class Match(AsyncMode):
             self.machine.events.post('match_player_2')
 
         self.machine.events.post('match_code_ended')
-
+     

@@ -5,7 +5,7 @@ mode:
     stop_events: mode_lock_started
     priority: 120
 
-scoring:
+variable_player:
     left_saucer_hit:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_saucer_hit:

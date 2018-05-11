@@ -3,12 +3,12 @@
 coils:
     pfc_flipper_left_main:
         number: 0-2-0
-        default_pulse_ms: 20ms
+        default_pulse_ms: 27ms
         default_hold_power: 0.25
         label: Left Flipper
     pfc_flipper_right_main:
         number: 0-2-1
-        default_pulse_ms: 20ms
+        default_pulse_ms: 27ms
         default_hold_power: 0.25
         label: Right Flipper
 

@@ -6,7 +6,7 @@ mode:
     priority: 130
     restart_on_next_ball: True
 
-scoring:
+variable_player:
     player_shot_right_lock{value==1}:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     player_shot_left_lock{value==1}:
