@@ -84,7 +84,7 @@ coils:
         default_pulse_ms: 20ms
         label: Right Sling
     pfc_trough_eject:
-        number: 0-2-3
+        number: 0-2-2
         default_pulse_ms: 20ms
         label: Trough Eject
     pfc_right_pop:
@@ -119,11 +119,3 @@ coils:
         number: 0-3-2
         default_pulse_ms: 20ms
         label: Left Saucer
-
-    unused_2_2:
-        number: 0-2-2
-    unused_2_6:
-        number: 0-2-6
-    unused_2_7:
-        number: 0-2-7
-

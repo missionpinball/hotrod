@@ -307,6 +307,11 @@ lights:
         subtype: matrix
         label: Girl Middle
         tags: tilt_lamps
+    bbl_girl_face:
+        number: 1-0-31
+        subtype: matrix
+        label: Girl Face
+        tags: tilt_lamps
 
     # Player 1 Corvette GI
     bbl_corvette_right_hl:
@@ -511,19 +516,6 @@ lights:
         subtype: matrix
         label: Lane 1
         tags: gi, tilt_lamps
-
-    unused_1_0_17:
-        number: 1-0-17
-    unused_1_0_31:
-        number: 1-0-31
-    unused_1_1_26:
-        number: 1-1-26
-    unused_1_1_29:
-        number: 1-1-29 
-    unused_1_1_30:
-        number: 1-1-30 
-    unused_1_1_31:
-        number: 1-1-31 
 
 # Bacxkbox status lights
 info_lights:
