@@ -6,4 +6,16 @@
 - time: +1
   coils:
       cc_chime_2: pulse
+- time: +1
+  coils:
+      cc_chime_1: pulse
+- time: +1
+  coils:
+      cc_chime_2: pulse
+- time: +1
+  coils:
+      cc_chime_1: pulse
+- time: +1
+  coils:
+      cc_chime_2: pulse
 

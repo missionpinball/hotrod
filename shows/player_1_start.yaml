@@ -15,3 +15,18 @@
       cc_chime_3: 
           action: pulse
           max_wait_ms: 50ms
+- duration: 200ms
+  coils:
+      cc_chime_1: 
+          action: pulse
+          max_wait_ms: 50ms
+- duration: 200ms
+  coils:
+      cc_chime_2: 
+          action: pulse
+          max_wait_ms: 50ms
+- duration: 200ms
+  coils:
+      cc_chime_3: 
+          action: pulse
+          max_wait_ms: 50ms
