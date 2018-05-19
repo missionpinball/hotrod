@@ -12,9 +12,3 @@ variable_player:
 show_player:
     mode_super_pops_2_started:
         flash_pops: play
-    sw_pop_active:
-        just_on:
-            loops: 0
-            priority: 1
-            show_tokens:
-                lights: pops

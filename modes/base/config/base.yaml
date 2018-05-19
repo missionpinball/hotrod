@@ -54,7 +54,7 @@ variable_player:
     rod_in_order_hit:
         score: 2000 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     nudge_bonus:
-        score: 500
+        score: 1000
     # Jackpot and Multiplier values
     increase_required:
         required_hits: 
@@ -109,6 +109,7 @@ counters:
             - right_inlane_hit
             - pfs_left_eject_active
             - pfs_right_eject_active
+            - skill_shot_lit_hit
         starting_count: 0
         count_interval: 1000
         count_complete_value: 10000
@@ -244,6 +245,7 @@ show_player:
         bonus_off:
             loops: 0
             key: bonus_show
+
     bonus_lamp_1000_lit:
         bonus_1000: 
             action: play
@@ -295,6 +297,7 @@ show_player:
             key: bonus_show
     stop_bonus_shows:
         bonus_show: stop
+        
     pfs_left_sling_active:
         flash:
            loops: 0

@@ -7,7 +7,7 @@ mode:
 
 variable_player:
     jackpot:
-        score: (2000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
+        score: (3500 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
 
 event_player:
     balldevice_bd_shooter_lane_ball_eject_success: start_2ball

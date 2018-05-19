@@ -50,7 +50,7 @@ class Count(Mode):
         self.machine.shows['flash'].play(show_tokens=dict(light='pfl_bonus_' + str(self.count_down)), speed=10.0, loops=3)
         self.machine.lights['pfl_bonus_' + str(self.count_down)].off()
 
-        self.count_down -= self.bonus_value
+        self.count_down -= 1000
 
         self.check_score_reels()
 

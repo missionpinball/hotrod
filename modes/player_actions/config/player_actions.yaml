@@ -1,11 +1,16 @@
 #config_version=5
 
 mode:
-    start_events: player_turn_started
-    stop_events: ball_will_end
-    priority: 110
+    stop_on_ball_end: false
+    priority: 5000
 
 show_player:
+    request_to_start_game:
+        player_1_start:
+            loops: 0
+    player_added:
+        player_2_start:
+            loops: 0
     ball_starting{player==1}:
         player_1_score_on: play
         corvette_on: play
@@ -16,3 +21,6 @@ show_player:
         belair_on: play
         player_1_score_off: play        
         corvette_off: play
+    game_ending:
+        game_over:
+            loops: 0

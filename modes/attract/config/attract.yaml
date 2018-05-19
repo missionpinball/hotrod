@@ -1,11 +1,6 @@
 #config_version=5
 
 show_player:
-    request_to_start_game:
-        player_1_start:
-            loops: 0
-            priority: 10000
-
     mode_attract_started:
         general_illumination: play
         attract_display_loop: play

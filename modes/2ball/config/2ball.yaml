@@ -18,7 +18,7 @@ variable_player:
     balldevice_bd_right_saucer_ball_enter:
         score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
     jackpot.2:
-        score: (1000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
+        score: (2000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
     jackpot.1:
         light_jackpot_required_hits: 1
     mode_2ball_started:
@@ -58,22 +58,16 @@ achievements:
 show_player:
     mode_2ball_started:
         saucer_bounce: play
-    multiball_mb_2ball_started:
-        flash:
-            speed: 2
-            loops: 20
-            priority: 1000
-            show_tokens:
-                light: pfl_same_player
-    multiball_mb_2ball_shoot_again:
-        bell_ring:
-            loops: 5
     balldevice_bd_left_eject_ball_eject_attempt{device.sequences.jackpot_sequence["value"]==1}:
+        bell_ring_2ball:
+            loops: 0
         flash_playfield:
             loops: 15
             priority: 10000
             block_queue: yes
     balldevice_bd_right_eject_ball_eject_attempt{device.sequences.jackpot_sequence["value"]==1}:
+        bell_ring_2ball:
+            loops: 0
         flash_playfield:
             loops: 15
             priority: 10000
@@ -94,6 +88,4 @@ show_player:
             loops: 0
             priority: 10
             events_when_completed: right_saucer_eject_show_completed
-    jackpot:
-        bell_ring_2ball:
-            loops: 0
+ 
