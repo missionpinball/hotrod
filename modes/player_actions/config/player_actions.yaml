@@ -1,14 +1,16 @@
 #config_version=5
 
 mode:
+    game_mode: false
+    start_events: request_to_start_game
     stop_on_ball_end: false
     priority: 5000
 
 show_player:
-    request_to_start_game:
+    mode_player_actions_started:
         player_1_start:
             loops: 0
-    player_added:
+    player_add_request:
         player_2_start:
             loops: 0
     ball_starting{player==1}:
