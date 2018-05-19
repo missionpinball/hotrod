@@ -7,7 +7,7 @@ mode:
     priority: 5000
 
 show_player:
-    mode_player_actions_started:
+    game_start:
         player_1_start:
             loops: 0
     player_add_request:
@@ -16,13 +16,13 @@ show_player:
     ball_starting{player==1}:
         player_1_score_on: play
         corvette_on: play
-        player_2_score_off: play
-        belair_off: play
+        player_2_score_on: stop
+        belair_on: stop
     ball_starting{player==2}:
         player_2_score_on: play
         belair_on: play
-        player_1_score_off: play        
-        corvette_off: play
+        player_1_score_on: stop        
+        corvette_on: stop
     game_ending:
         game_over:
             loops: 0
