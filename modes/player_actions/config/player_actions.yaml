@@ -2,12 +2,12 @@
 
 mode:
     game_mode: false
-    start_events: request_to_start_game
+    start_events: mode_tilt_started
     stop_on_ball_end: false
     priority: 5000
 
 show_player:
-    game_start:
+    game_started:
         player_1_start:
             loops: 0
     player_add_request:

@@ -1,32 +1,27 @@
 #show_version=5
 
-- duration: 200ms
-  coils:
-      cc_chime_1: 
-          action: pulse
-          max_wait_ms: 50ms
-- duration: 200ms
-  coils:
-      cc_chime_2: 
-          action: pulse
-          max_wait_ms: 50ms
-- duration: 200ms
+- duration: 150ms
   coils:
       cc_chime_3: 
           action: pulse
-          max_wait_ms: 50ms
-- duration: 200ms
-  coils:
-      cc_chime_1: 
-          action: pulse
-          max_wait_ms: 50ms
-- duration: 200ms
+          max_wait_ms: 50
+- duration: 150ms
   coils:
       cc_chime_2: 
           action: pulse
-          max_wait_ms: 50ms
-- duration: 200ms
+          max_wait_ms: 50
+- duration: 150ms
   coils:
-      cc_chime_3: 
+      cc_chime_1: 
           action: pulse
-          max_wait_ms: 50ms
+          max_wait_ms: 50
+- duration: 150ms
+  coils:
+      cc_chime_2: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 150ms
+  coils:
+      cc_chime_1: 
+          action: pulse
+          max_wait_ms: 50

@@ -76,7 +76,7 @@ coils:
         label: Chime 3
 
     pfc_left_sling:
-        number: 0-2-3
+        number: 0-2-6
         default_pulse_ms: 15ms
         label: Left Sling
     pfc_right_sling:
@@ -109,7 +109,7 @@ coils:
         label: Left Saucer
     pfc_drop_reset:
         number: 0-3-4
-        default_pulse_ms: 30ms
+        default_pulse_ms: 40ms
         label: Drop Reset
     pfc_left_eject:
         number: 0-3-3
