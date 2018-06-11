@@ -2,135 +2,134 @@
 
 switches:
     cs_left_flipper:
-        number: 0-2-0
+        number: 1/1/0 # SW-16 Address 1, Bank B, Switch 1
         tags: playfield_active,flipper
     cs_right_flipper:
-        number: 0-2-1
+        number: 1/1/1 
         tags: playfield_active,flipper
 
     cs_coin_1:
-        number: 1-2-27
+        number: 1/1/3
     cs_coin_2:
-        number: 1-2-28
+        number: 1/1/4
     cs_start:
-        number: 1-2-26
+        number: 1/1/2
         tags: start
     cs_tilt_bob:
-        number: 1-2-29
+        number: 1/1/5
         tags: playfield_active, tilt_warning
     cs_slam_tilt:
-        number: 1-2-30
+        number: 1/1/6
         tags: slam_tilt
 
     bbs_player_2_10000:
-        number: 1-2-16
+        number: 1/0/0 # SW-16 Address 1, Bank A, Switch 1
     bbs_player_2_1000:
-        number: 1-2-17
+        number: 1/0/1
     bbs_player_2_100:
-        number: 1-2-18
+        number: 1/0/2
     bbs_player_2_10:
-        number: 1-2-19
+        number: 1/0/3
 
     bbs_player_1_10000:
-        number: 1-2-23
+        number: 1/0/4
     bbs_player_1_1000:
-        number: 1-2-22
+        number: 1/0/5
     bbs_player_1_100:
-        number: 1-2-21
+        number: 1/0/6
     bbs_player_1_10:
-        number: 1-2-20
+        number: 1/0/7
 
-    bbs_credit_down:
-        number: 1-2-24
-    bbs_credit_up:
-        number: 1-2-25
+    #bbs_credit_down:
+    #    number: 1-2-24
+    #bbs_credit_up:
+    #    number: 1-2-25
 
     pfs_left_sling:
-        number: 0-2-8
+        number: 3/1/7 # SW-16 Address 3, Bank B, Switch 8
         tags: playfield_active, skill_shot_cancel
     pfs_right_sling:
-        number: 0-2-9
+        number: 2/0/4
         tags: playfield_active, skill_shot_cancel
     pfs_left_upper:
-        number: 0-2-16
+        number: 3/1/4
         tags: playfield_active, skill_shot_cancel
     pfs_left_side:
-        number: 0-2-17
+        number: 2/0/5
         tags: playfield_active, skill_shot_cancel
     pfs_left_eject:
-        number: 0-2-18
+        number: 3/1/3
         tags: skill_shot_cancel, ejects
     pfs_drop_r:
-        number: 0-2-19
+        number: 3/1/0
         tags: playfield_active, skill_shot_cancel
     pfs_drop_o:
-        number: 0-2-20
+        number: 3/1/1
         tags: playfield_active, skill_shot_cancel
     pfs_drop_d:
-        number: 0-2-21
+        number: 3/1/2
         tags: playfield_active, skill_shot_cancel
     pfs_left_rollover:
-        number: 0-2-22
+        number: 3/0/0
         tags: playfield_active, skill_shot_cancel
     pfs_center_rollover:
-        number: 0-2-23
+        number: 3/0/1
         tags: playfield_active, skill_shot_cancel
     pfs_left_inlane:
-        number: 0-2-25
+        number: 3/1/6
         tags: playfield_active, skill_shot_cancel
     pfs_left_outlane:
-        number: 0-2-26
+        number: 3/1/5
         tags: playfield_active, skill_shot_cancel
     pfs_trough_1:
-        number: 0-2-27
+        number: 2/1/0
     pfs_trough_2:
-        number: 0-2-28
+        number: 2/1/1
     pfs_trough_3:
-        number: 0-2-29
+        number: 2/1/2
     pfs_trough_jam:
-        number: 0-2-30
+        number: 2/1/3
     pfs_right_pop:
-        number: 0-3-11
+        number: 3/0/3
         tags: playfield_active, pop, skill_shot_cancel
     pfs_center_pop:
-        number: 0-3-10
+        number: 3/0/2
         tags: playfield_active, pop, skill_shot_cancel
     pfs_left_pop:
-        number: 0-3-1
+        number: 3/0/4
         tags: playfield_active, pop, skill_shot_cancel
     pfs_shooter_lane:
-        number: 0-3-16
+        number: 2/0/1
     pfs_right_outlane:
-        number: 0-3-17
+        number: 2/0/2
         tags: playfield_active, skill_shot_cancel
     pfs_right_inlane:
-        number: 0-3-18 
+        number: 2/0/3 
         tags: playfield_active, skill_shot_cancel
     pfs_right_rollover:
-        number: 0-3-20
+        number: 2/0/0
         tags: playfield_active, skill_shot_cancel
     pfs_right_eject:
-        number: 0-3-21
+        number: 2/0/6
         tags: skill_shot_cancel, ejects
     pfs_right_side:
-        number: 0-3-22
+        number: 3/0/7
         tags: playfield_active, skill_shot_cancel
     pfs_right_upper:
-        number: 0-3-23
+        number: 2/0/7
         tags: playfield_active, skill_shot_cancel
     pfs_top_lane_h:
-        number: 0-3-26
+        number: 2/1/4
         tags: playfield_active
     pfs_top_lane_o:
-        number: 0-3-27
+        number: 2/1/5
         tags: playfield_active
     pfs_top_lane_t:
-        number: 0-3-28
+        number: 2/1/6
         tags: playfield_active
     pfs_right_saucer:
-        number: 0-3-30
+        number: 2/1/7
         tags: skill_shot_cancel
     pfs_left_saucer:
-        number: 0-3-31
+        number: 3/0/5
         tags: skill_shot_cancel
-

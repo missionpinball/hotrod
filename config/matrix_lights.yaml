@@ -3,516 +3,546 @@
 lights:
     # Tilt
     bbl_tilt:
-        number: 1-0-27
+        number: C-A2-B0-1:R-A2-B1-1
         subtype: matrix
         label: Tilt
 
     # Players
     bbl_player_1_up:
-        number: 1-0-28
+        number: C-A2-B0-0:R-A2-B1-0
         subtype: matrix
         label: Player 1 Up
     bbl_player_2_up:
-        number: 1-0-29
+        number: C-A2-B0-0:R-A2-B1-1
         subtype: matrix
         label: Player 2 Up
 
     # Ball in Play
     bbl_ball_in_play_1:
-        number: 1-0-22
+        number: C-A2-B0-4:R-A2-B1-0
         subtype: matrix
         label: Ball 1
     bbl_ball_in_play_2:
-        number: 1-0-21
+        number: C-A2-B0-4:R-A2-B1-1
         subtype: matrix
-        label: Ball 1
+        label: Ball 2
     bbl_ball_in_play_3:
-        number: 1-0-20
+        number: C-A2-B0-4:R-A2-B1-2
         subtype: matrix
         label: Ball 3
     bbl_ball_in_play_4:
-        number: 1-0-19
+        number: C-A2-B0-4:R-A2-B1-3
         subtype: matrix
         label: Ball 4
     bbl_ball_in_play_5:
-        number: 1-0-18
+        number: C-A2-B0-4:R-A2-B1-4
         subtype: matrix
         label: Ball 5
 
     # Game Over
     bbl_game_over:
-        number: 1-0-24
+        number: C-A2-B0-5:R-A2-B1-1
         subtype: matrix
         label: Game Over
 
     # Match 
     bbl_match:
-        number: 1-0-10
+        number: C-A2-B0-3:R-A2-B1-2
         subtype: matrix
         label: Match
     bbl_match_00:
-        number: 1-0-9
+        number: C-A2-B0-3:R-A2-B1-1
         subtype: matrix
         label: Match 00
     bbl_match_10:
-        number: 1-0-8
+        number: C-A2-B0-3:R-A2-B1-0
         subtype: matrix
         label: Match 10
     bbl_match_20:
-        number: 1-0-7
+        number: C-A2-B0-2:R-A2-B1-7
         subtype: matrix
         label: Match 20
     bbl_match_30:
-        number: 1-0-6
+        number: C-A2-B0-2:R-A2-B1-6
         subtype: matrix
         label: Match 30
     bbl_match_40:
-        number: 1-0-5
+        number: C-A2-B0-2:R-A2-B1-5
         subtype: matrix
         label: Match 40
     bbl_match_50:
-        number: 1-0-4
+        number: C-A2-B0-2:R-A2-B1-4
         subtype: matrix
         label: Match 50
     bbl_match_60:
-        number: 1-0-3
+        number: C-A2-B0-2:R-A2-B1-3
         subtype: matrix
         label: Match 60
     bbl_match_70:
-        number: 1-0-2
+        number: C-A2-B0-2:R-A2-B1-2
         subtype: matrix
         label: Match 70
     bbl_match_80:
-        number: 1-0-1
+        number: C-A2-B0-2:R-A2-B1-1
         subtype: matrix
         label: Match 80
     bbl_match_90:
-        number: 1-0-0
+        number: C-A2-B0-2:R-A2-B1-0
         subtype: matrix
         label: Match 90
 
     # HOT Lamps
     pfl_top_lane_h:
-        number: 0-0-15
+        number: C-A4-B0-0:R-A4-B1-0
         subtype: matrix
         label: Top Lane H
         tags: tilt_lamps, hot_lanes
     pfl_top_lane_o:
-        number: 0-0-14
+        number: C-A4-B0-0:R-A4-B1-1
         subtype: matrix
         label: Top Lane O
         tags: tilt_lamps, hot_lanes
     pfl_top_lane_t:
-        number: 0-0-13
+        number: C-A4-B0-0:R-A4-B1-2
         subtype: matrix
         label: Top Lane T
         tags: tilt_lamps, hot_lanes
 
     # Left Saucer Lamps
     pfl_left_saucer_1:
-        number: 0-1-18
+        number: C-A4-B0-2:R-A4-B1-4
         subtype: matrix
         label: Left Saucer 1
         tags: tilt_lamps
     pfl_left_saucer_2:
-        number: 0-1-19
+        number: C-A4-B0-2:R-A4-B1-3
         subtype: matrix
         label: Left Saucer 2
         tags: tilt_lamps
     pfl_left_saucer_3:
-        number: 0-1-20
+        number: C-A4-B0-2:R-A4-B1-2
         subtype: matrix
         label: Left Saucer 3
         tags: tilt_lamps
     pfl_left_saucer_4:
-        number: 0-0-0
+        number: C-A4-B0-2:R-A4-B1-1
         subtype: matrix
         label: Left Saucer 4
         tags: tilt_lamps
 
     # Right Saucer Lamps
     pfl_right_saucer_1:
-        number: 0-1-21
+        number: C-A4-B0-1:R-A4-B1-4
         subtype: matrix
         label: Right Saucer 1
         tags: tilt_lamps
     pfl_right_saucer_2:
-        number: 0-1-22
+        number: C-A4-B0-1:R-A4-B1-3
         subtype: matrix
         label: Right Saucer 2
         tags: tilt_lamps
     pfl_right_saucer_3:
-        number: 0-1-23
+        number: C-A4-B0-1:R-A4-B1-2
         subtype: matrix
         label: Right Saucer 3
         tags: tilt_lamps
     pfl_right_saucer_4:
-        number: 0-0-2
+        number: C-A4-B0-1:R-A4-B1-1
         subtype: matrix
         label: Right Saucer 4
         tags: tilt_lamps
 
     pfl_extra_ball:
-        number: 0-0-3
+        number: C-A4-B0-0:R-A4-B1-7
         subtype: matrix
         label: Extra Ball
         tags: tilt_lamps
 
     # Jackpots
     pfl_right_jackpot:
-        number: 0-0-6
+        number: C-A4-B0-4:R-A4-B1-1
         subtype: matrix
         label: Right Jackpot
         tags: tilt_lamps
     pfl_left_jackpot:
-        number: 0-0-7
+        number: C-A4-B0-2:R-A4-B1-6
         subtype: matrix
         label: Left Jackpot
         tags: tilt_lamps
 
     # Bonus
     pfl_bonus_1000:
-        number: 0-1-14
+        number: C-A4-B0-5:R-A4-B1-0
         subtype: matrix
         label: Bonus 1,000
         tags: bonus_lamps
     pfl_bonus_2000:
-        number: 0-1-9
+        number: C-A4-B0-7:R-A4-B1-0
         subtype: matrix
         label: Bonus 2,000
         tags: bonus_lamps
     pfl_bonus_3000:
-        number: 0-1-1
+        number: C-A4-B0-5:R-A4-B1-1
         subtype: matrix
         label: Bonus 3,000
         tags: bonus_lamps
     pfl_bonus_4000:
-        number: 0-1-10
+        number: C-A4-B0-7:R-A4-B1-1
         subtype: matrix
         label: Bonus 4,000
         tags: bonus_lamps
     pfl_bonus_5000:
-        number: 0-1-2
+        number: C-A4-B0-5:R-A4-B1-2
         subtype: matrix
         label: Bonus 5,000
         tags: bonus_lamps
     pfl_bonus_6000:
-        number: 0-1-11
+        number: C-A4-B0-7:R-A4-B1-2
         subtype: matrix
         label: Bonus 6,000
         tags: bonus_lamps
     pfl_bonus_7000:
-        number: 0-1-3
+        number: C-A4-B0-5:R-A4-B1-3
         subtype: matrix
         label: Bonus 7,000
         tags: bonus_lamps
     pfl_bonus_8000:
-        number: 0-1-12
+        number: C-A4-B0-7:R-A4-B1-3
         subtype: matrix
         label: Bonus 8,000
         tags: bonus_lamps
     pfl_bonus_9000:
-        number: 0-1-4
+        number: C-A4-B0-5:R-A4-B1-4
         subtype: matrix
         label: Bonus 9,000
         tags: bonus_lamps
     pfl_bonus_10000:
-        number: 0-1-8
+        number: C-A4-B0-7:R-A4-B1-4
         subtype: matrix
         label: Bonus 10,000
         tags: bonus_lamps
 
     # In and Outlanes
     pfl_left_inlane:
-        number: 0-1-7
+        number: C-A4-B0-3:R-A4-B1-4
         subtype: matrix
         label: Left Inlane
         tags: tilt_lamps
     pfl_left_outlane:
-        number: 0-1-5
+        number: C-A4-B0-3:R-A4-B1-3
         subtype: matrix
         label: Left Outlane
         tags: tilt_lamps
     pfl_right_outlane:
-        number: 0-1-25
+        number: C-A4-B0-4:R-A4-B1-4
         subtype: matrix
         label: Right Outlane
         tags: tilt_lamps
     pfl_right_inlane:
-        number: 0-1-26
+        number: C-A4-B0-4:R-A4-B1-3
         subtype: matrix
         label: Right Inlane
         tags: tilt_lamps
 
     # Multipliers 
     pfl_2x:
-        number: 0-1-0
+        number: C-A4-B0-3:R-A4-B1-7
         subtype: matrix
         label: 2X
         tags: tilt_lamps
     pfl_4x:
-        number: 0-1-24
+        number: C-A4-B0-4:R-A4-B1-7
         subtype: matrix
         label: 4X
         tags: tilt_lamps
 
     pfl_same_player:
-        number: 0-1-13
+        number: C-A4-B0-7:R-A4-B1-5
         subtype: matrix
         label: Same Player Shoots Again
         tags: tilt_lamps
 
     # Pop Bumpers
     pfl_center_pop:
-        number: 0-1-15
+        number: C-A4-B0-1:R-A4-B1-6
         subtype: matrix
         label: Center Pop
         tags: tilt_lamps, pops
     pfl_left_pop:
-        number: 0-1-16
+        number: C-A4-B0-1:R-A4-B1-7
         subtype: matrix
         label: Right Pop
         tags: tilt_lamps, pops
     pfl_right_pop:
-        number: 0-1-31
+        number: C-A4-B0-1:R-A4-B1-5
         subtype: matrix
         label: Right Pop
         tags: tilt_lamps, pops
 
     # Center Rollovers
     pfl_right_rollover:
-        number: 0-1-17
+        number: C-A4-B0-3:R-A4-B1-2
         subtype: matrix
         label: Right Rollover
         tags: tilt_lamps
     pfl_left_rollover:
-        number: 0-1-29
+        number: C-A4-B0-3:R-A4-B1-0
         subtype: matrix
         label: Left Rollover
         tags: tilt_lamps
     pfl_center_rollover:
-        number: 0-1-30
+        number: C-A4-B0-3:R-A4-B1-1
         subtype: matrix
         label: Center Rollover
         tags: tilt_lamps
 
     # Girl GI
     bbl_girl_right_leg:
-        number: 1-0-11
+        number: C-A2-B0-3:R-A2-B1-7
         subtype: matrix
         label: Girl Right Leg
         tags: tilt_lamps
+    bbl_girl_left_leg:
+        number: C-A2-B0-3:R-A2-B1-3
+        subtype: matrix
+        label: Girl Left Leg
+        tags: tilt_lamps
     bbl_girl_mid:
-        number: 1-0-15
+        number: C-A2-B0-1:R-A2-B1-4
         subtype: matrix
         label: Girl Middle
         tags: tilt_lamps
+    bbl_girl_mid_2:
+        number: C-A2-B0-5:R-A2-B1-4
+        subtype: matrix
+        label: Girl Middle 2
+        tags: tilt_lamps
     bbl_girl_face:
-        number: 1-0-31
+        number: C-A2-B0-1:R-A2-B1-2
+        subtype: matrix
+        label: Girl Face
+        tags: tilt_lamps
+    bbl_girl_left:
+        number: C-A2-B0-4:R-A2-B1-5
         subtype: matrix
         label: Girl Face
         tags: tilt_lamps
 
     # Player 1 Corvette GI
     bbl_corvette_right_hl:
-        number: 1-0-16
+        number: C-A2-B0-5:R-A2-B1-0
         subtype: matrix
         label: Corvette Right Headlight
         tags: tilt_lamps
     bbl_corvette_left_hl:
-        number: 1-0-23
+        number: C-A2-B0-4:R-A2-B1-6
         subtype: matrix
         label: Corvette Left Headlight
         tags: tilt_lamps
     bbl_corvette_driver:
-        number: 1-0-26
+        number: C-A2-B0-1:R-A2-B1-5
         subtype: matrix
         label: Corvette Driver
+        tags: tilt_lamps
+    bbl_corvette_mid:
+        number: C-A2-B0-3:R-A2-B1-5
+        subtype: matrix
+        label: Corvette Mid
         tags: tilt_lamps
 
     # Player 2 Bel-Air GI
     bbl_belair_right_hl:
-        number: 1-0-12
+        number: C-A2-B0-4:R-A2-B1-7
         subtype: matrix
         label: Belair Right Headlight
         tags: tilt_lamps
     bbl_belair_left_hl:
-        number: 1-0-13
+        number: C-A2-B0-3:R-A2-B1-4
         subtype: matrix
         label: Belair Left Headlight
         tags: tilt_lamps
     bbl_belair_driver:
-        number: 1-0-14
+        number: C-A2-B0-5:R-A2-B1-2
         subtype: matrix
         label: Belair Driver
+        tags: tilt_lamps
+    bbl_belair_engine:
+        number: C-A2-B0-5:R-A2-B1-3
+        subtype: matrix
+        label: Belair Engine
+        tags: tilt_lamps
+    bbl_belair_mid:
+        number: C-A2-B0-3:R-A2-B1-6
+        subtype: matrix
+        label: Belair Mid
         tags: tilt_lamps
 
     # Player 1 Score GI
     bbl_player_1_100k:
-        number: 1-0-25
+        number: C-A2-B0-1:R-A2-B1-7
         subtype: matrix
         label: Player 1 100,000
         tags: tilt_lamps
     bbl_player_1_10k:
-        number: 1-1-16
+        number: C-A2-B0-6:R-A2-B1-0
         subtype: matrix
         label: Player 1 10,000
         tags: tilt_lamps
     bbl_player_1_1000:
-        number: 1-1-17
+        number: C-A2-B0-6:R-A2-B1-1
         subtype: matrix
         label: Player 1 1,000
         tags: tilt_lamps
     bbl_player_1_100:
-        number: 1-1-18
+        number: C-A2-B0-6:R-A2-B1-2
         subtype: matrix
         label: Player 1 100
         tags: tilt_lamps
     bbl_player_1_10:
-        number: 1-1-19
+        number: C-A2-B0-6:R-A2-B1-3
         subtype: matrix
         label: Player 1 10
         tags: tilt_lamps
     bbl_player_1_1:
-        number: 1-1-20
+        number: C-A2-B0-6:R-A2-B1-4
         subtype: matrix
         label: Player 1 1
         tags: tilt_lamps
 
     # Player 2 Score GI
     bbl_player_2_100k:
-        number: 1-1-21
+        number: C-A2-B0-1:R-A2-B1-3
         subtype: matrix
         label: Player 2 100,000
         tags: tilt_lamps
     bbl_player_2_10k:
-        number: 1-1-25
+        number: C-A2-B0-7:R-A2-B1-0
         subtype: matrix
         label: Player 2 10,000
         tags: tilt_lamps
     bbl_player_2_1000:
-        number: 1-1-28
+        number: C-A2-B0-7:R-A2-B1-1
         subtype: matrix
         label: Player 2 1,000
         tags: tilt_lamps
     bbl_player_2_100:
-        number: 1-1-27
+        number: C-A2-B0-7:R-A2-B1-2
         subtype: matrix
         label: Player 2 100
         tags: tilt_lamps
     bbl_player_2_10:
-        number: 1-1-24
+        number: C-A2-B0-7:R-A2-B1-3
         subtype: matrix
         label: Player 2 10
         tags: tilt_lamps
     bbl_player_2_1:
-        number: 1-1-23
+        number: C-A2-B0-7:R-A2-B1-4
         subtype: matrix
         label: Player 2 1
         tags: tilt_lamps
 
     # HOT ROD Title flames
     bbl_title_flame_left:
-        number: 1-0-30
+        number: C-A2-B0-0:R-A2-B1-2
         subtype: matrix
         label: Title Flame Left
     bbl_title_flame_right:
-        number: 1-3-0
+        number: C-A2-B0-1:R-A2-B1-0
         subtype: matrix
         label: Title Flame Right
 
     # HOT ROD Title
     bbl_title_1:
-        number: 1-3-5
+        number: C-A2-B0-0:R-A2-B1-3
         subtype: matrix
         label: Title 1
     bbl_title_2:
-        number: 1-3-1
+        number: C-A2-B0-0:R-A2-B1-4
         subtype: matrix
         label: Title 2
     bbl_title_3:
-        number: 1-3-3
+        number: C-A2-B0-0:R-A2-B1-5
         subtype: matrix
         label: Title 3
     bbl_title_4:
-        number: 1-3-2
+        number: C-A2-B0-0:R-A2-B1-6
         subtype: matrix
         label: Title 4
     bbl_title_5:
-        number: 1-3-4
+        number: C-A2-B0-0:R-A2-B1-7
         subtype: matrix
         label: Title 5
 
     # Playfield General Illumination
     pfl_left_saucer_gi:
-        number: 0-0-8
+        number: C-A4-B0-2:R-A4-B1-0
         subtype: matrix
         label: Left Saucer
         tags: gi, tilt_lamps
     pfl_right_saucer_gi:
-        number: 0-0-1
+        number: C-A4-B0-1:R-A4-B1-0
         subtype: matrix
         label: Right Saucer
         tags: gi, tilt_lamps
     pfl_left_upper:
-        number: 0-0-4
+        number: C-A4-B0-2:R-A4-B1-5
         subtype: matrix
         label: Left Upper
         tags: gi, tilt_lamps
     pfl_right_upper:
-        number: 0-0-5
+        number: C-A4-B0-4:R-A4-B1-0
         subtype: matrix
         label: Right Upper
         tags: gi, tilt_lamps
     pfl_right_eject:
-        number: 0-1-27
+        number: C-A4-B4-4:R-A4-B1-2
         subtype: matrix
         label: Right Eject
         tags: gi, tilt_lamps
     pfl_left_eject:
-        number: 0-1-28
+        number: C-A4-B0-2:R-A4-B1-7
         subtype: matrix
         label: Left Eject
         tags: gi, tilt_lamps
     pfl_left_sling_1:
-        number: 0-0-19
+        number: C-A4-B0-3:R-A4-B1-5
         subtype: matrix
         label: Left Sling 1
         tags: gi, tilt_lamps
     pfl_left_sling_2:
-        number: 0-0-18
+        number: C-A4-B0-3:R-A4-B1-6
         subtype: matrix
         label: Left Sling 2
         tags: gi, tilt_lamps
     pfl_right_sling_1:
-        number: 0-0-17
+        number: C-A4-B0-4:R-A4-B1-5
         subtype: matrix
         label: Right Sling 1
         tags: gi, tilt_lamps
     pfl_right_sling_2:
-        number: 0-0-16
+        number: C-A4-B0-4:R-A4-B1-6
         subtype: matrix
         label: Right Sling 2
         tags: gi, tilt_lamps
 
     # HOT Lanes GI
     pfl_lane_4:
-        number: 0-0-9
+        number: C-A4-B0-0:R-A4-B1-6
         subtype: matrix
         label: Lane 4
         tags: gi, tilt_lamps
     pfl_lane_3:
-        number: 0-0-10
+        number: C-A4-B0-0:R-A4-B1-5
         subtype: matrix
         label: Lane 3
         tags: gi, tilt_lamps
     pfl_lane_2:
-        number: 0-0-11
+        number: C-A4-B0-0:R-A4-B1-4
         subtype: matrix
         label: Lane 2
         tags: gi, tilt_lamps
     pfl_lane_1:
-        number: 0-0-12
+        number: C-A4-B0-0:R-A4-B1-3
         subtype: matrix
         label: Lane 1
         tags: gi, tilt_lamps

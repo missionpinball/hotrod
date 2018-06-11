@@ -8,16 +8,12 @@ config:
     - score_reels.yaml
 
 hardware:
-    platform: opp
-    driverboards: gen2
+    platform: p3_roc
+    driverboards: pdb
 
-opp:
-    # OPP0 is Playfield (4 controllers), OPP1 is Backbox (3 controllers)
-    ports: /dev/ttyOPP0, /dev/ttyOPP1
-    debug: true
-    chains:
-        0: /dev/ttyOPP0
-        1: /dev/ttyOPP1
+p3_roc:
+   use_watchdog: true
+   watchdog_time: 1s
 
 game:
     allow_start_with_loose_balls: true
@@ -61,11 +57,15 @@ modes:
 
 flippers:
     left_flipper:
-        main_coil: pfc_flipper_left_main
+        main_coil: pfc_flipper_left_power
+        hold_coil: pfc_flipper_left_hold
         activation_switch: cs_left_flipper
+        label: Left Flipper
     right_flipper:
-        main_coil: pfc_flipper_right_main
+        main_coil: pfc_flipper_right_power
+        hold_coil: pfc_flipper_right_hold
         activation_switch: cs_right_flipper
+        label: Right Flipper
 
 ball_devices:
     bd_trough:
