@@ -3,58 +3,58 @@
 coils:
     pfc_flipper_left_power:
         number: A3-B1-0
-        default_pulse_ms: 22ms
-        default_hold_power: 0.2
+        default_pulse_ms: 20ms
+        default_hold_power: 0.5
         label: Left Flipper Power
     pfc_flipper_left_hold:
         number: A3-B1-1
-        default_pulse_ms: 22ms
-        default_hold_power: 0.2
+        default_pulse_ms: 20ms
+        default_hold_power: 0.5
         label: Left Flipper Hold
     pfc_flipper_right_power:
         number: A3-B0-0
-        default_pulse_ms: 22ms
-        default_hold_power: 0.2
+        default_pulse_ms: 20ms
+        default_hold_power: 0.5
         label: Right Flipper Power
     pfc_flipper_right_hold:
         number: A3-B0-1
-        default_pulse_ms: 22ms
-        default_hold_power: 0.2
+        default_pulse_ms: 20ms
+        default_hold_power: 0.5
         label: Right Flipper Hold
 
-    bbc_player_1_10000:
-        number: A1-B0-3
-        default_pulse_ms: 7ms
-        label: Player 1 10,000        
-    bbc_player_1_1000:
-        number: A1-B0-2
-        default_pulse_ms: 7ms
-        label: Player 1 1,000
-    bbc_player_1_100:
-        number: A1-B0-1
-        default_pulse_ms: 7ms
-        label: Player 1 100
-    bbc_player_1_10:
-        number: A1-B0-0
-        default_pulse_ms: 7ms
-        label: Player 1 10
-
-    bbc_player_2_10000:
-        number: A1-B0-7
-        default_pulse_ms: 7ms
-        label: Player 1 10,000
-    bbc_player_2_1000:
-        number: A1-B0-6
-        default_pulse_ms: 7ms
-        label: Player 1 1,000
-    bbc_player_2_100:
-        number: A1-B0-5
-        default_pulse_ms: 7ms
-        label: Player 1 100
     bbc_player_2_10:
+        number: A1-B0-0
+        default_pulse_ms: 12ms
+        label: Player 2 10
+    bbc_player_2_100:
+        number: A1-B0-1
+        default_pulse_ms: 12ms
+        label: Player 2 100
+    bbc_player_2_1000:
+        number: A1-B0-2
+        default_pulse_ms: 12ms
+        label: Player 1 2,000
+    bbc_player_2_10000:
+        number: A1-B0-3
+        default_pulse_ms: 12ms
+        label: Player 2 10,000        
+
+    bbc_player_1_10:
         number: A1-B0-4
-        default_pulse_ms: 7ms
+        default_pulse_ms: 12ms
         label: Player 1 10
+    bbc_player_1_100:
+        number: A1-B0-5
+        default_pulse_ms: 12ms
+        label: Player 1 100
+    bbc_player_1_1000:
+        number: A1-B0-6
+        default_pulse_ms: 12ms
+        label: Player 1 1,000
+    bbc_player_1_10000:
+        number: A1-B0-7
+        default_pulse_ms: 12ms
+        label: Player 1 10,000
 
     bbc_credit_down:
         number: A1-B1-6
@@ -63,51 +63,51 @@ coils:
         number: A1-B1-5
         label: Credit Up
 
+    cc_chime_1:
+        number: A1-B1-0
+        default_pulse_ms: 12ms
+        label: Chime 1
+    cc_chime_2:
+        number: A1-B1-1
+        default_pulse_ms: 12ms
+        label: Chime 2
+    cc_chime_3:
+        number: A1-B1-2
+        default_pulse_ms: 12ms
+        label: Chime 3
+
+    cc_knocker:
+        number: A1-B1-3
+        default_pulse_ms: 20ms
+        label: Knocker
+
     bbc_bell:
         number: A1-B1-7
         label: Bell
 
-    cc_knocker:
-        number: A1-B1-3
-        default_pulse_ms: 10ms
-        label: Knocker
-
-    cc_chime_1:
-        number: A1-B1-0
-        default_pulse_ms: 7ms
-        label: Chime 1
-    cc_chime_2:
-        number: A1-B1-1
-        default_pulse_ms: 7ms
-        label: Chime 2
-    cc_chime_3:
-        number: A1-B1-2
-        default_pulse_ms: 7ms
-        label: Chime 3
-
     pfc_left_sling:
         number: A3-B1-2
-        default_pulse_ms: 15ms
+        default_pulse_ms: 10ms
         label: Left Sling
     pfc_right_sling:
         number: A3-B0-3
-        default_pulse_ms: 15ms
+        default_pulse_ms: 10ms
         label: Right Sling
     pfc_trough_eject:
         number: A3-B0-2
-        default_pulse_ms: 20ms
+        default_pulse_ms: 25ms
         label: Trough Eject
     pfc_right_pop:
         number: A3-B0-7
-        default_pulse_ms: 15ms
+        default_pulse_ms: 10ms
         label: Right Pop
     pfc_center_pop:
         number: A3-B1-5
-        default_pulse_ms: 15ms
+        default_pulse_ms: 10ms
         label: Center Pop
     pfc_left_pop:
         number: A3-B1-6
-        default_pulse_ms: 15ms
+        default_pulse_ms: 10ms
         label: Left Pop
     pfc_right_saucer:
         number: A3-B0-6
@@ -115,15 +115,15 @@ coils:
         label: Right Saucer
     pfc_right_eject:
         number: A3-B0-4
-        default_pulse_ms: 13ms
+        default_pulse_ms: 19ms
         label: Right Eject
     pfc_drop_reset:
         number: A3-B0-5
-        default_pulse_ms: 40ms
+        default_pulse_ms: 600ms
         label: Drop Reset
     pfc_left_eject:
         number: A3-B1-3
-        default_pulse_ms: 13ms
+        default_pulse_ms: 19ms
         label: Left Eject
     pfc_left_saucer:
         number: A3-B1-4

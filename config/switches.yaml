@@ -3,9 +3,11 @@
 switches:
     cs_left_flipper:
         number: 1/1/0 # SW-16 Address 1, Bank B, Switch 1
+        debounce: quick
         tags: playfield_active,flipper
     cs_right_flipper:
         number: 1/1/1 
+        debounce: quick
         tags: playfield_active,flipper
 
     cs_coin_1:
@@ -32,13 +34,13 @@ switches:
         number: 1/0/3
 
     bbs_player_1_10000:
-        number: 1/0/4
-    bbs_player_1_1000:
-        number: 1/0/5
-    bbs_player_1_100:
-        number: 1/0/6
-    bbs_player_1_10:
         number: 1/0/7
+    bbs_player_1_1000:
+        number: 1/0/6
+    bbs_player_1_100:
+        number: 1/0/5
+    bbs_player_1_10:
+        number: 1/0/4
 
     #bbs_credit_down:
     #    number: 1-2-24
@@ -51,15 +53,28 @@ switches:
     pfs_right_sling:
         number: 2/0/4
         tags: playfield_active, skill_shot_cancel
+
     pfs_left_upper:
         number: 3/1/4
         tags: playfield_active, skill_shot_cancel
+    pfs_right_upper:
+        number: 2/0/7
+        tags: playfield_active, skill_shot_cancel
+
     pfs_left_side:
         number: 2/0/5
         tags: playfield_active, skill_shot_cancel
+    pfs_right_side:
+        number: 3/0/7
+        tags: playfield_active, skill_shot_cancel
+
     pfs_left_eject:
         number: 3/1/3
         tags: skill_shot_cancel, ejects
+    pfs_right_eject:
+        number: 2/0/6
+        tags: skill_shot_cancel, ejects
+
     pfs_drop_r:
         number: 3/1/0
         tags: playfield_active, skill_shot_cancel
@@ -69,55 +84,62 @@ switches:
     pfs_drop_d:
         number: 3/1/2
         tags: playfield_active, skill_shot_cancel
+
     pfs_left_rollover:
         number: 3/0/0
+        debounce: quick
         tags: playfield_active, skill_shot_cancel
     pfs_center_rollover:
         number: 3/0/1
+        debounce: quick
         tags: playfield_active, skill_shot_cancel
+    pfs_right_rollover:
+        number: 2/0/0
+        debounce: quick
+        tags: playfield_active, skill_shot_cancel
+
     pfs_left_inlane:
         number: 3/1/6
+        debounce: quick
         tags: playfield_active, skill_shot_cancel
+    pfs_right_inlane:
+        number: 2/0/3 
+        debounce: quick
+        tags: playfield_active, skill_shot_cancel
+
     pfs_left_outlane:
         number: 3/1/5
+        debounce: quick
         tags: playfield_active, skill_shot_cancel
+    pfs_right_outlane:
+        number: 2/0/2
+        debounce: quick
+        tags: playfield_active, skill_shot_cancel
+
     pfs_trough_1:
         number: 2/1/0
     pfs_trough_2:
         number: 2/1/1
     pfs_trough_3:
-        number: 2/1/2
-    pfs_trough_jam:
         number: 2/1/3
+    #pfs_trough_jam:
+    #    number: 2/1/2
+    pfs_shooter_lane:
+        number: 2/0/1
+
     pfs_right_pop:
         number: 3/0/3
+        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
     pfs_center_pop:
         number: 3/0/2
+        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
     pfs_left_pop:
         number: 3/0/4
+        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
-    pfs_shooter_lane:
-        number: 2/0/1
-    pfs_right_outlane:
-        number: 2/0/2
-        tags: playfield_active, skill_shot_cancel
-    pfs_right_inlane:
-        number: 2/0/3 
-        tags: playfield_active, skill_shot_cancel
-    pfs_right_rollover:
-        number: 2/0/0
-        tags: playfield_active, skill_shot_cancel
-    pfs_right_eject:
-        number: 2/0/6
-        tags: skill_shot_cancel, ejects
-    pfs_right_side:
-        number: 3/0/7
-        tags: playfield_active, skill_shot_cancel
-    pfs_right_upper:
-        number: 2/0/7
-        tags: playfield_active, skill_shot_cancel
+
     pfs_top_lane_h:
         number: 2/1/4
         tags: playfield_active
@@ -127,9 +149,12 @@ switches:
     pfs_top_lane_t:
         number: 2/1/6
         tags: playfield_active
+
     pfs_right_saucer:
         number: 2/1/7
+        debounce: quick
         tags: skill_shot_cancel
     pfs_left_saucer:
         number: 3/0/5
+        debounce: quick
         tags: skill_shot_cancel

@@ -1,6 +1,19 @@
 #config_version=5
 
 lights:
+    a2_4_5:
+        number: C-A2-B0-4:R-A2-B1-5
+        subtype: matrix
+    a2_5_2:
+        number: C-A2-B0-5:R-A2-B1-2
+        subtype: matrix
+    a2_5_3:
+        number: C-A2-B0-5:R-A2-B1-3
+        subtype: matrix
+    a2_5_7:
+        number: C-A2-B0-5:R-A2-B1-7
+        subtype: matrix
+
     # Tilt
     bbl_tilt:
         number: C-A2-B0-1:R-A2-B1-1
@@ -67,7 +80,7 @@ lights:
         subtype: matrix
         label: Match 30
     bbl_match_40:
-        number: C-A2-B0-2:R-A2-B1-5
+        number: C-A2-B0-2:R-A2-B1-3
         subtype: matrix
         label: Match 40
     bbl_match_50:
@@ -75,7 +88,7 @@ lights:
         subtype: matrix
         label: Match 50
     bbl_match_60:
-        number: C-A2-B0-2:R-A2-B1-3
+        number: C-A2-B0-2:R-A2-B1-5
         subtype: matrix
         label: Match 60
     bbl_match_70:
@@ -298,12 +311,12 @@ lights:
 
     # Girl GI
     bbl_girl_right_leg:
-        number: C-A2-B0-3:R-A2-B1-7
+        number: C-A2-B0-3:R-A2-B1-3
         subtype: matrix
         label: Girl Right Leg
         tags: tilt_lamps
     bbl_girl_left_leg:
-        number: C-A2-B0-3:R-A2-B1-3
+        number: C-A2-B0-4:R-A2-B1-7
         subtype: matrix
         label: Girl Left Leg
         tags: tilt_lamps
@@ -322,25 +335,20 @@ lights:
         subtype: matrix
         label: Girl Face
         tags: tilt_lamps
-    bbl_girl_left:
-        number: C-A2-B0-4:R-A2-B1-5
-        subtype: matrix
-        label: Girl Face
-        tags: tilt_lamps
 
     # Player 1 Corvette GI
     bbl_corvette_right_hl:
-        number: C-A2-B0-5:R-A2-B1-0
+        number: C-A2-B0-4:R-A2-B1-6
         subtype: matrix
         label: Corvette Right Headlight
         tags: tilt_lamps
     bbl_corvette_left_hl:
-        number: C-A2-B0-4:R-A2-B1-6
+        number: C-A2-B0-5:R-A2-B1-0
         subtype: matrix
         label: Corvette Left Headlight
         tags: tilt_lamps
     bbl_corvette_driver:
-        number: C-A2-B0-1:R-A2-B1-5
+        number: C-A2-B0-5:R-A2-B1-5
         subtype: matrix
         label: Corvette Driver
         tags: tilt_lamps
@@ -349,10 +357,15 @@ lights:
         subtype: matrix
         label: Corvette Mid
         tags: tilt_lamps
+    bbl_corvette_engine:
+        number: C-A2-B0-5:R-A2-B1-6
+        subtype: matrix
+        label: Corvette Engine
+        tags: tilt_lamps
 
     # Player 2 Bel-Air GI
     bbl_belair_right_hl:
-        number: C-A2-B0-4:R-A2-B1-7
+        number: C-A2-B0-3:R-A2-B1-7
         subtype: matrix
         label: Belair Right Headlight
         tags: tilt_lamps
@@ -362,12 +375,12 @@ lights:
         label: Belair Left Headlight
         tags: tilt_lamps
     bbl_belair_driver:
-        number: C-A2-B0-5:R-A2-B1-2
+        number: C-A2-B0-1:R-A2-B1-5
         subtype: matrix
         label: Belair Driver
         tags: tilt_lamps
     bbl_belair_engine:
-        number: C-A2-B0-5:R-A2-B1-3
+        number: C-A2-B0-1:R-A2-B1-6
         subtype: matrix
         label: Belair Engine
         tags: tilt_lamps
@@ -495,7 +508,7 @@ lights:
         label: Right Upper
         tags: gi, tilt_lamps
     pfl_right_eject:
-        number: C-A4-B4-4:R-A4-B1-2
+        number: C-A4-B0-4:R-A4-B1-2
         subtype: matrix
         label: Right Eject
         tags: gi, tilt_lamps
