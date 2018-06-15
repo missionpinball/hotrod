@@ -2,6 +2,8 @@
 
 - time: 0
   lights:
-      bbl_belair_driver: 00
-      bbl_belair_left_hl: 00
       bbl_belair_right_hl: 00
+      bbl_belair_left_hl: 00
+      bbl_belair_driver: 00
+      bbl_belair_engine: 00
+      bbl_belair_mid: 00

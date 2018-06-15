@@ -9,7 +9,7 @@ multiballs:
     mb_2ball:
         ball_count: 2
         start_events: mode_2ball_started
-        shoot_again: 10s
+        #shoot_again: 10s
         ball_locks: bd_left_saucer, bd_right_saucer
 
 variable_player:

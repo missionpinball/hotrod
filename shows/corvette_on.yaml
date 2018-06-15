@@ -2,40 +2,42 @@
 
 - time: 0
   lights:
-      bbl_corvette_driver: ff
-      bbl_corvette_left_hl: ff
       bbl_corvette_right_hl: ff
+      bbl_corvette_left_hl: ff
+      bbl_corvette_driver: ff
+      bbl_corvette_mid: ff
+      bbl_corvette_engine: ff
 - time: +5s
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
 - time: +50ms
   lights:
-      bbl_corvette_driver: 00
+      bbl_corvette_engine: 00
 - time: +50ms
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
 - time: +50ms
   lights:
-      bbl_corvette_driver: 00
+      bbl_corvette_engine: 00
 - time: +50ms
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
 - time: +50ms
   lights:
-      bbl_corvette_driver: 00
+      bbl_corvette_engine: 00
 - time: +50ms
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
 - time: +50ms
   lights:
-      bbl_corvette_driver: 00
+      bbl_corvette_engine: 00
 - time: +50ms
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
 - time: +50ms
   lights:
-      bbl_corvette_driver: 00
+      bbl_corvette_engine: 00
 - time: +50ms
   lights:
-      bbl_corvette_driver: ff
+      bbl_corvette_engine: ff
       

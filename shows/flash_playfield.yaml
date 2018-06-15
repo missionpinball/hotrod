@@ -2,7 +2,6 @@
 
 - duration: 50ms
   lights:
-      bbl_girl_face: ff
       bbl_ball_in_play_1: 00
       bbl_ball_in_play_2: ff
       bbl_ball_in_play_3: 00
@@ -15,7 +14,6 @@
       bbl_corvette_left_hl: ff
       bbl_corvette_right_hl: 00
       bbl_game_over: ff
-      bbl_girl_mid: 00
       bbl_match: ff
       bbl_match_00: 00
       bbl_match_20: ff
@@ -96,7 +94,6 @@
       pfl_top_lane_t: ff
 - duration: 50ms
   lights:
-      bbl_girl_face: 00
       bbl_ball_in_play_1: ff
       bbl_ball_in_play_2: 00
       bbl_ball_in_play_3: ff
@@ -109,7 +106,6 @@
       bbl_corvette_left_hl: 00
       bbl_corvette_right_hl: ff
       bbl_game_over: 00
-      bbl_girl_mid: ff
       bbl_match: 00
       bbl_match_00: ff
       bbl_match_20: 00

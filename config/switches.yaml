@@ -3,11 +3,9 @@
 switches:
     cs_left_flipper:
         number: 1/1/0 # SW-16 Address 1, Bank B, Switch 1
-        debounce: quick
         tags: playfield_active,flipper
     cs_right_flipper:
         number: 1/1/1 
-        debounce: quick
         tags: playfield_active,flipper
 
     cs_coin_1:
@@ -87,33 +85,26 @@ switches:
 
     pfs_left_rollover:
         number: 3/0/0
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
     pfs_center_rollover:
         number: 3/0/1
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
     pfs_right_rollover:
         number: 2/0/0
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
 
     pfs_left_inlane:
         number: 3/1/6
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
     pfs_right_inlane:
         number: 2/0/3 
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
 
     pfs_left_outlane:
         number: 3/1/5
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
     pfs_right_outlane:
         number: 2/0/2
-        debounce: quick
         tags: playfield_active, skill_shot_cancel
 
     pfs_trough_1:
@@ -129,15 +120,12 @@ switches:
 
     pfs_right_pop:
         number: 3/0/3
-        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
     pfs_center_pop:
         number: 3/0/2
-        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
     pfs_left_pop:
         number: 3/0/4
-        debounce: quick
         tags: playfield_active, pop, skill_shot_cancel
 
     pfs_top_lane_h:

@@ -2,6 +2,8 @@
 
 - time: 0
   lights:
-      bbl_girl_face: ff
-      bbl_girl_mid: ff
       bbl_girl_right_leg: ff
+      bbl_girl_left_leg: ff
+      bbl_girl_mid: ff
+      bbl_girl_mid_2: ff
+      bbl_girl_face: ff

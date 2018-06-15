@@ -2,9 +2,11 @@
 
 - time: 0
   lights:
-      bbl_belair_driver: ff
-      bbl_belair_left_hl: ff
       bbl_belair_right_hl: ff
+      bbl_belair_left_hl: ff
+      bbl_belair_driver: ff
+      bbl_belair_engine: ff
+      bbl_belair_mid: ff
 - time: +5s
   lights:
       bbl_belair_driver: ff
