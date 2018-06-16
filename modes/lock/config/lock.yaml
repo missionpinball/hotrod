@@ -7,23 +7,31 @@ mode:
     restart_on_next_ball: True
 
 variable_player:
+    # Locks
     player_shot_right_lock{value==1}:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 100 * current_player.pf_multiplier
+        block: true
     player_shot_left_lock{value==1}:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 100 * current_player.pf_multiplier
+        block: true
     player_shot_right_lock{value==2}:
-        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 150 * current_player.pf_multiplier
+        block: true
     player_shot_left_lock{value==2}:
-        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 150 * current_player.pf_multiplier
+        block: true
     player_shot_right_lock{value==3}:
-        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 160 * current_player.pf_multiplier
+        block: true
     player_shot_left_lock{value==3}:
-        score: 150 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+        score: 160 * current_player.pf_multiplier
     # Ejects
-    pfs_left_eject_active:
-        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
-    pfs_right_eject_active:
-        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)|block
+    balldevice_bd_left_eject_ball_entered:
+        score: 500 * current_player.pf_multiplier
+        block: true
+    balldevice_bd_right_eject_ball_entered:
+        score: 500 * current_player.pf_multiplier
+        block: true
 
 shots:
     left_lock:

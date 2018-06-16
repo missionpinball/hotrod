@@ -7,7 +7,9 @@ mode:
 
 variable_player:
     skill_shot_lit_hit:
-        score: 450
+        score: 450 * current_player.pf_multiplier
+    skill_shot_unlit_hit:
+        score: 50 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
 
 shots:
     skill_shot_h:
