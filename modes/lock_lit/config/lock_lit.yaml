@@ -23,5 +23,7 @@ multiball_locks:
 event_player:
     # on eject start 2ball
     sw_ejects{device.multiball_locks.bl_lock["locked_balls"] == 1}: start_2ball
+    #balldevice_bd_left_eject_ball_eject_success{device.multiball_locks.bl_lock["locked_balls"] == 1}: start_2ball
+    #balldevice_bd_right_eject_ball_eject_success{device.multiball_locks.bl_lock["locked_balls"] == 1}: start_2ball
     # when both locks are full start 3ball
     multiball_lock_bl_lock_locked_ball{device.multiball_locks.bl_lock["locked_balls"] == 2}: start_3ball

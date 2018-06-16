@@ -17,6 +17,15 @@ ball_saves:
         auto_launch: no
         balls_to_save: 1
 
+shows:
+    flash_shooter:
+        - duration: 100ms
+          lights:
+              pfl_shooter_lane: ff
+        - duration: 100ms
+          lights:
+              pfl_shooter_lane: 00
+
 show_player:
     ball_save_default_enabled:
         flash:
@@ -38,8 +47,13 @@ show_player:
             action: stop
             show_tokens:
                 light: pfl_same_player
+        flash_shooter:
+            action: play
         bell_ring:
             loops: 5
+    balldevice_bd_shooter_lane_ball_eject_success:
+        flash_shooter: 
+            action: stop
     ball_save_default_disabled:
         flash:
             action: stop

@@ -1,19 +1,6 @@
 #config_version=5
 
 lights:
-    a2_4_5:
-        number: C-A2-B0-4:R-A2-B1-5
-        subtype: matrix
-    a2_5_2:
-        number: C-A2-B0-5:R-A2-B1-2
-        subtype: matrix
-    a2_5_3:
-        number: C-A2-B0-5:R-A2-B1-3
-        subtype: matrix
-    a2_5_7:
-        number: C-A2-B0-5:R-A2-B1-7
-        subtype: matrix
-
     # Tilt
     bbl_tilt:
         number: C-A2-B0-1:R-A2-B1-1
@@ -103,6 +90,12 @@ lights:
         number: C-A2-B0-2:R-A2-B1-0
         subtype: matrix
         label: Match 90
+
+    pfl_shooter_lane:
+        number: C-A4-B0-7:R-A4-B1-6
+        subtype: matrix
+        label: Lane 4
+        tags: gi, tilt_lamps
 
     # HOT Lamps
     pfl_top_lane_h:
