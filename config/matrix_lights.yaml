@@ -91,11 +91,19 @@ lights:
         subtype: matrix
         label: Match 90
 
+    # Shooter Lane 
     pfl_shooter_lane:
         number: C-A4-B0-7:R-A4-B1-6
         subtype: matrix
-        label: Lane 4
+        label: Shooter Lane
         tags: gi, tilt_lamps
+
+    # Coin Door 
+    cl_coin_door:
+        number: C-A2-B0-4:R-A2-B1-5
+        subtype: matrix
+        label: Coin Door
+        tags: gi
 
     # HOT Lamps
     pfl_top_lane_h:

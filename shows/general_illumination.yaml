@@ -2,6 +2,7 @@
 
 - time: 0
   lights:
+    cl_coin_door: ff
     bbl_title_1: ff
     bbl_title_2: ff
     bbl_title_3: ff
