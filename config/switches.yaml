@@ -54,10 +54,10 @@ switches:
 
     pfs_left_upper:
         number: 3/1/4
-        tags: playfield_active, skill_shot_cancel
+        tags: playfield_active, skill_shot_cancel, upper_ejects
     pfs_right_upper:
         number: 2/0/7
-        tags: playfield_active, skill_shot_cancel
+        tags: playfield_active, skill_shot_cancel, upper_ejects
 
     pfs_left_side:
         number: 3/0/6

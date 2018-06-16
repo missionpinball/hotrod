@@ -48,7 +48,7 @@ achievements:
         show_when_completed: off
         start_events:
             light_jackpot: .1s
-            multiball_mb_2ball_started: 1s
+            multiball_mb_2ball_started: 2s
         events_when_started: jackpot_lit
         reset_events:
             jackpot: 1s
