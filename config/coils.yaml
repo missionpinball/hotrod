@@ -74,7 +74,7 @@ coils:
 
     cc_knocker:
         number: A1-B1-3
-        default_pulse_ms: 10ms
+        default_pulse_ms: 7ms
         label: Knocker
 
     bbc_bell:
@@ -83,11 +83,11 @@ coils:
 
     pfc_left_sling:
         number: A3-B1-2
-        default_pulse_ms: 8ms
+        default_pulse_ms: 9ms
         label: Left Sling
     pfc_right_sling:
         number: A3-B0-3
-        default_pulse_ms: 8ms
+        default_pulse_ms: 9ms
         label: Right Sling
 
     pfc_trough_eject:
@@ -97,15 +97,15 @@ coils:
 
     pfc_right_pop:
         number: A3-B0-7
-        default_pulse_ms: 5ms
+        default_pulse_ms: 6ms
         label: Right Pop
     pfc_center_pop:
         number: A3-B1-5
-        default_pulse_ms: 5ms
+        default_pulse_ms: 6ms
         label: Center Pop
     pfc_left_pop:
         number: A3-B1-6
-        default_pulse_ms: 5ms
+        default_pulse_ms: 6ms
         label: Left Pop
 
     pfc_right_saucer:
@@ -119,11 +119,11 @@ coils:
 
     pfc_right_eject:
         number: A3-B0-4
-        default_pulse_ms: 10ms
+        default_pulse_ms: 9ms
         label: Right Eject
     pfc_left_eject:
         number: A3-B1-3
-        default_pulse_ms: 10ms
+        default_pulse_ms: 9ms
         label: Left Eject
 
     pfc_drop_reset:

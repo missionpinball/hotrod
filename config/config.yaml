@@ -11,10 +11,6 @@ hardware:
     platform: p3_roc
     driverboards: pdb
 
-p3_roc:
-   use_watchdog: true
-   watchdog_time: 1s
-
 game:
     allow_start_with_loose_balls: true
     balls_per_game: 3
