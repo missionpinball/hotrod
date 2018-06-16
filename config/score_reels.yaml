@@ -7,64 +7,64 @@ score_reels:
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_1_100:
          coil_inc: bbc_player_1_100
          switch_0: bbs_player_1_100
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_1_1000:
          coil_inc: bbc_player_1_1000
          switch_0: bbs_player_1_1000
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_1_10000:
          coil_inc: bbc_player_1_10000
          switch_0: bbs_player_1_10000
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_2_10:
          coil_inc: bbc_player_2_10
          switch_0: bbs_player_2_10
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_2_100:
          coil_inc: bbc_player_2_100
          switch_0: bbs_player_2_100
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_2_1000:
          coil_inc: bbc_player_2_1000
          switch_0: bbs_player_2_1000
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
      score_player_2_10000:
          coil_inc: bbc_player_2_10000
          switch_0: bbs_player_2_10000
          rollover: True
          limit_hi: 9
          limit_lo: 0
-         repeat_pulse_time: 200ms
-         hw_confirm_time: 100ms
+         repeat_pulse_time: 250ms
+         hw_confirm_time: 10ms
 
 score_reel_groups:
      player1:

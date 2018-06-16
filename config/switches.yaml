@@ -60,7 +60,7 @@ switches:
         tags: playfield_active, skill_shot_cancel
 
     pfs_left_side:
-        number: 2/0/5
+        number: 3/0/6
         tags: playfield_active, skill_shot_cancel
     pfs_right_side:
         number: 3/0/7
@@ -140,9 +140,7 @@ switches:
 
     pfs_right_saucer:
         number: 2/1/7
-        debounce: quick
         tags: skill_shot_cancel
     pfs_left_saucer:
         number: 3/0/5
-        debounce: quick
         tags: skill_shot_cancel

@@ -294,12 +294,12 @@ lights:
 
     # Center Rollovers
     pfl_right_rollover:
-        number: C-A4-B0-3:R-A4-B1-2
+        number: C-A4-B0-3:R-A4-B1-0
         subtype: matrix
         label: Right Rollover
         tags: tilt_lamps
     pfl_left_rollover:
-        number: C-A4-B0-3:R-A4-B1-0
+        number: C-A4-B0-3:R-A4-B1-2
         subtype: matrix
         label: Left Rollover
         tags: tilt_lamps
