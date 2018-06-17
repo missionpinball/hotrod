@@ -7,18 +7,14 @@ mode:
 
 variable_player:
     left_saucer_hit:
-        score: 300 * current_player.pf_multiplier
-        block: true
+        score: 300 * current_player.pf_multiplier|block
     right_saucer_hit:
-        score: 300 * current_player.pf_multiplier
-        block: true
+        score: 300 * current_player.pf_multiplier|block
     # Ejects
     balldevice_bd_left_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier
-        block: true
+        score: 500 * current_player.pf_multiplier|block
     balldevice_bd_right_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier
-        block: true
+        score: 500 * current_player.pf_multiplier|block
 
 shots:
     left_saucer:

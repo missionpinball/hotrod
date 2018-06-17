@@ -1,36 +1,36 @@
 #show_version=5
 
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_1: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_2: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_1: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_3: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_3: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       cc_chime_2: 
           action: pulse
           max_wait_ms: 50
-- duration: 150ms
+- duration: 170ms
   coils:
       bbc_bell: 
           action: pulse

@@ -14,14 +14,11 @@ multiballs:
 
 variable_player:
     balldevice_bd_left_saucer_ball_enter{not device.sequences.jackpot_sequence["value"]==1}:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-        block: true
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler)|block
     balldevice_bd_right_saucer_ball_enter{not device.sequences.jackpot_sequence["value"]==1}:
-        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
-        block: true
+        score: 100 * (current_player.pf_multiplier + current_player.mb_2ball_multipler)|block
     jackpot.2:
-        score: (2000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier
-        block: true
+        score: (2000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
     jackpot.1:
         light_jackpot_required_hits: 1
     mode_2ball_started:

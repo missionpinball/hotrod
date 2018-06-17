@@ -3,7 +3,7 @@
 coils:
     pfc_flipper_left_power:
         number: A3-B1-0
-        default_pulse_ms: 10ms
+        default_pulse_ms: 9ms
         label: Left Flipper Power
     pfc_flipper_left_hold:
         number: A3-B1-1
@@ -11,7 +11,7 @@ coils:
         label: Left Flipper Hold
     pfc_flipper_right_power:
         number: A3-B0-0
-        default_pulse_ms: 10ms
+        default_pulse_ms: 9ms
         label: Right Flipper Power
     pfc_flipper_right_hold:
         number: A3-B0-1
@@ -97,15 +97,15 @@ coils:
 
     pfc_right_pop:
         number: A3-B0-7
-        default_pulse_ms: 6ms
+        default_pulse_ms: 7ms
         label: Right Pop
     pfc_center_pop:
         number: A3-B1-5
-        default_pulse_ms: 6ms
+        default_pulse_ms: 7ms
         label: Center Pop
     pfc_left_pop:
         number: A3-B1-6
-        default_pulse_ms: 6ms
+        default_pulse_ms: 7ms
         label: Left Pop
 
     pfc_right_saucer:

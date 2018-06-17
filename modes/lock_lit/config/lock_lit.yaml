@@ -9,11 +9,9 @@ mode:
 variable_player:
     # Ejects
     balldevice_bd_left_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier
-        block: true
+        score: 500 * current_player.pf_multiplier|block
     balldevice_bd_right_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier
-        block: true
+        score: 500 * current_player.pf_multiplier|block
 
 multiball_locks:
     bl_lock:

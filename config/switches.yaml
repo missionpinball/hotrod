@@ -63,7 +63,7 @@ switches:
         number: 3/0/6
         tags: playfield_active, skill_shot_cancel
     pfs_right_side:
-        number: 3/0/7
+        number: 2/0/5
         tags: playfield_active, skill_shot_cancel
 
     pfs_left_eject:
@@ -113,8 +113,8 @@ switches:
         number: 2/1/1
     pfs_trough_3:
         number: 2/1/3
-    #pfs_trough_jam:
-    #    number: 2/1/2
+    pfs_trough_jam:
+        number: 2/1/2
     pfs_shooter_lane:
         number: 2/0/1
 

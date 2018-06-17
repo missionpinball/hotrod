@@ -19,10 +19,10 @@ ball_saves:
 
 shows:
     flash_shooter:
-        - duration: 100ms
+        - duration: 70ms
           lights:
               pfl_shooter_lane: ff
-        - duration: 100ms
+        - duration: 70ms
           lights:
               pfl_shooter_lane: 00
 

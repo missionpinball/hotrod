@@ -336,14 +336,22 @@ show_player:
             loops: 4
             speed: 4
 
-    rollovers_lit_complete:
+    timer_2x_multiplier_started:
         flash_rollover:
             loops: 4
             speed: 4
-        bell_ring:
-            loops: 3
+        bell_ring_2x:
+            loops: 0
+        flash_2x: 
+            action: play
+            sync_ms: 500
 
-    timer_2x_multiplier_started:
+    timer_2x_multiplier_restarted:
+        flash_rollover:
+            loops: 4
+            speed: 4
+        bell_ring_2x:
+            loops: 0
         flash_2x: 
             action: play
             sync_ms: 500
@@ -372,6 +380,26 @@ show_player:
             loops: 3
 
 shows:
+    bell_ring_2x:
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
+        - duration: 275ms
+          coils:
+              bbc_bell: pulse
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
+
     # Multiplier lamps
     flash_2x:
         - duration: 250ms
