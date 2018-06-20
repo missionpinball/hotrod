@@ -1,0 +1,8 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+      pfl_right_eject: ff
+- duration: 100ms
+  lights:
+      pfl_right_eject: 00
