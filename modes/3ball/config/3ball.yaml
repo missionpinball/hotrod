@@ -6,10 +6,10 @@ mode:
     priority: 150
 
 variable_player:
-    balldevice_bd_left_saucer_ball_enter{not device.sequences.jackpot_sequence["value"]==1}:
-        score: 200 * current_player.pf_multiplier|block
-    balldevice_bd_right_saucer_ball_enter{not device.sequences.jackpot_sequence["value"]==1}:
-        score: 200 * current_player.pf_multiplier|block
+    balldevice_bd_left_saucer_ball_entered{not device.sequences.jackpot_sequence["value"]==1}:
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler)|block
+    balldevice_bd_right_saucer_ball_entered{not device.sequences.jackpot_sequence["value"]==1}:
+        score: 500 * (current_player.pf_multiplier + current_player.mb_2ball_multipler)|block
     jackpot:
         score: (3000 + (current_player.light_jackpot_required_hits * 1000)) * current_player.pf_multiplier|block
 
@@ -19,7 +19,7 @@ event_player:
 multiballs:
     mb_3ball:
         ball_count: 3
-        shoot_again: 10s
+        shoot_again: 1s
         start_events: balldevice_bd_shooter_lane_ball_eject_success
         ball_locks: bd_left_saucer, bd_right_saucer
 

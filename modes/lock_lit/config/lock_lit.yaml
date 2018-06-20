@@ -7,11 +7,10 @@ mode:
     restart_on_next_ball: True
 
 variable_player:
-    # Ejects
-    balldevice_bd_left_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier|block
-    balldevice_bd_right_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier|block
+    multiball_lock_bl_lock_locked_ball{device.multiball_locks.bl_lock["locked_balls"] == 1}:
+        ready_to_start_multiball:
+            action: set
+            int: 1
 
 multiball_locks:
     bl_lock:
@@ -21,7 +20,10 @@ multiball_locks:
         locked_ball_counting_strategy: min_virtual_physical
 
 event_player:
-    # on eject start 2ball
+    # Flash ejects on single lock
+    ball_started{current_player.ready_to_start_multiball==1}: 2ball_ready
+    multiball_lock_bl_lock_locked_ball{device.multiball_locks.bl_lock["locked_balls"] == 1}: 2ball_ready
+    # on ball hitting eject upper switch, start 2ball
     sw_upper_ejects{device.multiball_locks.bl_lock["locked_balls"] == 1}: start_2ball
     # when both locks are full start 3ball
     multiball_lock_bl_lock_locked_ball{device.multiball_locks.bl_lock["locked_balls"] == 2}: start_3ball

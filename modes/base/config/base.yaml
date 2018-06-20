@@ -44,6 +44,11 @@ variable_player:
         score: 70 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
     right_rollover_hit:
         score: 70 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
+    # Ejects
+    balldevice_bd_left_eject_ball_entered:
+        score: 500 * current_player.pf_multiplier
+    balldevice_bd_right_eject_ball_entered:
+        score: 500 * current_player.pf_multiplier
     # Achievement Awards
     bonus_lanes_lit_complete:
         score: 300 * (current_player.pf_multiplier + current_player.mb_2ball_multipler + current_player.mb_3ball_multipler)
@@ -68,6 +73,9 @@ variable_player:
             int: 1
             action: set
     mode_2ball_started:
+        ready_to_start_multiball: 
+            int: 0
+            action: set
         mb_2ball_multipler:
             float: 1.5
             action: set
@@ -83,6 +91,9 @@ variable_player:
         mb_3ball_multipler:
             float: 0
             action: set
+
+event_player:
+    rollovers_lit_complete: start_2x
 
 counters:
     # R-O-D drops must be hit to light lock, and the number of times it must be done increases after each jackpot
@@ -143,10 +154,6 @@ sequences:
         events: ball_lock_bl_right_lock_locked_ball
         reset_events: mode_lock_started
         events_when_complete: ball_locked
-    # Center Rollovers enable 2X playfield multiplier
-    lb_rollovers:
-        events: rollovers_lit_complete
-        events_when_hit: start_2x
 
 accruals:
     # Extra Ball is lit after completing H-O-T R-O-D and all In and Outlanes
@@ -295,7 +302,17 @@ show_player:
             key: bonus_show
     stop_bonus_shows:
         bonus_show: stop
-        
+    
+    # Flash ejects to signal 2-ball multiball ready
+    2ball_ready:
+        flash_ejects: 
+            action: play
+            priority: 500
+
+    # Stop flashing ejects when 2-ball started
+    mode_2ball_started:
+        flash_ejects: stop
+
     pfs_left_sling_active:
         flash:
            loops: 0
@@ -312,25 +329,6 @@ show_player:
            show_tokens:
                light: pfl_right_sling_2
 
-    mode_2ball_started:
-        flash_left_eject: stop
-        flash_right_eject: stop
-        
-    player_shot_left_lock{value==3}:
-        flash_left_eject: 
-            action: play
-            priority: 500
-        flash_right_eject: 
-            action: play
-            priority: 500
-    player_shot_right_lock{value==3}:
-        flash_left_eject: 
-            action: play
-            priority: 500
-        flash_right_eject: 
-            action: play
-            priority: 500
-
     bonus_lanes_lit_complete: 
         bonus_lanes_complete:
             loops: 4
@@ -338,8 +336,9 @@ show_player:
 
     timer_2x_multiplier_started:
         flash_rollover:
-            loops: 4
+            loops: -1
             speed: 4
+            sync_ms: 500
         bell_ring_2x:
             loops: 0
         flash_2x: 
@@ -348,8 +347,9 @@ show_player:
 
     timer_2x_multiplier_restarted:
         flash_rollover:
-            loops: 4
+            loops: -1
             speed: 4
+            sync_ms: 500
         bell_ring_2x:
             loops: 0
         flash_2x: 
@@ -357,6 +357,7 @@ show_player:
             sync_ms: 500
 
     timer_2x_multiplier_stopped:
+        flash_rollover: stop
         flash_2x: stop
 
     pfs_shooter_lane_inactive:
@@ -387,7 +388,7 @@ shows:
         - duration: 20ms
           coils:
               bbc_bell: pulse
-        - duration: 275ms
+        - duration: 500ms
           coils:
               bbc_bell: pulse
         - duration: 20ms
@@ -446,13 +447,6 @@ shows:
         - duration: 250ms
           lights:
               pfl_left_saucer_4: 00
-    flash_left_eject:
-        - duration: 100ms
-          lights:
-              pfl_left_eject: ff
-        - duration: 100ms
-          lights:
-              pfl_left_eject: 00
 
     # Right saucer lamps indicating lock status
     flash_right_1:
@@ -483,13 +477,6 @@ shows:
         - duration: 250ms
           lights:
               pfl_right_saucer_4: 00
-    flash_right_eject:
-        - duration: 100ms
-          lights:
-              pfl_right_eject: ff
-        - duration: 100ms
-          lights:
-              pfl_right_eject: 00
 
     left_lock_off:
         - time: 0

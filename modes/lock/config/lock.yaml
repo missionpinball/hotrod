@@ -20,11 +20,6 @@ variable_player:
         score: 160 * current_player.pf_multiplier|block
     player_shot_left_lock{value==3}:
         score: 160 * current_player.pf_multiplier|block
-    # Ejects
-    balldevice_bd_left_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier|block
-    balldevice_bd_right_eject_ball_entered:
-        score: 500 * current_player.pf_multiplier|block
 
 shots:
     left_lock:

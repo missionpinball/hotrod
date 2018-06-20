@@ -31,6 +31,8 @@ player_vars:
         initial_value: 0
     mb_3ball_multiplier:
         initial_value: 0
+    ready_to_start_multiball:
+        initial_value: 0
 
 modes:
   - gi

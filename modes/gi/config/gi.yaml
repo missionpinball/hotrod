@@ -1,7 +1,9 @@
 #config_version=5
 
 mode:
+    game_mode: false
     start_events: mode_base_starting
+    stop_on_ball_end: false
     priority: 400
 
 show_player:
