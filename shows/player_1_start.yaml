@@ -8,7 +8,7 @@
   coils:
       cc_chime_2: 
           action: pulse
-- duration: 200ms
+- duration: 350ms
   coils:
       cc_chime_1: 
           action: pulse
@@ -20,7 +20,7 @@
   coils:
       cc_chime_2: 
           action: pulse
-- duration: 200ms
+- duration: 350ms
   coils:
       cc_chime_1: 
           action: pulse

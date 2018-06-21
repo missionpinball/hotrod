@@ -17,6 +17,7 @@ switches:
         tags: start
     cs_tilt_bob:
         number: 1/1/5
+        debounce: quick
         tags: playfield_active, tilt_warning
     cs_slam_tilt:
         number: 1/1/6

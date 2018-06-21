@@ -388,7 +388,13 @@ shows:
         - duration: 20ms
           coils:
               bbc_bell: pulse
+        - duration: 20ms
+          coils:
+              bbc_bell: pulse
         - duration: 500ms
+          coils:
+              bbc_bell: pulse
+        - duration: 20ms
           coils:
               bbc_bell: pulse
         - duration: 20ms

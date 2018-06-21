@@ -460,32 +460,39 @@ lights:
         number: C-A2-B0-0:R-A2-B1-2
         subtype: matrix
         label: Title Flame Left
+        tags: tilt_lamps
     bbl_title_flame_right:
         number: C-A2-B0-1:R-A2-B1-0
         subtype: matrix
         label: Title Flame Right
+        tags: tilt_lamps
 
     # HOT ROD Title
     bbl_title_1:
         number: C-A2-B0-0:R-A2-B1-3
         subtype: matrix
         label: Title 1
+        tags: tilt_lamps
     bbl_title_2:
         number: C-A2-B0-0:R-A2-B1-4
         subtype: matrix
         label: Title 2
+        tags: tilt_lamps
     bbl_title_3:
         number: C-A2-B0-0:R-A2-B1-5
         subtype: matrix
         label: Title 3
+        tags: tilt_lamps
     bbl_title_4:
         number: C-A2-B0-0:R-A2-B1-6
         subtype: matrix
         label: Title 4
+        tags: tilt_lamps
     bbl_title_5:
         number: C-A2-B0-0:R-A2-B1-7
         subtype: matrix
         label: Title 5
+        tags: tilt_lamps
 
     # Playfield General Illumination
     pfl_left_saucer_gi:

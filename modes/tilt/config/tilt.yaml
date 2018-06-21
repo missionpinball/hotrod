@@ -2,16 +2,13 @@
 
 tilt:
     tilt_switch_tag: tilt
-    warnings_to_tilt: 3
+    warnings_to_tilt: 2
     reset_warnings_events: ball_ended
-    multiple_hit_window: 300ms
-    settle_time: 5s
     tilt_warnings_player_var: tilt_warnings
 
 show_player:
     tilt:
         just_off:
-            priority: 1
-            loops: 0
+            loops: 4
             show_tokens:
                 lights: tilt_lamps

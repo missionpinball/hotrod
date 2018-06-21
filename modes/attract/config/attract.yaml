@@ -7,6 +7,7 @@ show_player:
         attract_pops: play
         player_1_score_on: play
         player_2_score_on: play
+        title_on: play
         girl_on: play
         corvette_on: play
         belair_on: play

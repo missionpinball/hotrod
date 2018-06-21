@@ -26,3 +26,9 @@ show_player:
     game_ending:
         game_over:
             loops: 0
+    player_tilt_warnings:
+        flash:
+            loops: 4
+            speed: 6
+            show_tokens:
+                lights: bbl_tilt
