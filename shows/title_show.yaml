@@ -1,0 +1,65 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
+- duration: 200ms
+  lights:
+      bbl_title_1: ff
+      bbl_title_2: ff
+      bbl_title_3: ff
+      bbl_title_4: 00
+      bbl_title_5: 00
+- duration: 200ms
+  lights:
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: ff
+      bbl_title_4: ff
+      bbl_title_5: ff
+- duration: 100ms
+  lights:
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
+- duration: 100ms
+  lights:
+      bbl_title_1: ff
+      bbl_title_2: ff
+      bbl_title_3: ff
+      bbl_title_4: ff
+      bbl_title_5: ff
+- duration: 100ms
+  lights:
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
+- duration: 100ms
+  lights:
+      bbl_title_1: ff
+      bbl_title_2: ff
+      bbl_title_3: ff
+      bbl_title_4: ff
+      bbl_title_5: ff
+- duration: 100ms
+  lights:
+      bbl_title_1: 00
+      bbl_title_2: 00
+      bbl_title_3: 00
+      bbl_title_4: 00
+      bbl_title_5: 00
+- duration: 100ms
+  lights:
+      bbl_title_1: ff
+      bbl_title_2: ff
+      bbl_title_3: ff
+      bbl_title_4: ff
+      bbl_title_5: ff
