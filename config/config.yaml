@@ -67,7 +67,7 @@ flippers:
 
 ball_devices:
     bd_trough:
-        ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3 
+        ball_switches: pfs_trough_1, pfs_trough_2, pfs_trough_3, pfs_trough_jam
         jam_switch: pfs_trough_jam
         eject_coil_jam_pulse: 40ms
         entrance_count_delay: 300ms
@@ -75,9 +75,10 @@ ball_devices:
         tags: trough, home, drain
         eject_targets: bd_shooter_lane
         confirm_eject_type: target
+        eject_timeouts: 1s
     bd_shooter_lane:
         ball_switches: pfs_shooter_lane
-        eject_timeouts: 3s
+        eject_timeouts: 2s
         mechanical_eject: true
     bd_left_eject:
         ball_switches: pfs_left_eject
@@ -149,4 +150,13 @@ virtual_platform_start_active_switches:
 displays:
     window:
         width: 800
-        height: 600
+        height: 300
+
+window:
+    width: 800
+    height: 300
+    resizable: true
+    fullscreen: false
+    borderless: false
+    exit_on_escape: true
+    
