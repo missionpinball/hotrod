@@ -51,7 +51,7 @@ class Match(AsyncMode):
         self.log.info('Match Show: ' + str(match_show))
 
         #if match_show == 1:
-        yield from self.match_show_circle_right()
+        yield from self.match_show_classic()
         #if match_show == 2:
         #    self.match_show_circle_left()
         #if match_show == 3:
